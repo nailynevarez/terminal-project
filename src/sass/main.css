@@ -97,15 +97,61 @@ body {
   width: 100%;
 }
 
-.Directions-Wrapper {
-  position: absolute;
+.First-Wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  background-color: #292759;
+  background-color: #F23E2E;
+}
+.First-Wrapper img {
+  height: 100%;
+  width: 100%;
 }
 
-h1 {
-  color: red;
+.OneBackground {
+  top: 0;
+  left: 0;
+}
+
+.Texture {
+  position: absolute;
+  opacity: 8%;
+}
+
+.First-Wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #F23E2E;
+}
+.First-Wrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+.First-Background {
+  top: 0;
+  left: 0;
+}
+
+.First-Texture {
+  position: absolute;
+  opacity: 8%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.App-Wrapper {
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

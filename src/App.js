@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Directions from './Directions.js';
+import First from './First.js';
 import './sass/main.css';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      activeScene: 'directions',
+      activeScene: 'first',
     };
   }
 
@@ -26,6 +27,9 @@ render() {
       switch (this.state.activeScene) {
         case 'directions':
           component = <Directions switchSceneFunction = {this.switchScene}/>;
+          break;
+        case 'first':
+          component = <First switchSceneFunction = {this.switchScene}/>;
           break;
         }
   return (
