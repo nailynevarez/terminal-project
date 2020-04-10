@@ -1,0 +1,31 @@
+.First-Eagle {
+  -webkit-animation: flyTop 3s;
+  -moz-animation: flyTop 3s;
+  -o-animation: flyTop 3s;
+  animation: flyTop 3s;
+}
+
+
+
+
+
+@-webkit-keyframes flyTop {
+  from {
+    top: 45vw; }
+  to {
+    top: -20vw; } }
+@-moz-keyframes flyTop {
+  from {
+    top: 45vw; }
+  to {
+    top: -20vw; } }
+@-o-keyframes flyTop {
+  from {
+    top: 45vw; }
+  to {
+    top: -20vw; }  }
+@keyframes flyTop {
+  from {
+    top: 45vw; }
+  to {
+    top: -20vw; } }

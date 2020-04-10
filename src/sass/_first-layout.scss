@@ -7,18 +7,28 @@
   height: 100%;
   width: 100%;
   background-color: $red;
-  img {
-    height: 100%;
-    width: 100%;
-  }
 }
 
 .First-Background {
   top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .First-Texture {
   position: absolute;
   opacity: 8%;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+}
+
+.First-Eagle {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  left: 25vw;
+  top: -20vw;
 }

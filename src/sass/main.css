@@ -87,16 +87,6 @@
     opacity: 1;
   }
 }
-body {
-  height: 100%;
-  width: 100%;
-}
-
-.App-Wrapper {
-  height: 100%;
-  width: 100%;
-}
-
 .First-Wrapper {
   position: relative;
   top: 0;
@@ -104,43 +94,30 @@ body {
   height: 100%;
   width: 100%;
   background-color: #F23E2E;
-}
-.First-Wrapper img {
-  height: 100%;
-  width: 100%;
-}
-
-.OneBackground {
-  top: 0;
-  left: 0;
-}
-
-.Texture {
-  position: absolute;
-  opacity: 8%;
-}
-
-.First-Wrapper {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #F23E2E;
-}
-.First-Wrapper img {
-  height: 100%;
-  width: 100%;
 }
 
 .First-Background {
   top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .First-Texture {
   position: absolute;
   opacity: 8%;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.First-Eagle {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  left: 25vw;
+  top: -20vw;
 }
 
 body {
@@ -152,6 +129,46 @@ body {
 .App-Wrapper {
   height: 100%;
   width: 100%;
+}
+
+.First-Eagle {
+  -webkit-animation: flyTop 3s;
+  -moz-animation: flyTop 3s;
+  -o-animation: flyTop 3s;
+  animation: flyTop 3s;
+}
+
+@-webkit-keyframes flyTop {
+  from {
+    top: 45vw;
+  }
+  to {
+    top: -20vw;
+  }
+}
+@-moz-keyframes flyTop {
+  from {
+    top: 45vw;
+  }
+  to {
+    top: -20vw;
+  }
+}
+@-o-keyframes flyTop {
+  from {
+    top: 45vw;
+  }
+  to {
+    top: -20vw;
+  }
+}
+@keyframes flyTop {
+  from {
+    top: 45vw;
+  }
+  to {
+    top: -20vw;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
