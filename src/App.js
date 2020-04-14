@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Directions from './Directions.js';
 import First from './First.js';
+import Second from './Second.js';
 import './sass/main.css';
 
 class App extends Component {
@@ -30,6 +31,9 @@ render() {
           break;
         case 'first':
           component = <First switchSceneFunction = {this.switchScene}/>;
+          break;
+        case 'second':
+          component = <Second switchSceneFunction = {this.switchScene}/>;
           break;
         }
   return (

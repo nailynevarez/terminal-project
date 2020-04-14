@@ -24,18 +24,18 @@ export default class First extends Component {
     }, 5000);
   }
 
-  // handleBeginClick = () => {
-  //   this.setState({
-  //     isPageActive: false,
-  //   });
-  //
-  //   this.handlePageSwitch();
-  // }
-  //
-  // handlePageSwitch = (event) => {
-  //   let pageName = "directions";
-  //   this.props.switchPageFunction(pageName);
-  //   }
+  handleEagleClick = () => {
+    this.setState({
+      isPageActive: false,
+    });
+
+    this.handleSceneSwitch();
+  }
+
+  handleSceneSwitch = (event) => {
+    let pageName = "second";
+    this.props.switchSceneFunction(pageName);
+    }
 
 
 
@@ -43,7 +43,7 @@ render() {
   return (
     <div>
     <div className = "First-Wrapper">
-    {this.state.isEagleActive ? <div className = "First-EagleDiv"><img className = "First-Eagle" src = {FirstEagle}/></div> : null}
+    {this.state.isEagleActive ? <div className = "First-EagleDiv"><img className = "First-Eagle" onClick = {this.handleEagleClick.bind(this)} src = {FirstEagle}/></div> : null}
     <img className = "First-Texture" src = {FirstTexture}/>
     <img className = "First-Background" src = {FirstBackground} />
     </div>
