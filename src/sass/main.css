@@ -1,3 +1,18 @@
+@media (min-width: 0) {
+  body {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 0) {
+  .App-Wrapper {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .fadeIn {
   -webkit-animation: fadeIn 0.6s;
   -moz-animation: fadeIn 0.6s;
@@ -87,87 +102,203 @@
     opacity: 1;
   }
 }
-.First-Wrapper {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #F23E2E;
+@media (min-width: 0) {
+  .First-Wrapper {
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
 }
 
-.First-Background {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+@media (min-width: 0) {
+  .First-Texture {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
 }
 
-.First-Texture {
-  position: absolute;
-  opacity: 8%;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
+@media (min-width: 0) {
+  .First-Background {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 }
 
-.First-Eagle {
-  position: absolute;
-  height: 50%;
-  width: 50%;
-  left: 25vw;
-  top: -20vw;
+@media (min-width: 0) {
+  .First-Eagle {
+    height: 50%;
+    left: calc(100vw/4);
+    position: absolute;
+    top: calc(100vh - 120vh);
+    width: 50%;
+    z-index: 4;
+  }
 }
 
-body {
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
+@media (min-width: 0) {
+  .First-Eagle {
+    -webkit-animation: flyTop 7s ease-in, eagleFlashing 0.7s;
+    -moz-animation: flyTop 7s ease-in, eagleFlashing 0.7s;
+    -o-animation: flyTop 7s ease-in, eagleFlashing 0.7s;
+    animation: flyTop 7s ease-in, eagleFlashing 0.7s linear infinite;
+    animation-delay: 0s, 7s;
+  }
 }
 
-.App-Wrapper {
-  height: 100%;
-  width: 100%;
+.First-Eagle:hover {
+  opacity: 50%;
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
 }
 
-.First-Eagle {
-  -webkit-animation: flyTop 3s;
-  -moz-animation: flyTop 3s;
-  -o-animation: flyTop 3s;
-  animation: flyTop 3s;
+@media (min-width: 0) {
+  .First-Wrapper {
+    background: #0d0d0d;
+  }
+}
+
+@media (min-width: 0) {
+  .First-Texture {
+    opacity: 10%;
+    -webkit-animation: blackTexture 6s;
+    -moz-animation: blackTexture 6s;
+    -o-animation: blackTexture 6s;
+    animation: blackTexture 6s;
+  }
+}
+
+@media (min-width: 0) {
+  .First-Background {
+    opacity: 100%;
+    -webkit-animation: blackBackground 6s;
+    -moz-animation: blackBackground 6s;
+    -o-animation: blackBackground 6s;
+    animation: blackBackground 6s;
+  }
 }
 
 @-webkit-keyframes flyTop {
   from {
-    top: 45vw;
+    top: 52vw;
   }
   to {
-    top: -20vw;
+    top: calc(100vh - 120vh);
   }
 }
 @-moz-keyframes flyTop {
   from {
-    top: 45vw;
+    top: 52vw;
   }
   to {
-    top: -20vw;
+    top: calc(100vh - 120vh);
   }
 }
 @-o-keyframes flyTop {
   from {
-    top: 45vw;
+    top: 52vw;
   }
   to {
-    top: -20vw;
+    top: calc(100vh - 120vh);
   }
 }
 @keyframes flyTop {
   from {
-    top: 45vw;
+    top: 52vw;
   }
   to {
-    top: -20vw;
+    top: calc(100vh - 120vh);
+  }
+}
+@-webkit-keyframes blackBackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@-moz-keyframes blackBackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@-o-keyframes blackBackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes blackBackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes blackTexture {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+@-moz-keyframes blackTexture {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+@-o-keyframes blackTexture {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+@keyframes blackTexture {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+@-webkit-keyframes eagleFlashing {
+  50% {
+    opacity: 15%;
+  }
+}
+@-moz-keyframes eagleFlashing {
+  50% {
+    opacity: 15%;
+  }
+}
+@-o-keyframes eagleFlashing {
+  50% {
+    opacity: 15%;
+  }
+}
+@keyframes eagleFlashing {
+  50% {
+    opacity: 15%;
   }
 }
 

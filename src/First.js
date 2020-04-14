@@ -21,7 +21,7 @@ export default class First extends Component {
       this.setState({
         isEagleActive: true,
       });
-    }, 2000);
+    }, 5000);
   }
 
   // handleBeginClick = () => {
@@ -41,9 +41,9 @@ export default class First extends Component {
 
 render() {
   return (
-    <div className = {this.state.isPageActive ? 'fadeIn' : 'fadeOut'}>
+    <div>
     <div className = "First-Wrapper">
-    {this.state.isEagleActive ? <img className = "First-Eagle" src = {FirstEagle}/> : null}
+    {this.state.isEagleActive ? <div className = "First-EagleDiv"><img className = "First-Eagle" src = {FirstEagle}/></div> : null}
     <img className = "First-Texture" src = {FirstTexture}/>
     <img className = "First-Background" src = {FirstBackground} />
     </div>

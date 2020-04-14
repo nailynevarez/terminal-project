@@ -1,34 +1,43 @@
 
 
 .First-Wrapper {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: $red;
-}
+  @include sm {
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
 
-.First-Background {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  }
 }
 
 .First-Texture {
-  position: absolute;
-  opacity: 8%;
-  height: 100%;
-  width: 100%;
-  top:0;
-  left:0;
+  @include sm {
+    height: 100%;
+    left:0;
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: 3;
+  }
+}
+
+.First-Background {
+  @include sm {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 }
 
 .First-Eagle {
-  position: absolute;
-  height: 50%;
-  width: 50%;
-  left: 25vw;
-  top: -20vw;
+  @include sm {
+    height: 50%;
+    left: calc(100vw/4);
+    position: absolute;
+    top: calc(100vh - 120vh);
+    width: 50%;
+    z-index: 4;
+  }
 }

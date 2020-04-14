@@ -1,11 +1,14 @@
 body {
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
-
+  @include sm {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 .App-Wrapper {
-  height: 100%;
-  width: 100%;
+  @include sm {
+    height: 100%;
+    width: 100%;
+  }
 }
