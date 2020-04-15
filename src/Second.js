@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import SecondBackground from "./images/Second-Background.jpg";
+import SecondTexture from "./images/First-Texture.gif";
 
 export default class Second extends Component {
   constructor(props){
@@ -42,7 +43,7 @@ render() {
   return (
     <div>
     <div className = "Second-Wrapper">
-    <p>This is the second page!</p>
+    <div className = "Second-Background"></div>
     </div>
     </div>
   );

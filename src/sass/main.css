@@ -1,5 +1,5 @@
 body {
-  cursor: url("../images/General-Cursor.png"), auto;
+  cursor: url("../images/General-Cursor.svg"), auto;
 }
 @media (min-width: 0) {
   body {
@@ -165,6 +165,7 @@ html {
   opacity: 50%;
   animation-play-state: paused;
   -webkit-animation-play-state: paused;
+  cursor: url("../images/General-Cursor.png"), auto;
 }
 
 @media (min-width: 0) {
@@ -307,6 +308,82 @@ html {
 @keyframes eagleFlashing {
   50% {
     opacity: 15%;
+  }
+}
+.Second-Wrapper {
+  overflow: hidden;
+  height: 100vh;
+  width: 200vw;
+}
+
+@media (min-width: 0) {
+  .Second-Texture {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    opacity: 10%;
+  }
+}
+
+@media (min-width: 0) {
+  .Second-Background {
+    background: url("../images/Second-BackgroundSmall.jpg") repeat-x;
+    background-size: cover;
+    height: 100vh;
+    width: 200vw;
+  }
+}
+@media (min-width: 650px) {
+  .Second-Background {
+    background: url("../images/Second-BackgroundMedium.jpg") repeat-x;
+    background-size: cover;
+  }
+}
+@media (min-width: 769px) {
+  .Second-Background {
+    background: url("../images/Second-BackgroundLarge.jpg") repeat-x;
+    background-size: cover;
+  }
+}
+
+.Second-Background {
+  animation: slideBackground 10s linear infinite;
+  background-position: 0% 0%;
+}
+
+@-webkit-keyframes slideBackground {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: -200vw 0%;
+  }
+}
+@-moz-keyframes slideBackground {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: -200vw 0%;
+  }
+}
+@-o-keyframes slideBackground {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: -200vw 0%;
+  }
+}
+@keyframes slideBackground {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: -200vw 0%;
   }
 }
 

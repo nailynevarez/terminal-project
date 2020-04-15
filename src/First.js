@@ -41,7 +41,7 @@ export default class First extends Component {
 
 render() {
   return (
-    <div>
+    <div className = {this.state.isPageActive ? null : 'fadeOut'}>
     <div className = "First-Wrapper">
     {this.state.isEagleActive ? <div className = "First-EagleDiv"><img className = "First-Eagle" onClick = {this.handleEagleClick.bind(this)} src = {FirstEagle}/></div> : null}
     <img className = "First-Texture" src = {FirstTexture}/>

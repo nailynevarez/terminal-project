@@ -1,0 +1,84 @@
+.Second-Background {
+  animation: slideBackground 10s linear infinite;
+  background-position: 0% 0%;
+}
+
+
+//
+// @-webkit-keyframes slideBackground {
+//   0%{
+//     transform: translate3d(0, 0, 0);
+//   }
+//   100%{
+//     transform: translate3d(-3840px, 0, 0);
+//   } }
+// @-moz-keyframes slideBackground {
+//   0%{
+//     transform: translate3d(0, 0, 0);
+//   }
+//   100%{
+//     transform: translate3d(-3840px, 0, 0);
+//   } }
+// @-o-keyframes slideBackground {
+//   0%{
+//     transform: translate3d(0, 0, 0);
+//   }
+//   100%{
+//     transform: translate3d(-3840px, 0, 0);
+//   } }
+// @keyframes slideBackground {
+//   0%{
+//     transform: translate3d(0, 0, 0);
+//   }
+//   100%{
+//     transform: translate3d(-3840px, 0, 0);
+//   } }
+
+
+
+  @-webkit-keyframes slideBackground {
+    from {
+       background-position: 0% 0%;
+   }
+   to {
+       background-position: -200vw 0%;
+   }}
+  @-moz-keyframes slideBackground {
+    from {
+       background-position: 0% 0%;
+   }
+   to {
+       background-position: -200vw 0%;
+   }}
+  @-o-keyframes slideBackground {
+    from {
+       background-position: 0% 0%;
+   }
+   to {
+       background-position: -200vw 0%;
+   }}
+  @keyframes slideBackground {
+    from {
+       background-position: 0% 0%;
+   }
+   to {
+       background-position: -200vw 0%;
+   }}
+
+      //
+      // @-webkit-keyframes slideBackground {
+      //   100% {
+      //       transform: translateX(-66.6666%);
+      //     }}
+      // @-moz-keyframes slideBackground {
+      //   100% {
+      //       transform: translateX(-66.6666%);
+      //     }}
+      // @-o-keyframes slideBackground {
+      //   100% {
+      //       transform: translateX(-66.6666%);
+      //     }}
+      // @keyframes slideBackground {
+      //   100% {
+      //       transform: translateX(-66.6666%);
+      //     }}
