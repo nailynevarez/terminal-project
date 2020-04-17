@@ -45,7 +45,7 @@ render() {
     <div className = "First-Wrapper">
     {this.state.isEagleActive ? <div className = "First-EagleDiv"><img className = "First-Eagle" onClick = {this.handleEagleClick.bind(this)} src = {FirstEagle}/></div> : null}
     <img className = "First-Texture" src = {FirstTexture}/>
-    <img className = "First-Background" src = {FirstBackground} />
+    <div className = "First-Background"></div>
     </div>
     </div>
   );

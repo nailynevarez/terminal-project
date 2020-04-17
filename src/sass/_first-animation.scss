@@ -1,10 +1,10 @@
 .First-Eagle {
   @include sm {
-    -webkit-animation: flyTop 7s ease-in, eagleFlashing .7s;
-    -moz-animation: flyTop 7s ease-in, eagleFlashing .7s;
-    -o-animation: flyTop 7s ease-in, eagleFlashing .7s;
-    animation: flyTop 7s ease-in, eagleFlashing .7s linear infinite;
-    animation-delay: 0s, 7s;
+    -webkit-animation: flyTop 6s ease-in, eagleFlashing .7s;
+    -moz-animation: flyTop 6s ease-in, eagleFlashing .7s;
+    -o-animation: flyTop 6s ease-in, eagleFlashing .7s;
+    animation: flyTop 6s ease-in, eagleFlashing .7s linear infinite;
+    animation-delay: 0s, 6s;
   }
 }
 

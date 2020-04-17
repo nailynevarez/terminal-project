@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SecondBackground from "./images/Second-Background.jpg";
-import SecondTexture from "./images/First-Texture.gif";
+import SecondTexture from "./images/Second-Texture.gif";
+import SecondEagle from "./images/Second-Eagle.gif";
 
 export default class Second extends Component {
   constructor(props){
@@ -41,9 +42,11 @@ export default class Second extends Component {
 
 render() {
   return (
-    <div>
+    <div className = {this.state.isPageActive ? 'fadeIn' : 'fadeOut'}>
     <div className = "Second-Wrapper">
-    <div className = "Second-Background"></div>
+      <div className = "Second-Background"></div>
+      <img className = "Second-Texture" src = {SecondTexture}/>
+      <img className = "Second-Eagle" src = {SecondEagle}/>
     </div>
     </div>
   );
