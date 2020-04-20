@@ -7,6 +7,7 @@ export default class First extends Component {
   constructor(props){
     super(props);
     this.state = {
+      done: undefined,
       isPageActive: true,
       isEagleActive: false,
     };
@@ -16,26 +17,26 @@ export default class First extends Component {
     this.showEagle();
   }
 
-  showEagle = () => {
-    setTimeout(() => {
-      this.setState({
-        isEagleActive: true,
-      });
-    }, 5000);
-  }
-
-  handleEagleClick = () => {
-    this.setState({
-      isPageActive: false,
-    });
-
-    this.handleSceneSwitch();
-  }
-
-  handleSceneSwitch = (event) => {
-    let pageName = "second";
-    this.props.switchSceneFunction(pageName);
-    }
+  // showEagle = () => {
+  //   setTimeout(() => {
+  //     this.setState({
+  //       isEagleActive: true,
+  //     });
+  //   }, 5000);
+  // }
+  //
+  // handleEagleClick = () => {
+  //   this.setState({
+  //     isPageActive: false,
+  //   });
+  //
+  //   this.handleSceneSwitch();
+  // }
+  //
+  // handleSceneSwitch = (event) => {
+  //   let pageName = "second";
+  //   this.props.switchSceneFunction(pageName);
+  //   }
 
 
 

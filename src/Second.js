@@ -7,14 +7,21 @@ export default class Second extends Component {
   constructor(props){
     super(props);
     this.state = {
+      isLoadDone: false,
       isPageActive: true,
 
     };
   }
 
-  // componentDidMount(){
-  //   this.showEagle();
-  // }
+  componentDidMount(){
+    setTimeout(() => {
+        this.setState({
+          isLoadDone: true,
+        });
+      }, 3500);
+  }
+
+
   //
   // showEagle = () => {
   //   setTimeout(() => {
@@ -42,12 +49,23 @@ export default class Second extends Component {
 
 render() {
   return (
-    <div className = {this.state.isPageActive ? 'fadeIn' : 'fadeOut'}>
+    <div>
+    {!this.state.isLoadDone ? (
+      <div className = "First-Wrapper">
+      <p className = "First-Text">Loading...</p>
+      <img className = "First-Texture" src = {SecondTexture}/>
+      <div className = "First-Background"></div>
+      </div>
+    )
+    :
+
+    (<div className = {this.state.isPageActive ? 'fadeIn' : 'fadeOut'}>
     <div className = "Second-Wrapper">
       <div className = "Second-Background"></div>
       <img className = "Second-Texture" src = {SecondTexture}/>
       <img className = "Second-Eagle" src = {SecondEagle}/>
     </div>
+    </div>)}
     </div>
   );
 }

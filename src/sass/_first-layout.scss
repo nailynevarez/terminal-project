@@ -2,6 +2,7 @@
 
 .First-Wrapper {
   @include sm {
+    background: $black;
     height: 100%;
     left: 0;
     position: relative;
@@ -15,10 +16,24 @@
   @include sm {
     height: 100%;
     left:0;
+    opacity: 5%;
     position: absolute;
     top:0;
     width: 100%;
     z-index: 3;
+  }
+
+}
+
+
+.First-Text {
+  @include sm {
+    color: $white;
+    font-size: 2em;
+    top: calc(100vh/2);
+    position: absolute;
+    left: calc(100vw/2 - 100px);
+    z-index: 4;
   }
 
 }
@@ -28,17 +43,18 @@
     background: url("../images/First-Background.jpg");
     background-size: cover;
     height: 100vh;
+    opacity: 60%;
     width: 100vw;
   }
 }
 
-.First-Eagle {
-  @include sm {
-    height: 50%;
-    left: calc(100vw/4);
-    position: absolute;
-    top: calc(100vh - 120vh);
-    width: 50%;
-    z-index: 4;
-  }
-}
+// .First-Eagle {
+//   @include sm {
+//     height: 50%;
+//     left: calc(100vw/4);
+//     position: absolute;
+//     top: calc(100vh - 120vh);
+//     width: 50%;
+//     z-index: 4;
+//   }
+// }

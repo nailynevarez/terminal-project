@@ -22,10 +22,10 @@ html {
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 0.6s;
-  -moz-animation: fadeIn 0.6s;
-  -o-animation: fadeIn 0.6s;
-  animation: fadeIn 0.6s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2;
+  -o-animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -61,10 +61,10 @@ html {
   }
 }
 .fadeOut {
-  -webkit-animation: fadeOut 1s forwards;
-  -moz-animation: fadeOut 1s forwards;
-  -o-animation: fadeOut 1s forwards;
-  animation: fadeOut 1s forwards;
+  -webkit-animation: fadeOut 0.5s forwards;
+  -moz-animation: fadeOut 0.5s forwards;
+  -o-animation: fadeOut 0.5s forwards;
+  animation: fadeOut 0.5s forwards;
 }
 
 @-webkit-keyframes fadeOut {
@@ -112,6 +112,7 @@ html {
 }
 @media (min-width: 0) {
   .First-Wrapper {
+    background: #0d0d0d;
     height: 100%;
     left: 0;
     position: relative;
@@ -124,6 +125,7 @@ html {
   .First-Texture {
     height: 100%;
     left: 0;
+    opacity: 5%;
     position: absolute;
     top: 0;
     width: 100%;
@@ -132,184 +134,26 @@ html {
 }
 
 @media (min-width: 0) {
-  .First-Background {
-    background: url("../images/First-Background.jpg");
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-  }
-}
-
-@media (min-width: 0) {
-  .First-Eagle {
-    height: 50%;
-    left: calc(100vw/4);
+  .First-Text {
+    color: #FFE9DD;
+    font-size: 2em;
+    top: calc(100vh/2);
     position: absolute;
-    top: calc(100vh - 120vh);
-    width: 50%;
+    left: calc(100vw/2 - 100px);
     z-index: 4;
   }
 }
 
 @media (min-width: 0) {
-  .First-Eagle {
-    -webkit-animation: flyTop 6s ease-in, eagleFlashing 0.7s;
-    -moz-animation: flyTop 6s ease-in, eagleFlashing 0.7s;
-    -o-animation: flyTop 6s ease-in, eagleFlashing 0.7s;
-    animation: flyTop 6s ease-in, eagleFlashing 0.7s linear infinite;
-    animation-delay: 0s, 6s;
-  }
-}
-
-.First-Eagle:hover {
-  opacity: 50%;
-  animation-play-state: paused;
-  -webkit-animation-play-state: paused;
-  cursor: url("../images/General-Cursor.png"), auto;
-}
-
-@media (min-width: 0) {
-  .First-Wrapper {
-    background: #0d0d0d;
-  }
-}
-
-@media (min-width: 0) {
-  .First-Texture {
-    opacity: 10%;
-    -webkit-animation: blackTexture 6s;
-    -moz-animation: blackTexture 6s;
-    -o-animation: blackTexture 6s;
-    animation: blackTexture 6s;
-  }
-}
-
-@media (min-width: 0) {
   .First-Background {
-    opacity: 100%;
-    -webkit-animation: blackBackground 6s;
-    -moz-animation: blackBackground 6s;
-    -o-animation: blackBackground 6s;
-    animation: blackBackground 6s;
+    background: url("../images/First-Background.jpg");
+    background-size: cover;
+    height: 100vh;
+    opacity: 60%;
+    width: 100vw;
   }
 }
 
-@-webkit-keyframes flyTop {
-  from {
-    top: 52vw;
-  }
-  to {
-    top: calc(100vh - 120vh);
-  }
-}
-@-moz-keyframes flyTop {
-  from {
-    top: 52vw;
-  }
-  to {
-    top: calc(100vh - 120vh);
-  }
-}
-@-o-keyframes flyTop {
-  from {
-    top: 52vw;
-  }
-  to {
-    top: calc(100vh - 120vh);
-  }
-}
-@keyframes flyTop {
-  from {
-    top: 52vw;
-  }
-  to {
-    top: calc(100vh - 120vh);
-  }
-}
-@-webkit-keyframes blackBackground {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-@-moz-keyframes blackBackground {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-@-o-keyframes blackBackground {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-@keyframes blackBackground {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-@-webkit-keyframes blackTexture {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.1;
-  }
-}
-@-moz-keyframes blackTexture {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.1;
-  }
-}
-@-o-keyframes blackTexture {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.1;
-  }
-}
-@keyframes blackTexture {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.1;
-  }
-}
-@-webkit-keyframes eagleFlashing {
-  50% {
-    opacity: 15%;
-  }
-}
-@-moz-keyframes eagleFlashing {
-  50% {
-    opacity: 15%;
-  }
-}
-@-o-keyframes eagleFlashing {
-  50% {
-    opacity: 15%;
-  }
-}
-@keyframes eagleFlashing {
-  50% {
-    opacity: 15%;
-  }
-}
 .Second-Wrapper {
   overflow: hidden;
   height: 100vh;
