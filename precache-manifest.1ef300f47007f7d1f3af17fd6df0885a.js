@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "099a61a52d403220869ef456b7d784d9",
+    "revision": "b46d706449a0a18b61d1f6f0725e4550",
     "url": "/terminal-project/index.html"
   },
   {
-    "revision": "f4c91352c8c168125d6f",
-    "url": "/terminal-project/static/css/main.6c34c3f0.chunk.css"
+    "revision": "988a4a6476d55e8e0178",
+    "url": "/terminal-project/static/css/main.c55eb159.chunk.css"
   },
   {
-    "revision": "f11bff444a48bf1a6c08",
-    "url": "/terminal-project/static/js/2.64df0473.chunk.js"
+    "revision": "62e095d2b9e41f720547",
+    "url": "/terminal-project/static/js/2.d0c22188.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/terminal-project/static/js/2.64df0473.chunk.js.LICENSE.txt"
+    "url": "/terminal-project/static/js/2.d0c22188.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f4c91352c8c168125d6f",
-    "url": "/terminal-project/static/js/main.20289d7e.chunk.js"
+    "revision": "988a4a6476d55e8e0178",
+    "url": "/terminal-project/static/js/main.6da86360.chunk.js"
   },
   {
     "revision": "5854051d1e97ed3ae115",
@@ -54,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "953510dc82d96826b0af4468b8e2e3a9",
     "url": "/terminal-project/static/media/Second-BackgroundSmall.953510dc.jpg"
+  },
+  {
+    "revision": "4de957526455e45c3ae67972da7ff3df",
+    "url": "/terminal-project/static/media/Second-Button.4de95752.png"
   },
   {
     "revision": "59c22b8e0127a053c75ff4a181c7081f",
