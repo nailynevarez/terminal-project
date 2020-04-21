@@ -1,38 +1,11 @@
 .Second-Background {
+  -webkit-animation: slideBackground 60s linear infinite;
+   -moz-animation: slideBackground 60s linear infinite;
+   -o-animation: slideBackground 60s linear infinite;
   animation: slideBackground 60s linear infinite;
   background-position: 0% 0%;
 }
 
-
-//
-// @-webkit-keyframes slideBackground {
-//   0%{
-//     transform: translate3d(0, 0, 0);
-//   }
-//   100%{
-//     transform: translate3d(-3840px, 0, 0);
-//   } }
-// @-moz-keyframes slideBackground {
-//   0%{
-//     transform: translate3d(0, 0, 0);
-//   }
-//   100%{
-//     transform: translate3d(-3840px, 0, 0);
-//   } }
-// @-o-keyframes slideBackground {
-//   0%{
-//     transform: translate3d(0, 0, 0);
-//   }
-//   100%{
-//     transform: translate3d(-3840px, 0, 0);
-//   } }
-// @keyframes slideBackground {
-//   0%{
-//     transform: translate3d(0, 0, 0);
-//   }
-//   100%{
-//     transform: translate3d(-3840px, 0, 0);
-//   } }
 
 
 
@@ -65,20 +38,86 @@
        background-position: -200vw 0%;
    }}
 
-      //
-      // @-webkit-keyframes slideBackground {
-      //   100% {
-      //       transform: translateX(-66.6666%);
-      //     }}
-      // @-moz-keyframes slideBackground {
-      //   100% {
-      //       transform: translateX(-66.6666%);
-      //     }}
-      // @-o-keyframes slideBackground {
-      //   100% {
-      //       transform: translateX(-66.6666%);
-      //     }}
-      // @keyframes slideBackground {
-      //   100% {
-      //       transform: translateX(-66.6666%);
-      //     }}
+
+
+   .Second-EagleAway {
+
+     @include sm {
+       -webkit-animation: eagleAwaySmall 10s;
+        -moz-animation: eagleAwaySmall 10s;
+        -o-animation: eagleAwaySmall 10s;
+        animation: eagleAwaySmall 10s;
+        transition: animation ease-in;
+     }
+
+     @include md {
+       -webkit-animation: eagleAwayLarge 10s;
+        -moz-animation: eagleAwayLarge 10s;
+        -o-animation: eagleAwayLarge 10s;
+        animation: eagleAwayLarge 10s;
+        transition: animation;
+     }
+
+   }
+
+
+
+   @-webkit-keyframes eagleAwaySmall {
+     from {
+        left: calc(100vw/2 - 25px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}
+   @-moz-keyframes eagleAwaySmall {
+     from {
+        left: calc(100vw/2 - 25px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}
+   @-o-keyframes eagleAwaySmall {
+     from {
+        left: calc(100vw/2 - 25px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}
+   @keyframes eagleAwaySmall {
+     from {
+        left: calc(100vw/2 - 25px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}
+
+
+
+   @-webkit-keyframes eagleAwayLarge {
+     from {
+        left: calc(100vw/2 - 37.5px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}
+   @-moz-keyframes eagleAwayLarge {
+     from {
+        left: calc(100vw/2 - 37.5px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}
+   @-o-keyframes eagleAwayLarge {
+     from {
+        left: calc(100vw/2 - 37.5px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}
+   @keyframes eagleAwayLarge {
+     from {
+        left: calc(100vw/2 - 37.5px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}

@@ -9,8 +9,9 @@ export default class Second extends Component {
     super(props);
     this.state = {
       isLoadDone: false,
-      isPageActive: true,
-
+      isSceneActive: true,
+      isButtonClicked: false,
+      isButtonActive: true,
     };
   }
 
@@ -23,28 +24,32 @@ export default class Second extends Component {
   }
 
 
-  //
-  // showEagle = () => {
-  //   setTimeout(() => {
-  //     this.setState({
-  //       isEagleActive: true,
-  //     });
-  //   }, 5000);
-  // }
-  //
-  //
-  // handleEagleClick = () => {
-  //   this.setState({
-  //     isPageActive: false,
-  //   });
-  //
-  //   this.handlePageSwitch();
-  // }
-  //
-  // handlePageSwitch = (event) => {
-  //   let pageName = "second";
-  //   this.props.switchPageFunction(pageName);
-  //   }
+
+  handleButtonClick = () => {
+    this.setState({
+      isButtonActive: false,
+    });
+
+    setTimeout(() => {
+        this.setState({
+          isButtonClicked: true,
+        });
+      }, 1000);
+
+
+    setTimeout(() => {
+          this.setState({
+            isSceneActive: false,
+          });
+          this.handleSceneSwitch();
+        }, 4500);
+
+  }
+
+  handleSceneSwitch = (event) => {
+    let sceneName = "third";
+    this.props.switchSceneFunction(sceneName);
+    }
 
 
 
@@ -60,12 +65,17 @@ render() {
     )
     :
 
-    (<div className = {this.state.isPageActive ? 'fadeIn' : 'fadeOut'}>
-    <div className = "Second-Wrapper">
-      <div className = "Second-Background"></div>
+    (
+    <div className = {this.state.isSceneActive ? "Second-WrapperWhite" : "Second-WrapperRed"}>
+    <div className = {this.state.isSceneActive ? 'fadeIn' : 'fadeOut'}>
+      <div className = 'Second-Background'></div>
       <img className = "Second-Texture" src = {SecondTexture}/>
-      <img className = "Second-Eagle" src = {SecondEagle}/>
-      <div className = "Second-ButtonDiv"><img className = "Second-ButtonImage" src = {SecondButton}/></div>
+      <img className = {this.state.isButtonClicked ? 'Second-EagleAway' : 'Second-Eagle'} src = {SecondEagle}/>
+      <div className = {this.state.isButtonActive ? 'fadeIn' : 'fadeOut'}>
+        <div className = 'Second-ButtonDiv'>
+          <img className = "Second-ButtonImage" onClick={this.handleButtonClick.bind(this)} src = {SecondButton}/>
+        </div>
+      </div>
     </div>
     </div>)}
     </div>

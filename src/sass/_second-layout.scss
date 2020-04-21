@@ -1,4 +1,12 @@
-.Second-Wrapper {
+.Second-WrapperWhite {
+  background-color: $white;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Second-WrapperRed {
+  background-color: $red;
   overflow: hidden;
   height: 100vh;
   width: 100vw;
@@ -49,6 +57,9 @@
 }
 
 
+//-----------------------------------------------
+
+
 .Second-Eagle {
   @include sm {
     height: auto;
@@ -69,6 +80,32 @@
   }
 }
 
+
+
+
+.Second-EagleAway {
+  @include sm {
+    height: auto;
+    left: calc(100vw/2 - 25px);
+    max-width: 50px;
+    max-height: 130px;
+    position: absolute;
+    top: 20vh;
+    width: auto;
+    z-index: 2;
+  }
+
+  @include md {
+    left: calc(100vw/2 - 37.5px);
+    max-width: 75px;
+    max-height: 175px;
+
+  }
+}
+
+
+//-----------------------------------------------
+
 .Second-Background {
   @include sm {
     background: url("../images/Second-BackgroundSmall.jpg") repeat-x;
@@ -87,3 +124,6 @@
     background-size: cover;
   }
 }
+
+
+//-----------------------------------------------

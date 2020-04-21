@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Directions from './Directions.js';
-import First from './First.js';
 import Second from './Second.js';
+import Third from './Third.js';
 import './sass/main.css';
 
 class App extends Component {
@@ -12,10 +12,10 @@ class App extends Component {
     };
   }
 
-  switchScene = (sceneSwitch) => {
+  switchScene = (sceneName) => {
     setTimeout(() => {
       this.setState({
-        activeScene: sceneSwitch,
+        activeScene: sceneName,
       });
     }, 2000);
   }
@@ -29,11 +29,11 @@ render() {
         case 'directions':
           component = <Directions switchSceneFunction = {this.switchScene}/>;
           break;
-        case 'first':
-          component = <First switchSceneFunction = {this.switchScene}/>;
-          break;
         case 'second':
           component = <Second switchSceneFunction = {this.switchScene}/>;
+          break;
+        case 'third':
+          component = <Third switchSceneFunction = {this.switchScene}/>;
           break;
         }
   return (
