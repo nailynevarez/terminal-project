@@ -1,7 +1,38 @@
 .Second-Wrapper {
   overflow: hidden;
   height: 100vh;
-  width: 200vw;
+  width: 100vw;
+}
+
+
+.Second-ButtonDiv {
+  @include sm {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.Second-ButtonImage {
+  @include sm {
+    height: 8vh;
+    min-width: 110px;
+    min-height: 40px;
+    opacity: 80%;
+    position: absolute;
+    transition: .2s ease-out;
+    bottom: 10vh;
+    width: 11vw;
+    z-index: 4;
+  }
+  &:hover {
+    height: 9vh;
+    opacity: 100%;
+    transition: .2s ease-in;
+    width: 12vw;
+  }
 }
 
 
@@ -21,13 +52,20 @@
 .Second-Eagle {
   @include sm {
     height: auto;
-    left: calc(100vw/2 - 40px);
-    max-width: 80px;
-    max-height: 180px;
+    left: calc(100vw/2 - 25px);
+    max-width: 50px;
+    max-height: 130px;
     position: absolute;
     top: 20vh;
     width: auto;
-    z-index: 4;
+    z-index: 2;
+  }
+
+  @include md {
+    left: calc(100vw/2 - 37.5px);
+    max-width: 75px;
+    max-height: 175px;
+
   }
 }
 

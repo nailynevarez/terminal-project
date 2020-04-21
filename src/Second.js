@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SecondBackground from "./images/Second-Background.jpg";
 import SecondTexture from "./images/Second-Texture.gif";
 import SecondEagle from "./images/Second-Eagle.gif";
+import SecondButton from "./images/Second-Button.png";
 
 export default class Second extends Component {
   constructor(props){
@@ -52,7 +53,7 @@ render() {
     <div>
     {!this.state.isLoadDone ? (
       <div className = "First-Wrapper">
-      <p className = "First-Text">Loading...</p>
+      <div className = "First-Text"> <p>LOADING...</p> </div>
       <img className = "First-Texture" src = {SecondTexture}/>
       <div className = "First-Background"></div>
       </div>
@@ -64,6 +65,7 @@ render() {
       <div className = "Second-Background"></div>
       <img className = "Second-Texture" src = {SecondTexture}/>
       <img className = "Second-Eagle" src = {SecondEagle}/>
+      <div className = "Second-ButtonDiv"><img className = "Second-ButtonImage" src = {SecondButton}/></div>
     </div>
     </div>)}
     </div>

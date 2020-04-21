@@ -28,14 +28,24 @@
 
 .First-Text {
   @include sm {
-    color: $white;
+    align-items: center;
+    color: $red;
+    display: flex;
     font-size: 2em;
-    top: calc(100vh/2);
+    font-family: $font;
+    font-weight: $font-xbold;
+    height: 100vh;
+    justify-content: center;
     position: absolute;
-    left: calc(100vw/2 - 100px);
-    z-index: 4;
+    width: 100vw;
+    z-index: 2;
   }
-
+  @include md {
+    font-size: 3em;
+  }
+  @include lg {
+    font-size: 3.5em;
+  }
 }
 
 .First-Background {
@@ -47,14 +57,3 @@
     width: 100vw;
   }
 }
-
-// .First-Eagle {
-//   @include sm {
-//     height: 50%;
-//     left: calc(100vw/4);
-//     position: absolute;
-//     top: calc(100vh - 120vh);
-//     width: 50%;
-//     z-index: 4;
-//   }
-// }
