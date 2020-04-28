@@ -29,10 +29,10 @@
 
 .Third-FlagSmall {
   @include sm {
-    height: 110%;
+    height: 120%;
     position: absolute;
     width: auto;
-    top: 20vh;
+    top: 10vh;
   }
   @include md {
     display: none;
@@ -49,7 +49,7 @@
     height: 120%;
     position: absolute;
     width: auto;
-    top: 20vh;
+    top: 10vh;
   }
 }
 
