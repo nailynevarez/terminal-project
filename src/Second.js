@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SecondBackground from "./images/Second-Background.jpg";
-import SecondTexture from "./images/Second-Texture.gif";
+import SecondTexture from "./images/Texture.gif";
 import SecondEagle from "./images/Second-Eagle.gif";
 import SecondButton from "./images/Second-Button.png";
 

@@ -410,5 +410,69 @@ html {
     left: calc(100vw + 200px);
   }
 }
+.Third-WrapperRed {
+  color: #FFE9DD;
+  background-color: #F23E2E;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+@media (min-width: 0) {
+  .Third-Texture {
+    height: 100vh;
+    left: 0;
+    opacity: 10%;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 3;
+  }
+}
+
+.Third-FlagDivs {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (min-width: 0) {
+  .Third-FlagSmall {
+    height: 110%;
+    position: absolute;
+    width: auto;
+    top: 20vh;
+  }
+}
+@media (min-width: 769px) {
+  .Third-FlagSmall {
+    display: none;
+  }
+}
+
+@media (min-width: 0) {
+  .Third-FlagLarge {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .Third-FlagLarge {
+    display: flex;
+    height: 120%;
+    position: absolute;
+    width: auto;
+    top: 20vh;
+  }
+}
+
+@media (min-width: 0) {
+  .Third-Background {
+    background: url("../images/Third-BackgroundLarge.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

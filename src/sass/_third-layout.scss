@@ -1,0 +1,64 @@
+.Third-WrapperRed {
+  color: $white;
+  background-color: $red;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+
+.Third-Texture {
+  @include sm {
+    height: 100vh;
+    left:0;
+    opacity: 10%;
+    position: absolute;
+    top:0;
+    width: 100vw;
+    z-index: 3;
+  }
+}
+
+
+.Third-FlagDivs {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.Third-FlagSmall {
+  @include sm {
+    height: 110%;
+    position: absolute;
+    width: auto;
+    top: 20vh;
+  }
+  @include md {
+    display: none;
+  }
+}
+
+
+.Third-FlagLarge {
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: flex;
+    height: 120%;
+    position: absolute;
+    width: auto;
+    top: 20vh;
+  }
+}
+
+
+.Third-Background {
+  @include sm {
+    background: url("../images/Third-BackgroundLarge.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
