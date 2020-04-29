@@ -426,7 +426,7 @@ html {
     position: absolute;
     top: 0;
     width: 100vw;
-    z-index: 3;
+    z-index: 4;
   }
 }
 
@@ -443,6 +443,7 @@ html {
     position: absolute;
     width: auto;
     top: 10vh;
+    z-index: 2;
   }
 }
 @media (min-width: 769px) {
@@ -454,6 +455,7 @@ html {
 @media (min-width: 0) {
   .Third-FlagLarge {
     display: none;
+    z-index: 2;
   }
 }
 @media (min-width: 769px) {
@@ -464,6 +466,13 @@ html {
     width: auto;
     top: 10vh;
   }
+}
+
+.Third-FlagDistortLarge {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  z-index: 3;
 }
 
 @media (min-width: 0) {
@@ -480,6 +489,8 @@ html {
   -moz-animation: zoomFlag 10s;
   -o-animation: zoomFlag 10s;
   animation: zoomFlag 10s;
+  transform-origin: 58% 21%;
+  opacity: 0;
 }
 
 .Third-FlagLarge {
@@ -487,74 +498,148 @@ html {
   -moz-animation: zoomFlag 10s;
   -o-animation: zoomFlag 10s;
   animation: zoomFlag 10s;
+  transform-origin: 58% 21%;
+  opacity: 0;
 }
 
 @-webkit-keyframes zoomFlag {
   0% {
-    height: 120%;
-    top: 10vh;
-    right: 30vw;
+    transform-origin: 58% 21%;
+    left: 50%;
+    opacity: 1;
   }
-  40% {
-    height: 120%;
-    top: 10vh;
-    right: 36vw;
+  30% {
+    left: calc(100vw / 2 - 9.5vw);
+    transform: scale(1);
+  }
+  99% {
+    transform: scale(6.7);
+    opacity: 1;
   }
   100% {
-    height: 910%;
-    top: -155vh;
-    right: -22vw;
+    transform: scale(6.7);
+    opacity: 0;
   }
 }
 @-moz-keyframes zoomFlag {
   0% {
-    height: 120%;
-    top: 10vh;
-    right: 30vw;
+    transform-origin: 58% 21%;
+    left: 50%;
+    opacity: 1;
   }
-  40% {
-    height: 120%;
-    top: 10vh;
-    right: 36vw;
+  30% {
+    left: calc(100vw / 2 - 9.5vw);
+    transform: scale(1);
+  }
+  99% {
+    transform: scale(6.7);
+    opacity: 1;
   }
   100% {
-    height: 910%;
-    top: -155vh;
-    right: -22vw;
+    transform: scale(6.7);
+    opacity: 0;
   }
 }
 @-o-keyframes zoomFlag {
   0% {
-    height: 120%;
-    top: 10vh;
-    right: 30vw;
+    transform-origin: 58% 21%;
+    left: 50%;
+    opacity: 1;
   }
-  40% {
-    height: 120%;
-    top: 60vh;
-    right: 36vw;
+  30% {
+    left: calc(100vw / 2 - 9.5vw);
+    transform: scale(1);
+  }
+  99% {
+    transform: scale(6.7);
+    opacity: 1;
   }
   100% {
-    height: 910%;
-    top: -155vh;
-    right: -22vw;
+    transform: scale(6.7);
+    opacity: 0;
   }
 }
 @keyframes zoomFlag {
   0% {
-    height: 120%;
-    top: 10vh;
-    right: 30vw;
+    transform-origin: 58% 21%;
+    left: 50%;
+    opacity: 1;
   }
-  40% {
-    height: 120%;
-    top: 10vh;
-    right: 36vw;
+  30% {
+    left: calc(100vw / 2 - 9.5vw);
+    transform: scale(1);
+  }
+  99% {
+    transform: scale(6.7);
+    opacity: 1;
   }
   100% {
-    height: 910%;
-    top: -155vh;
-    right: -22vw;
+    transform: scale(6.7);
+    opacity: 0;
+  }
+}
+.Third-FlagDistortLarge {
+  -webkit-animation: flagDisort 20s;
+  -moz-animation: flagDisort 20s;
+  -o-animation: flagDisort 20s;
+  animation: flagDisort 20s;
+  opacity: 0;
+}
+
+@-webkit-keyframes flagDisort {
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes flagDisort {
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+@-o-keyframes flagDisort {
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+@keyframes flagDisort {
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
   }
 }
 

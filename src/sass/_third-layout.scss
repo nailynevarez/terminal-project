@@ -15,7 +15,7 @@
     position: absolute;
     top:0;
     width: 100vw;
-    z-index: 3;
+    z-index: 4;
   }
 }
 
@@ -33,6 +33,7 @@
     position: absolute;
     width: auto;
     top: 10vh;
+    z-index: 2;
   }
   @include md {
     display: none;
@@ -43,6 +44,7 @@
 .Third-FlagLarge {
   @include sm {
     display: none;
+    z-index: 2;
   }
   @include md {
     display: flex;
@@ -51,6 +53,14 @@
     width: auto;
     top: 10vh;
   }
+}
+
+
+.Third-FlagDistortLarge {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  z-index: 3;
 }
 
 
