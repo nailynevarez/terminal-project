@@ -1,0 +1,9 @@
+.Fourth-Background {
+  @include sm {
+    background: url("../images/Fourth-BackgroundLarge.jpg");
+    background-size: cover;
+    height: 100vh;
+    opacity: 1;
+    width: 100vw;
+  }
+}

@@ -426,7 +426,7 @@ html {
     position: absolute;
     top: 0;
     width: 100vw;
-    z-index: 4;
+    z-index: 5;
   }
 }
 
@@ -475,9 +475,16 @@ html {
   z-index: 3;
 }
 
+.Third-FlagDistorted {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  z-index: 4;
+}
+
 @media (min-width: 0) {
   .Third-Background {
-    background: url("../images/Third-BackgroundLarge.png");
+    background: url("../images/Fourth-BackgroundLarge.jpg");
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -593,10 +600,10 @@ html {
   50% {
     opacity: 1;
   }
-  65% {
+  70% {
     opacity: 1;
   }
-  66% {
+  71% {
     opacity: 0;
   }
 }
@@ -607,10 +614,10 @@ html {
   50% {
     opacity: 1;
   }
-  65% {
+  70% {
     opacity: 1;
   }
-  66% {
+  71% {
     opacity: 0;
   }
 }
@@ -621,10 +628,10 @@ html {
   50% {
     opacity: 1;
   }
-  65% {
+  70% {
     opacity: 1;
   }
-  66% {
+  71% {
     opacity: 0;
   }
 }
@@ -635,11 +642,174 @@ html {
   50% {
     opacity: 1;
   }
-  65% {
+  70% {
     opacity: 1;
   }
-  66% {
+  71% {
     opacity: 0;
+  }
+}
+.Third-Background {
+  -webkit-animation: crossFade 20s;
+  -moz-animation: crossFade 20s;
+  -o-animation: crossFade 20s;
+  animation: crossFade 20s;
+}
+
+@-webkit-keyframes crossFade {
+  0% {
+    background: url("../images/Third-BackgroundLarge.png");
+    background-size: cover;
+  }
+  60% {
+    background: url("../images/Third-BackgroundLarge.png");
+    background-size: cover;
+  }
+  70% {
+    background: url("../images/Fourth-BackgroundLarge.jpg");
+    background-size: cover;
+  }
+}
+@-moz-keyframes crossFade {
+  0% {
+    background: url("../images/Third-BackgroundLarge.png");
+    background-size: cover;
+  }
+  60% {
+    background: url("../images/Third-BackgroundLarge.png");
+    background-size: cover;
+  }
+  70% {
+    background: url("../images/Fourth-BackgroundLarge.jpg");
+    background-size: cover;
+  }
+}
+@-o-keyframes crossFade {
+  0% {
+    background: url("../images/Third-BackgroundLarge.png");
+    background-size: cover;
+  }
+  60% {
+    background: url("../images/Third-BackgroundLarge.png");
+    background-size: cover;
+  }
+  70% {
+    background: url("../images/Fourth-BackgroundLarge.jpg");
+    background-size: cover;
+  }
+}
+@keyframes crossFade {
+  0% {
+    background: url("../images/Third-BackgroundLarge.png");
+    background-size: cover;
+  }
+  60% {
+    background: url("../images/Third-BackgroundLarge.png");
+    background-size: cover;
+  }
+  70% {
+    background: url("../images/Fourth-BackgroundLarge.jpg");
+    background-size: cover;
+  }
+}
+.Third-FlagDistorted {
+  -webkit-animation: flagIn 20s;
+  -moz-animation: flagIn 20s;
+  -o-animation: flagIn 20s;
+  animation: flagIn 20s;
+}
+
+@-webkit-keyframes flagIn {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  71% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes flagIn {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  71% {
+    opacity: 1;
+  }
+}
+@-o-keyframes flagIn {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  71% {
+    opacity: 1;
+  }
+}
+@keyframes flagIn {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  71% {
+    opacity: 1;
+  }
+}
+@media (min-width: 0) {
+  .Fourth-Background {
+    background: url("../images/Fourth-BackgroundLarge.jpg");
+    background-size: cover;
+    height: 100vh;
+    opacity: 1;
+    width: 100vw;
+  }
+}
+
+.Fourth-Background {
+  -webkit-animation: fadeBlack 2s;
+  -moz-animation: fadeBlack 2s;
+  -o-animation: fadeBlack 2s;
+  animation: fadeBlack 2s;
+}
+
+@-webkit-keyframes fadeBlack {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeBlack {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeBlack {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeBlack {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
