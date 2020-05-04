@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SecondBackground from "./images/Second-Background.jpg";
 import SecondTexture from "./images/Texture.gif";
 import SecondEagle from "./images/Second-Eagle.gif";
 import SecondButton from "./images/Second-Button.png";
@@ -73,7 +72,7 @@ render() {
       <img className = {this.state.isButtonClicked ? 'Second-EagleAway' : 'Second-Eagle'} src = {SecondEagle}/>
       <div className = {this.state.isButtonActive ? 'fadeIn' : 'fadeOut'}>
         <div className = 'Second-ButtonDiv'>
-          <img className = "Second-ButtonImage" onClick={this.handleButtonClick.bind(this)} src = {SecondButton}/>
+          <img className = "Second-Button" onClick={this.handleButtonClick.bind(this)} src = {SecondButton}/>
         </div>
       </div>
     </div>

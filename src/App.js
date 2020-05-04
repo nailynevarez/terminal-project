@@ -3,7 +3,7 @@ import Directions from './Directions.js';
 import Second from './Second.js';
 import Third from './Third.js';
 import Fourth from './Fourth.js';
-import './sass/main.css';
+import './sass/newmain.css';
 
 class App extends Component {
   constructor(props){

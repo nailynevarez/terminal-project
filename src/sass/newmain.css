@@ -130,7 +130,7 @@ html {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 4;
   }
 }
 
@@ -146,7 +146,7 @@ html {
     justify-content: center;
     position: absolute;
     width: 100vw;
-    z-index: 2;
+    z-index: 3;
   }
 }
 @media (min-width: 769px) {
@@ -167,6 +167,7 @@ html {
     height: 100vh;
     opacity: 60%;
     width: 100vw;
+    z-index: 2;
   }
 }
 
@@ -195,7 +196,7 @@ html {
 }
 
 @media (min-width: 0) {
-  .Second-ButtonImage {
+  .Second-Button {
     height: 8vh;
     min-width: 110px;
     min-height: 40px;
@@ -207,7 +208,7 @@ html {
     z-index: 4;
   }
 }
-.Second-ButtonImage:hover {
+.Second-Button:hover {
   height: 9vh;
   opacity: 100%;
   transition: 0.2s ease-in;
@@ -813,4 +814,4 @@ html {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=newmain.css.map */

@@ -18,7 +18,7 @@
     position: absolute;
     top:0;
     width: 100%;
-    z-index: 3;
+    z-index: 4;
   }
 
 }
@@ -36,7 +36,7 @@
     justify-content: center;
     position: absolute;
     width: 100vw;
-    z-index: 2;
+    z-index: 3;
   }
   @include md {
     font-size: 3em;
@@ -53,5 +53,6 @@
     height: 100vh;
     opacity: 60%;
     width: 100vw;
+    z-index: 2;
   }
 }
