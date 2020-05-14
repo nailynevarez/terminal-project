@@ -7,12 +7,14 @@ body {
     height: 100vh;
     overflow: hidden;
     width: 100vw;
+    margin: 0;
   }
 }
 
 html {
   height: 100vh;
   width: 100vw;
+  margin: 0;
 }
 
 @media (min-width: 0) {
@@ -126,7 +128,7 @@ html {
   .First-Texture {
     height: 100%;
     left: 0;
-    opacity: 5%;
+    opacity: 0.1;
     position: absolute;
     top: 0;
     width: 100%;
@@ -165,7 +167,7 @@ html {
     background: url("../images/First-Background.jpg");
     background-size: cover;
     height: 100vh;
-    opacity: 60%;
+    opacity: 0.6;
     width: 100vw;
     z-index: 2;
   }
@@ -199,7 +201,7 @@ html {
   .Second-Button {
     max-height: 120px;
     max-width: 140px;
-    opacity: 70%;
+    opacity: 0.7;
     position: absolute;
     transition: 0.3s ease-out;
     bottom: 10vh;
@@ -208,7 +210,7 @@ html {
   .Second-Button:hover {
     max-height: 140px;
     max-width: 160px;
-    opacity: 100%;
+    opacity: 1;
     transition: 0.3s ease-in;
   }
 }
@@ -250,7 +252,7 @@ html {
   .Second-Title {
     max-width: 460px;
     position: absolute;
-    opacity: 100%;
+    opacity: 1;
     z-index: 3;
   }
 }
@@ -281,7 +283,7 @@ html {
     position: absolute;
     top: 0;
     z-index: 4;
-    opacity: 10%;
+    opacity: 0.1;
   }
 }
 
@@ -532,7 +534,7 @@ html {
   .Third-Texture {
     height: 100vh;
     left: 0;
-    opacity: 10%;
+    opacity: 0.1;
     position: absolute;
     top: 0;
     width: 100vw;
@@ -578,29 +580,119 @@ html {
   }
 }
 
-.Third-FlagDistortLarge {
-  height: 100%;
-  width: auto;
-  position: absolute;
-  z-index: 3;
+@media (min-width: 0) {
+  .Third-FlagDistortSmall {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 3;
+  }
+}
+@media (min-width: 769px) {
+  .Third-FlagDistortSmall {
+    display: none;
+  }
 }
 
-.Third-FlagDistorted {
-  height: 100%;
-  width: auto;
-  position: absolute;
-  z-index: 4;
+@media (min-width: 0) {
+  .Third-FlagDistortLarge {
+    display: none;
+    z-index: 3;
+  }
+}
+@media (min-width: 769px) {
+  .Third-FlagDistortLarge {
+    display: flex;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 0) {
+  .Fourth-FlagLarge {
+    display: none;
+    z-index: 4;
+  }
+}
+@media (min-width: 769px) {
+  .Fourth-FlagLarge {
+    display: flex;
+    height: 100%;
+    width: auto;
+    position: absolute;
+  }
+}
+
+@media (min-width: 0) {
+  .Fourth-FlagSmall {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 4;
+  }
+}
+@media (min-width: 769px) {
+  .Fourth-FlagSmall {
+    display: none;
+  }
 }
 
 @media (min-width: 0) {
   .Third-Background {
-    background: url("../images/Fourth-BackgroundLarge.jpg");
+    background: url("../images/Fourth-BackgroundSmall.jpg");
     background-size: cover;
     height: 100vh;
     width: 100vw;
   }
 }
+@media (min-width: 769px) {
+  .Third-Background {
+    background: url("../images/Fourth-BackgroundLarge.jpg") repeat-x;
+    background-size: cover;
+  }
+}
 
+.Third-FlagDivs {
+  -webkit-animation: moveFlag 10s;
+  -moz-animation: moveFlag 10s;
+  -o-animation: moveFlag 10s;
+  animation: moveFlag 10s;
+}
+
+@-webkit-keyframes moveFlag {
+  0% {
+    width: 50%;
+  }
+  30% {
+    width: 100%;
+  }
+}
+@-moz-keyframes moveFlag {
+  0% {
+    width: 50%;
+  }
+  30% {
+    width: 100%;
+  }
+}
+@-o-keyframes moveFlag {
+  0% {
+    width: 50%;
+  }
+  30% {
+    width: 100%;
+  }
+}
+@keyframes moveFlag {
+  0% {
+    width: 50%;
+  }
+  30% {
+    width: 100%;
+  }
+}
 .Third-FlagSmall {
   -webkit-animation: zoomFlag 10s;
   -moz-animation: zoomFlag 10s;
@@ -622,11 +714,9 @@ html {
 @-webkit-keyframes zoomFlag {
   0% {
     transform-origin: 58% 21%;
-    left: 50%;
     opacity: 1;
   }
   30% {
-    left: calc(100vw / 2 - 9.5vw);
     transform: scale(1);
   }
   99% {
@@ -641,11 +731,9 @@ html {
 @-moz-keyframes zoomFlag {
   0% {
     transform-origin: 58% 21%;
-    left: 50%;
     opacity: 1;
   }
   30% {
-    left: calc(100vw / 2 - 9.5vw);
     transform: scale(1);
   }
   99% {
@@ -660,11 +748,9 @@ html {
 @-o-keyframes zoomFlag {
   0% {
     transform-origin: 58% 21%;
-    left: 50%;
     opacity: 1;
   }
   30% {
-    left: calc(100vw / 2 - 9.5vw);
     transform: scale(1);
   }
   99% {
@@ -679,11 +765,9 @@ html {
 @keyframes zoomFlag {
   0% {
     transform-origin: 58% 21%;
-    left: 50%;
     opacity: 1;
   }
   30% {
-    left: calc(100vw / 2 - 9.5vw);
     transform: scale(1);
   }
   99% {
@@ -695,7 +779,7 @@ html {
     opacity: 0;
   }
 }
-.Third-FlagDistortLarge {
+.Third-FlagDistortLarge, .Third-FlagDistortSmall {
   -webkit-animation: flagDisort 20s;
   -moz-animation: flagDisort 20s;
   -o-animation: flagDisort 20s;
@@ -706,12 +790,16 @@ html {
 @-webkit-keyframes flagDisort {
   49% {
     opacity: 0;
+    height: 148%;
   }
   50% {
     opacity: 1;
+    top: -11%;
   }
   70% {
     opacity: 1;
+    height: 100%;
+    top: 0;
   }
   71% {
     opacity: 0;
@@ -720,12 +808,16 @@ html {
 @-moz-keyframes flagDisort {
   49% {
     opacity: 0;
+    height: 148%;
   }
   50% {
     opacity: 1;
+    top: -11%;
   }
   70% {
     opacity: 1;
+    height: 100%;
+    top: 0;
   }
   71% {
     opacity: 0;
@@ -734,12 +826,16 @@ html {
 @-o-keyframes flagDisort {
   49% {
     opacity: 0;
+    height: 148%;
   }
   50% {
     opacity: 1;
+    top: -11%;
   }
   70% {
     opacity: 1;
+    height: 100%;
+    top: 0;
   }
   71% {
     opacity: 0;
@@ -748,25 +844,95 @@ html {
 @keyframes flagDisort {
   49% {
     opacity: 0;
+    height: 148%;
   }
   50% {
     opacity: 1;
+    top: -11%;
   }
   70% {
     opacity: 1;
+    height: 100%;
+    top: 0;
   }
   71% {
     opacity: 0;
   }
 }
-.Third-Background {
-  -webkit-animation: crossFade 20s;
-  -moz-animation: crossFade 20s;
-  -o-animation: crossFade 20s;
-  animation: crossFade 20s;
+@media (min-width: 0) {
+  .Third-Background {
+    -webkit-animation: crossFadeSmall 20s;
+    -moz-animation: crossFadeSmall 20s;
+    -o-animation: crossFadeSmall 20s;
+    animation: crossFadeSmall 20s;
+  }
+}
+@media (min-width: 769px) {
+  .Third-Background {
+    -webkit-animation: crossFadeLarge 20s;
+    -moz-animation: crossFadeLarge 20s;
+    -o-animation: crossFadeLarge 20s;
+    animation: crossFadeLarge 20s;
+  }
 }
 
-@-webkit-keyframes crossFade {
+@-webkit-keyframes crossFadeSmall {
+  0% {
+    background: url("../images/Third-BackgroundSmall.png");
+    background-size: cover;
+  }
+  60% {
+    background: url("../images/Third-BackgroundSmall.png");
+    background-size: cover;
+  }
+  70% {
+    background: url("../images/Fourth-BackgroundSmall.jpg");
+    background-size: cover;
+  }
+}
+@-moz-keyframes crossFadeLarge {
+  0% {
+    background: url("../images/Third-BackgroundSmall.png");
+    background-size: cover;
+  }
+  60% {
+    background: url("../images/Third-BackgroundSmall.png");
+    background-size: cover;
+  }
+  70% {
+    background: url("../images/Fourth-BackgroundSmall.jpg");
+    background-size: cover;
+  }
+}
+@-o-keyframes crossFadeLarge {
+  0% {
+    background: url("../images/Third-BackgroundSmall.png");
+    background-size: cover;
+  }
+  60% {
+    background: url("../images/Third-BackgroundSmall.png");
+    background-size: cover;
+  }
+  70% {
+    background: url("../images/Fourth-BackgroundSmall.jpg");
+    background-size: cover;
+  }
+}
+@keyframes crossFadeLarge {
+  0% {
+    background: url("../images/Third-BackgroundSmall.png");
+    background-size: cover;
+  }
+  60% {
+    background: url("../images/Third-BackgroundSmall.png");
+    background-size: cover;
+  }
+  70% {
+    background: url("../images/Fourth-BackgroundSmall.jpg");
+    background-size: cover;
+  }
+}
+@-webkit-keyframes crossFadeLarge {
   0% {
     background: url("../images/Third-BackgroundLarge.png");
     background-size: cover;
@@ -780,7 +946,7 @@ html {
     background-size: cover;
   }
 }
-@-moz-keyframes crossFade {
+@-moz-keyframes crossFadeLarge {
   0% {
     background: url("../images/Third-BackgroundLarge.png");
     background-size: cover;
@@ -794,7 +960,7 @@ html {
     background-size: cover;
   }
 }
-@-o-keyframes crossFade {
+@-o-keyframes crossFadeLarge {
   0% {
     background: url("../images/Third-BackgroundLarge.png");
     background-size: cover;
@@ -808,7 +974,7 @@ html {
     background-size: cover;
   }
 }
-@keyframes crossFade {
+@keyframes crossFadeLarge {
   0% {
     background: url("../images/Third-BackgroundLarge.png");
     background-size: cover;
@@ -822,7 +988,7 @@ html {
     background-size: cover;
   }
 }
-.Third-FlagDistorted {
+.Fourth-FlagLarge, .Fourth-FlagSmall {
   -webkit-animation: flagIn 20s;
   -moz-animation: flagIn 20s;
   -o-animation: flagIn 20s;

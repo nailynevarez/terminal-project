@@ -11,7 +11,7 @@
   @include sm {
     height: 100vh;
     left:0;
-    opacity: 10%;
+    opacity: .1;
     position: absolute;
     top:0;
     width: 100vw;
@@ -55,28 +55,72 @@
   }
 }
 
-
-.Third-FlagDistortLarge {
-  height: 100%;
-  width: auto;
-  position: absolute;
-  z-index: 3;
+.Third-FlagDistortSmall {
+  @include sm {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 3;
+  }
+  @include md {
+    display: none;
+  }
 }
 
-.Third-FlagDistorted {
-  height: 100%;
-  width: auto;
-  position: absolute;
-  z-index: 4;
+
+.Third-FlagDistortLarge {
+  @include sm {
+    display: none;
+    z-index: 3;
+  }
+
+  @include md {
+    display: flex;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 3;
+  }
+}
+
+.Fourth-FlagLarge {
+  @include sm {
+    display: none;
+    z-index: 4;
+  }
+
+  @include md {
+    display: flex;
+    height: 100%;
+    width: auto;
+    position: absolute;
+  }
+}
+
+.Fourth-FlagSmall {
+  @include sm {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 4;
+  }
+  @include md {
+    display: none;
+  }
 }
 
 
 
 .Third-Background {
   @include sm {
-    background: url("../images/Fourth-BackgroundLarge.jpg");
+    background: url("../images/Fourth-BackgroundSmall.jpg");
     background-size: cover;
     height: 100vh;
     width: 100vw;
+  }
+
+  @include md {
+    background: url("../images/Fourth-BackgroundLarge.jpg") repeat-x;
+    background-size: cover;
   }
 }

@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import ThirdFlagLarge from "./images/Third-FlagLarge.gif";
 import ThirdFlagSmall from "./images/Third-FlagSmall.gif";
 import ThirdFlagDistortLarge from "./images/Third-FlagDistortLarge.gif";
+import ThirdFlagDistortSmall from "./images/Third-FlagDistortSmall.gif";
 import ThirdTexture from "./images/Texture.gif";
-import ThirdFlagDistorted from "./images/Fourth-Flag.png";
+import FourthFlagLarge from "./images/Fourth-FlagLarge.png";
+import FourthFlagSmall from "./images/Fourth-FlagSmall.png";
 
 
 export default class Third extends Component {
@@ -34,8 +36,10 @@ render() {
     <div className = {this.state.isSceneActive ? 'fadeIn' : 'fadeOut'}>
     <img className = "Third-Texture" src = {ThirdTexture}/>
     <div className = "Third-FlagDivs">
-      <img className= "Third-FlagDistorted" src = {ThirdFlagDistorted}/>
+      <img className= "Fourth-FlagLarge" src = {FourthFlagLarge}/>
+      <img className= "Fourth-FlagSmall" src = {FourthFlagSmall}/>
       <img className = "Third-FlagDistortLarge" src = {ThirdFlagDistortLarge}/>
+      <img className = "Third-FlagDistortSmall" src = {ThirdFlagDistortSmall}/>
       <img className = "Third-FlagSmall" src = {ThirdFlagSmall}/>
       <img className = "Third-FlagLarge" src = {ThirdFlagLarge}/>
     </div>
