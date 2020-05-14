@@ -40,7 +40,7 @@
 
 
 
-   .Second-EagleAway {
+.Second-EagleAway {
 
      @include sm {
        -webkit-animation: eagleAwaySmall 10s;
@@ -121,3 +121,55 @@
     to {
         left: calc(100vw + 200px);
     }}
+
+
+.Second-Title{
+  -webkit-animation: fadeTitle 10s;
+   -moz-animation: fadeTitle 10s;
+   -o-animation: fadeTitle 10s;
+  animation: fadeTitle 10s;
+}
+
+
+
+
+ @-webkit-keyframes fadeTitle {
+   0% {
+      opacity: 0;
+  }
+  10% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 100%;
+  }}
+ @-moz-keyframes fadeTitle  {
+   0% {
+      opacity: 0;
+  }
+  10% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 100%;
+  }}
+ @-o-keyframes fadeTitle  {
+   0% {
+      opacity: 0;
+  }
+  10% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 100%;
+  }}
+ @keyframes fadeTitle  {
+   0% {
+      opacity: 0;
+  }
+  10% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 100%;
+  }}

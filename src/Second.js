@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SecondTexture from "./images/Texture.gif";
 import SecondEagle from "./images/Second-Eagle.gif";
 import SecondButton from "./images/Second-Button.png";
+import SecondTitle from "./images/Second-Title.png";
 
 export default class Second extends Component {
   constructor(props){
@@ -68,7 +69,14 @@ render() {
     <div className = {this.state.isSceneActive ? "Second-WrapperWhite" : "Second-WrapperRed"}>
     <div className = {this.state.isSceneActive ? 'fadeIn' : 'fadeOut'}>
       <div className = 'Second-Background'></div>
+
       <img className = "Second-Texture" src = {SecondTexture}/>
+      <div className = {this.state.isButtonActive ? null : 'fadeOut'}>
+        <div className = "Second-TitleDiv">
+          <img className = "Second-Title" src = {SecondTitle}/>
+        </div>
+      </div>
+
       <img className = {this.state.isButtonClicked ? 'Second-EagleAway' : 'Second-Eagle'} src = {SecondEagle}/>
       <div className = {this.state.isButtonActive ? 'fadeIn' : 'fadeOut'}>
         <div className = 'Second-ButtonDiv'>
