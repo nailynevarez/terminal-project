@@ -13,15 +13,22 @@ export default class Third extends Component {
     super(props);
     this.state = {
       isSceneActive: true,
+      isDistortActive: false,
     };
   }
 
-  // componentDidMount(){
-  //   setTimeout(() => {
-  //         this.handleSceneSwitch();
-  //       }, 13000);
-  //
-  // }
+  componentDidMount(){
+  setTimeout(() => {
+    this.setState({
+      isDistortActive: true,
+    });
+  }, 9500);
+
+    setTimeout(() => {
+          this.handleSceneSwitch();
+        }, 13200);
+
+  }
 
   handleSceneSwitch = (event) => {
     let sceneName = "fourth";
@@ -33,13 +40,19 @@ export default class Third extends Component {
 render() {
   return (
     <div className = "Third-WrapperRed">
-    <div className = {this.state.isSceneActive ? 'fadeIn' : 'fadeOut'}>
+    <div className = {this.state.isSceneActive ? 'fadeIn' : 'none'}>
     <img className = "Third-Texture" src = {ThirdTexture}/>
     <div className = "Third-FlagDivs">
-      <img className= "Fourth-FlagLarge" src = {FourthFlagLarge}/>
-      <img className= "Fourth-FlagSmall" src = {FourthFlagSmall}/>
-      <img className = "Third-FlagDistortLarge" src = {ThirdFlagDistortLarge}/>
-      <img className = "Third-FlagDistortSmall" src = {ThirdFlagDistortSmall}/>
+      <img className= "Third-Fourth-FlagLarge" src = {FourthFlagLarge}/>
+      <img className= "Third-Fourth-FlagSmall" src = {FourthFlagSmall}/>
+    {this.state.isDistortActive ?
+          <img className = "Third-FlagDistortLarge" src = {ThirdFlagDistortLarge}/>
+          : null }
+
+    {this.state.isDistortActive ?
+          <img className = "Third-FlagDistortSmall" src = {ThirdFlagDistortSmall}/>
+          : null }
+
       <img className = "Third-FlagSmall" src = {ThirdFlagSmall}/>
       <img className = "Third-FlagLarge" src = {ThirdFlagLarge}/>
     </div>

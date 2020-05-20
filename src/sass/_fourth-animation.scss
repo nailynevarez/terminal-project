@@ -1,14 +1,14 @@
-.Fourth-Background{
-  -webkit-animation: fadeBlack 2s;
-   -moz-animation: fadeBlack 2s;
-   -o-animation: fadeBlack 2s;
-  animation: fadeBlack 2s;
+
+.Fourth-People {
+  -webkit-animation: fadePeople 3s;
+   -moz-animation: fadePeople 3s;
+   -o-animation: fadePeople 3s;
+  animation: fadePeople 3s;
 }
 
 
 
-
-@-webkit-keyframes fadeBlack {
+@-webkit-keyframes fadePeople {
   0% {
     opacity: 0;
   }
@@ -16,7 +16,7 @@
     opacity: 1;
   }
 }
-@-moz-keyframes fadeBlack {
+@-moz-keyframes fadePeople {
   0% {
     opacity: 0;
   }
@@ -25,7 +25,7 @@
   }
 }
 
-@-o-keyframes fadeBlack {
+@-o-keyframes fadePeople {
   0% {
     opacity: 0;
   }
@@ -33,7 +33,7 @@
     opacity: 1;
   }
 }
-@keyframes fadeBlack {
+@keyframes fadePeople {
   0% {
     opacity: 0;
   }

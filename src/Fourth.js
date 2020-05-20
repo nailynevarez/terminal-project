@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import ThirdFlagLarge from "./images/Third-FlagLarge.gif";
-import ThirdTexture from "./images/Texture.gif";
+import FourthTexture from "./images/Texture.gif";
+import FourthFlagLarge from "./images/Fourth-FlagLarge.png";
+import FourthFlagSmall from "./images/Fourth-FlagSmall.png";
+import FourthPeople from "./images/Fourth-People.png";
+
 
 
 export default class Fourth extends Component {
@@ -38,10 +41,11 @@ export default class Fourth extends Component {
 render() {
   return (
     <div className = "Fourth-Wrapper">
-    <div>
-    <p>This is the fourth scene! Welcome.</p>
+    <img className = "Fourth-Texture" src = {FourthTexture}/>
+    <img className = "Fourth-People" src = {FourthPeople}/>
+    <img className= "Fourth-FlagLarge" src = {FourthFlagLarge}/>
+    <img className= "Fourth-FlagSmall" src = {FourthFlagSmall}/>
     <div className = 'Fourth-Background'></div>
-    </div>
     </div>
   );
 }
