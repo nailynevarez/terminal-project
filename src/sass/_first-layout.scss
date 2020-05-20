@@ -18,13 +18,13 @@
     position: absolute;
     top:0;
     width: 100%;
-    z-index: 4;
+    z-index: 3;
   }
 
 }
 
 
-.First-Text {
+.First-TextLoad {
   @include sm {
     align-items: center;
     color: $red;
@@ -45,6 +45,56 @@
     font-size: 3.5em;
   }
 }
+
+.First-TextWarning {
+  @include sm {
+    align-items: center;
+    color: $white;
+    display: flex;
+    font-size: .8em;
+    font-family: $font;
+    font-weight: $font-bold;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    z-index: 4;
+    text-align: center;
+    p:first-of-type {
+      padding-right: 25%;
+      padding-left: 25%;
+
+    }
+    p:nth-of-type(2) {
+      text-align: center;
+      text-decoration: underline;
+      transition: .3s;
+      &:hover {
+        transition: .3s;
+        opacity: .4;
+      }
+    }
+
+    @include md {
+      font-size: 1em;
+    }
+
+    @include lg {
+      font-size: 1.2em;
+    }
+
+    @include xl {
+      font-size: 1.5em;
+      p:first-of-type {
+        padding-right: 30%;
+        padding-left: 30%;
+      }
+    }
+  }
+}
+
+
 
 .First-Background {
   @include sm {

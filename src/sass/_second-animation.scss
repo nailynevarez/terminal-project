@@ -163,17 +163,17 @@
 
 
 .Second-Title{
-  -webkit-animation: fadeTitle 5s;
-   -moz-animation: fadeTitle 5s;
-   -o-animation: fadeTitle 5s;
-  animation: fadeTitle 5s;
+  -webkit-animation: fadeTitle 3s;
+   -moz-animation: fadeTitle 3s;
+   -o-animation: fadeTitle 3s;
+  animation: fadeTitle 3s;
 }
 
 .Second-Subtitle {
-  -webkit-animation: fadeTitle 1s;
-   -moz-animation: fadeTitle 1s;
-   -o-animation: fadeTitle 1s;
-  animation: fadeTitle 1s;
+  -webkit-animation: fadeSubTitle 3s;
+   -moz-animation: fadeSubTitle 3s;
+   -o-animation: fadeSubTitle 3s;
+  animation: fadeSubTitle 3s;
 }
 
 
@@ -208,6 +208,9 @@
   }}
 
   @-webkit-keyframes fadeSubTitle {
+    0% {
+       opacity: 0;
+   }
     75% {
        opacity: 0;
    }
@@ -215,6 +218,9 @@
        opacity: 100%;
    }}
   @-moz-keyframes fadeSubTitle  {
+    0% {
+       opacity: 0;
+   }
     75% {
        opacity: 0;
    }
@@ -225,11 +231,17 @@
     0% {
        opacity: 0;
    }
+    75% {
+       opacity: 0;
+   }
 
    100% {
        opacity: 100%;
    }}
   @keyframes fadeSubTitle  {
+    0% {
+       opacity: 0;
+   }
     75% {
        opacity: 0;
    }

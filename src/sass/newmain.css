@@ -138,12 +138,12 @@
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 4;
+    z-index: 3;
   }
 }
 
 @media (min-width: 0) {
-  .First-Text {
+  .First-TextLoad {
     align-items: center;
     color: #F23E2E;
     display: flex;
@@ -158,13 +158,63 @@
   }
 }
 @media (min-width: 769px) {
-  .First-Text {
+  .First-TextLoad {
     font-size: 3em;
   }
 }
 @media (min-width: 1100px) {
-  .First-Text {
+  .First-TextLoad {
     font-size: 3.5em;
+  }
+}
+
+@media (min-width: 0) {
+  .First-TextWarning {
+    align-items: center;
+    color: #FFE9DD;
+    display: flex;
+    font-size: 0.8em;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    z-index: 4;
+    text-align: center;
+  }
+  .First-TextWarning p:first-of-type {
+    padding-right: 25%;
+    padding-left: 25%;
+  }
+  .First-TextWarning p:nth-of-type(2) {
+    text-align: center;
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+  .First-TextWarning p:nth-of-type(2):hover {
+    transition: 0.3s;
+    opacity: 0.4;
+  }
+}
+@media (min-width: 0) and (min-width: 769px) {
+  .First-TextWarning {
+    font-size: 1em;
+  }
+}
+@media (min-width: 0) and (min-width: 1100px) {
+  .First-TextWarning {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 0) and (min-width: 1442px) {
+  .First-TextWarning {
+    font-size: 1.5em;
+  }
+  .First-TextWarning p:first-of-type {
+    padding-right: 30%;
+    padding-left: 30%;
   }
 }
 
@@ -294,7 +344,7 @@
 @media (min-width: 0) {
   .Second-Subtitle {
     color: #303030;
-    font-size: 1em;
+    font-size: 0.8em;
     position: absolute;
     margin-top: 7%;
   }
@@ -569,17 +619,17 @@
   }
 }
 .Second-Title {
-  -webkit-animation: fadeTitle 5s;
-  -moz-animation: fadeTitle 5s;
-  -o-animation: fadeTitle 5s;
-  animation: fadeTitle 5s;
+  -webkit-animation: fadeTitle 3s;
+  -moz-animation: fadeTitle 3s;
+  -o-animation: fadeTitle 3s;
+  animation: fadeTitle 3s;
 }
 
 .Second-Subtitle {
-  -webkit-animation: fadeTitle 1s;
-  -moz-animation: fadeTitle 1s;
-  -o-animation: fadeTitle 1s;
-  animation: fadeTitle 1s;
+  -webkit-animation: fadeSubTitle 3s;
+  -moz-animation: fadeSubTitle 3s;
+  -o-animation: fadeSubTitle 3s;
+  animation: fadeSubTitle 3s;
 }
 
 @-webkit-keyframes fadeTitle {
@@ -615,6 +665,9 @@
   }
 }
 @-webkit-keyframes fadeSubTitle {
+  0% {
+    opacity: 0;
+  }
   75% {
     opacity: 0;
   }
@@ -623,6 +676,9 @@
   }
 }
 @-moz-keyframes fadeSubTitle {
+  0% {
+    opacity: 0;
+  }
   75% {
     opacity: 0;
   }
@@ -634,11 +690,17 @@
   0% {
     opacity: 0;
   }
+  75% {
+    opacity: 0;
+  }
   100% {
     opacity: 100%;
   }
 }
 @keyframes fadeSubTitle {
+  0% {
+    opacity: 0;
+  }
   75% {
     opacity: 0;
   }

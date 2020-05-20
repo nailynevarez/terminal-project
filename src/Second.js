@@ -15,15 +15,6 @@ export default class Second extends Component {
     };
   }
 
-  componentDidMount(){
-    setTimeout(() => {
-        this.setState({
-          isLoadDone: true,
-        });
-      }, 3500);
-  }
-
-
 
   handleButtonClick = () => {
     this.setState({
@@ -56,16 +47,6 @@ export default class Second extends Component {
 render() {
   return (
     <div>
-    {!this.state.isLoadDone ? (
-      <div className = "First-Wrapper">
-      <div className = "First-Text"> <p>LOADING...</p> </div>
-      <img className = "First-Texture" src = {SecondTexture}/>
-      <div className = "First-Background"></div>
-      </div>
-    )
-    :
-
-    (
     <div className = {this.state.isSceneActive ? "Second-WrapperWhite" : "Second-WrapperRed"}>
     <div className = {this.state.isSceneActive ? 'fadeIn' : 'fadeOut'}>
       <div className = 'Second-Background'></div>
@@ -85,7 +66,7 @@ render() {
         </div>
       </div>
     </div>
-    </div>)}
+    </div>
     </div>
   );
 }
