@@ -5,6 +5,9 @@ import Second from './Second.js';
 import Third from './Third.js';
 import Fourth from './Fourth.js';
 import './sass/newmain.css';
+import PortraitTexture from "./images/Texture.gif";
+import DeviceOrientation, { Orientation } from 'react-screen-orientation';
+import PortraitIcon from "./images/Portrait-Icon.gif";
 
 class App extends Component {
   constructor(props){
@@ -46,7 +49,23 @@ render() {
         }
   return (
     <div className="App-Wrapper">
-    {component}
+    <DeviceOrientation lockOrientation={'landscape'}>
+
+        <Orientation orientation='landscape' alwaysRender={false}>
+          <div>
+            {component}
+          </div>
+        </Orientation>
+
+        <Orientation orientation='portrait'>
+          <div className = "Portrait-Div">
+            <img className = "Portrait-Texture" src = {PortraitTexture}/>
+            <img className = "Portrait-Icon" src = {PortraitIcon}/>
+            <p>Please rotate your device.</p>
+          </div>
+        </Orientation>
+
+      </DeviceOrientation>
     </div>
   );
 }

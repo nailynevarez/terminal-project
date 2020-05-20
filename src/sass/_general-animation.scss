@@ -1,0 +1,50 @@
+.Portrait-Icon {
+  -webkit-animation: rotateIcon 3s infinite ;
+   -moz-animation: rotateIcon 3s infinite ;
+   -o-animation:rotateIcon 3s infinite ;
+  animation: rotateIcon 3s infinite ;
+}
+
+
+
+@-webkit-keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-90deg);
+  }
+}
+@-moz-keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-90deg);
+  }
+}
+
+@-o-keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-90deg);
+  }
+}
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-90deg);
+  }
+}

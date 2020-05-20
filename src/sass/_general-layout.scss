@@ -16,7 +16,6 @@ html, body {
     height: 100%;
     width: 100%;
   }
-
 }
 
 
@@ -27,4 +26,37 @@ nav {
   @include md {
     display: flex;
   }
+}
+
+.Portrait-Div {
+  height: 100vh;
+  width: 100vw;
+  background-color: $dark-red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 10%;
+  p {
+    color: $white;
+    font-weight: $font-bold;
+
+  }
+}
+
+.Portrait-Texture {
+  @include sm {
+    height: 100%;
+    left:0;
+    opacity: .1;
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: 3;
+  }
+}
+
+.Portrait-Icon {
+  height: 30%;
+  opacity: .5;
 }
