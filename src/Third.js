@@ -13,20 +13,14 @@ export default class Third extends Component {
     super(props);
     this.state = {
       isSceneActive: true,
-      isDistortActive: false,
     };
   }
 
   componentDidMount(){
-  setTimeout(() => {
-    this.setState({
-      isDistortActive: true,
-    });
-  }, 9500);
 
     setTimeout(() => {
           this.handleSceneSwitch();
-        }, 13200);
+        }, 13000);
 
   }
 
@@ -45,14 +39,8 @@ render() {
     <div className = "Third-FlagDivs">
       <img className= "Third-Fourth-FlagLarge" src = {FourthFlagLarge}/>
       <img className= "Third-Fourth-FlagSmall" src = {FourthFlagSmall}/>
-    {this.state.isDistortActive ?
-          <img className = "Third-FlagDistortLarge" src = {ThirdFlagDistortLarge}/>
-          : null }
-
-    {this.state.isDistortActive ?
-          <img className = "Third-FlagDistortSmall" src = {ThirdFlagDistortSmall}/>
-          : null }
-
+      <img className = "Third-FlagDistortLarge" src = {ThirdFlagDistortLarge}/>
+      <img className = "Third-FlagDistortSmall" src = {ThirdFlagDistortSmall}/>
       <img className = "Third-FlagSmall" src = {ThirdFlagSmall}/>
       <img className = "Third-FlagLarge" src = {ThirdFlagLarge}/>
     </div>

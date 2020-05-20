@@ -17,6 +17,7 @@ width: 50%;
 30% {
 width: 100%;
 }
+
 }
 @-moz-keyframes moveFlag {
   0% {
@@ -152,13 +153,12 @@ width: 50%;
 
 
 .Third-FlagDistortLarge, .Third-FlagDistortSmall {
-  -webkit-animation: flagDisort 5s;
-   -moz-animation: flagDisort 5s;
-   -o-animation: flagDisort 5s;
-  animation: flagDisort 5s;
+  -webkit-animation: flagDisort 20s;
+   -moz-animation: flagDisort 20s;
+   -o-animation: flagDisort 20s;
+  animation: flagDisort 20s;
   opacity: 0;
 }
-
 
 @-webkit-keyframes flagDisort {
   0% {
@@ -166,17 +166,21 @@ width: 50%;
     height: 148%;
   }
 
-  3% {
+  49% {
+    opacity: 0;
+    height: 148%;
+  }
+  50% {
     opacity: 1;
     top: -11%;
   }
 
-  99% {
+  70% {
     opacity: 1;
     height: 100%;
     top: 0;
   }
-  100% {
+  71% {
     opacity: 0;
   }
 }
@@ -186,17 +190,22 @@ width: 50%;
     height: 148%;
   }
 
-  3% {
+  49% {
+    opacity: 0;
+    height: 148%;
+  }
+  50% {
     opacity: 1;
     top: -11%;
+
   }
 
-  99% {
+  70% {
     opacity: 1;
     height: 100%;
     top: 0;
   }
-  100% {
+  71% {
     opacity: 0;
   }
 }
@@ -208,17 +217,21 @@ width: 50%;
     height: 148%;
   }
 
-  3% {
+  49% {
+    opacity: 0;
+    height: 148%;
+  }
+  50% {
     opacity: 1;
     top: -11%;
   }
 
-  99% {
+  70% {
     opacity: 1;
     height: 100%;
     top: 0;
   }
-  100% {
+  71% {
     opacity: 0;
   }
 }
@@ -228,20 +241,26 @@ width: 50%;
     height: 148%;
   }
 
-  3% {
+  49% {
+    opacity: 0;
+    height: 148%;
+
+  }
+  50% {
     opacity: 1;
     top: -11%;
   }
 
-  99% {
+  70% {
     opacity: 1;
     height: 100%;
     top: 0;
   }
-  100% {
+  71% {
     opacity: 0;
   }
 }
+
 
 
 
@@ -417,10 +436,10 @@ width: 50%;
     opacity: 0;
   }
 
-  72% {
+  69% {
     opacity: 0;
   }
-  73% {
+  70% {
     opacity: 1;
   }
 }
@@ -429,10 +448,10 @@ width: 50%;
     opacity: 0;
   }
 
-  72% {
+  69% {
     opacity: 0;
   }
-  73% {
+  70% {
     opacity: 1;
   }
 }
@@ -443,10 +462,10 @@ width: 50%;
     opacity: 0;
   }
 
-  72% {
+  69% {
     opacity: 0;
   }
-  73% {
+  70% {
     opacity: 1;
   }
 }
@@ -455,10 +474,10 @@ width: 50%;
     opacity: 0;
   }
 
-  72% {
+  69% {
     opacity: 0;
   }
-  73% {
+  70% {
     opacity: 1;
   }
 }
