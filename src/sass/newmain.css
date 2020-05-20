@@ -1,26 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
-body {
-  cursor: url("../images/General-Cursor.svg"), auto;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 @media (min-width: 0) {
-  body {
-    height: 100vh;
+  html, body {
+    height: 100%;
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
+    cursor: url("../images/General-Cursor.svg"), auto;
     margin: 0;
+    padding: 0;
+    overflow: hidden;
   }
-}
-
-html {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
 }
 
 @media (min-width: 0) {
   .App-Wrapper {
     height: 100%;
     width: 100%;
+  }
+}
+
+@media (min-width: 0) {
+  nav {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  nav {
+    display: flex;
   }
 }
 
@@ -216,35 +222,45 @@ html {
 }
 @media (min-width: 769px) {
   .Second-Button {
-    max-height: 160px;
-    max-width: 220px;
+    max-width: 150px;
   }
   .Second-Button:hover {
-    max-height: 180px;
-    max-width: 240px;
+    max-width: 170px;
   }
 }
 @media (min-width: 1100px) {
   .Second-Button {
-    max-height: 180px;
+    max-width: 170px;
+  }
+  .Second-Button:hover {
+    max-width: 190px;
+  }
+}
+@media (min-width: 1442px) {
+  .Second-Button {
     max-width: 240px;
   }
   .Second-Button:hover {
-    max-height: 200px;
     max-width: 260px;
   }
 }
 
 @media (min-width: 0) {
   .Second-TitleDiv {
-    align-items: center;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: 38vh;
     left: 0;
     position: absolute;
+  }
+}
+@media (min-width: 769px) {
+  .Second-TitleDiv {
+    top: 0;
+    align-items: center;
   }
 }
 
@@ -258,13 +274,13 @@ html {
 }
 @media (min-width: 769px) {
   .Second-Title {
-    max-width: 650px;
+    max-width: 550px;
     bottom: 55vh;
   }
 }
 @media (min-width: 1100px) {
   .Second-Title {
-    max-width: 900px;
+    max-width: 750px;
     bottom: 55vh;
   }
 }
@@ -272,6 +288,32 @@ html {
   .Second-Title {
     max-width: 1100px;
     bottom: 55vh;
+  }
+}
+
+@media (min-width: 0) {
+  .Second-Subtitle {
+    color: #303030;
+    font-size: 1em;
+    position: absolute;
+    margin-top: 7%;
+  }
+}
+@media (min-width: 769px) {
+  .Second-Subtitle {
+    position: relative;
+    font-size: 1.2em;
+    margin-top: 5%;
+  }
+}
+@media (min-width: 1100px) {
+  .Second-Subtitle {
+    margin-top: 2%;
+  }
+}
+@media (min-width: 1442px) {
+  .Second-Subtitle {
+    margin-top: 1%;
   }
 }
 
@@ -294,15 +336,22 @@ html {
     max-width: 50px;
     max-height: 130px;
     position: absolute;
-    top: 20vh;
+    top: 10vh;
     width: auto;
     z-index: 2;
   }
 }
 @media (min-width: 769px) {
   .Second-Eagle {
-    left: calc(100vw/2 - 37.5px);
-    max-width: 75px;
+    top: 15vh;
+    max-width: 65px;
+    left: calc(100vw/2 - 32.5px);
+  }
+}
+@media (min-width: 1442px) {
+  .Second-Eagle {
+    left: calc(100vw/2 - 45px);
+    max-width: 90px;
     max-height: 175px;
   }
 }
@@ -314,15 +363,22 @@ html {
     max-width: 50px;
     max-height: 130px;
     position: absolute;
-    top: 20vh;
+    top: 10vh;
     width: auto;
     z-index: 2;
   }
 }
 @media (min-width: 769px) {
   .Second-EagleAway {
-    left: calc(100vw/2 - 37.5px);
-    max-width: 75px;
+    top: 15vh;
+    max-width: 65px;
+    left: calc(100vw/2 - 32.5px);
+  }
+}
+@media (min-width: 1442px) {
+  .Second-EagleAway {
+    left: calc(100vw/2 - 45px);
+    max-width: 90px;
     max-height: 175px;
   }
 }
@@ -399,11 +455,20 @@ html {
 }
 @media (min-width: 769px) {
   .Second-EagleAway {
+    -webkit-animation: eagleAwayMedium 10s;
+    -moz-animation: eagleAwayMedium 10s;
+    -o-animation: eagleAwayMedium 10s;
+    animation: eagleAwayMedium 10s;
+    transition: animation ease-in;
+  }
+}
+@media (min-width: 1442px) {
+  .Second-EagleAway {
     -webkit-animation: eagleAwayLarge 10s;
     -moz-animation: eagleAwayLarge 10s;
     -o-animation: eagleAwayLarge 10s;
     animation: eagleAwayLarge 10s;
-    transition: animation;
+    transition: animation ease-in;
   }
 }
 
@@ -439,9 +504,41 @@ html {
     left: calc(100vw + 200px);
   }
 }
+@-webkit-keyframes eagleAwayMedium {
+  from {
+    left: calc(100vw/2 - 32.5px);
+  }
+  to {
+    left: calc(100vw + 200px);
+  }
+}
+@-moz-keyframes eagleAwayMedium {
+  from {
+    left: calc(100vw/2 - 32.5px);
+  }
+  to {
+    left: calc(100vw + 200px);
+  }
+}
+@-o-keyframes eagleAwayMedium {
+  from {
+    left: calc(100vw/2 - 32.5px);
+  }
+  to {
+    left: calc(100vw + 200px);
+  }
+}
+@keyframes eagleAwayMedium {
+  from {
+    left: calc(100vw/2 - 32.5px);
+  }
+  to {
+    left: calc(100vw + 200px);
+  }
+}
 @-webkit-keyframes eagleAwayLarge {
   from {
-    left: calc(100vw/2 - 37.5px);
+    left: calc(100vw/2 - 45px);
   }
   to {
     left: calc(100vw + 200px);
@@ -449,7 +546,7 @@ html {
 }
 @-moz-keyframes eagleAwayLarge {
   from {
-    left: calc(100vw/2 - 37.5px);
+    left: calc(100vw/2 - 45px);
   }
   to {
     left: calc(100vw + 200px);
@@ -457,7 +554,7 @@ html {
 }
 @-o-keyframes eagleAwayLarge {
   from {
-    left: calc(100vw/2 - 37.5px);
+    left: calc(100vw/2 - 45px);
   }
   to {
     left: calc(100vw + 200px);
@@ -465,24 +562,28 @@ html {
 }
 @keyframes eagleAwayLarge {
   from {
-    left: calc(100vw/2 - 37.5px);
+    left: calc(100vw/2 - 45px);
   }
   to {
     left: calc(100vw + 200px);
   }
 }
 .Second-Title {
-  -webkit-animation: fadeTitle 10s;
-  -moz-animation: fadeTitle 10s;
-  -o-animation: fadeTitle 10s;
-  animation: fadeTitle 10s;
+  -webkit-animation: fadeTitle 5s;
+  -moz-animation: fadeTitle 5s;
+  -o-animation: fadeTitle 5s;
+  animation: fadeTitle 5s;
+}
+
+.Second-Subtitle {
+  -webkit-animation: fadeTitle 1s;
+  -moz-animation: fadeTitle 1s;
+  -o-animation: fadeTitle 1s;
+  animation: fadeTitle 1s;
 }
 
 @-webkit-keyframes fadeTitle {
   0% {
-    opacity: 0;
-  }
-  10% {
     opacity: 0;
   }
   100% {
@@ -493,18 +594,12 @@ html {
   0% {
     opacity: 0;
   }
-  10% {
-    opacity: 0;
-  }
   100% {
     opacity: 100%;
   }
 }
 @-o-keyframes fadeTitle {
   0% {
-    opacity: 0;
-  }
-  10% {
     opacity: 0;
   }
   100% {
@@ -515,7 +610,36 @@ html {
   0% {
     opacity: 0;
   }
-  10% {
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes fadeSubTitle {
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-moz-keyframes fadeSubTitle {
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-o-keyframes fadeSubTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadeSubTitle {
+  75% {
     opacity: 0;
   }
   100% {

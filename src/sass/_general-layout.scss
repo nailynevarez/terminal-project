@@ -1,18 +1,14 @@
-body {
+html, body {
   @include sm {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
+    cursor: url("../images/General-Cursor.svg"), auto;
     margin: 0;
+    padding: 0;
+    overflow: hidden;
 
   }
-  cursor: url("../images/General-Cursor.svg"), auto;
-}
-
-html {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
 }
 
 .App-Wrapper {
@@ -21,4 +17,14 @@ html {
     width: 100%;
   }
 
+}
+
+
+nav {
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: flex;
+  }
 }

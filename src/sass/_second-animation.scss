@@ -51,12 +51,21 @@
      }
 
      @include md {
+       -webkit-animation: eagleAwayMedium 10s;
+        -moz-animation: eagleAwayMedium 10s;
+        -o-animation: eagleAwayMedium 10s;
+        animation: eagleAwayMedium 10s;
+        transition: animation ease-in;
+     }
+
+     @include xl {
        -webkit-animation: eagleAwayLarge 10s;
         -moz-animation: eagleAwayLarge 10s;
         -o-animation: eagleAwayLarge 10s;
         animation: eagleAwayLarge 10s;
-        transition: animation;
+        transition: animation ease-in;
      }
+
 
    }
 
@@ -92,31 +101,61 @@
     }}
 
 
+   @-webkit-keyframes eagleAwayMedium {
+     from {
+        left: calc(100vw/2 - 32.5px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}
+   @-moz-keyframes eagleAwayMedium {
+     from {
+        left: calc(100vw/2 - 32.5px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}
+   @-o-keyframes eagleAwayMedium {
+     from {
+        left: calc(100vw/2 - 32.5px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}
+   @keyframes eagleAwayMedium {
+     from {
+        left: calc(100vw/2 - 32.5px);
+    }
+    to {
+        left: calc(100vw + 200px);
+    }}
+
+
 
    @-webkit-keyframes eagleAwayLarge {
      from {
-        left: calc(100vw/2 - 37.5px);
+        left: calc(100vw/2 - 45px);
     }
     to {
         left: calc(100vw + 200px);
     }}
    @-moz-keyframes eagleAwayLarge {
      from {
-        left: calc(100vw/2 - 37.5px);
+        left: calc(100vw/2 - 45px);
     }
     to {
         left: calc(100vw + 200px);
     }}
    @-o-keyframes eagleAwayLarge {
      from {
-        left: calc(100vw/2 - 37.5px);
+        left: calc(100vw/2 - 45px);
     }
     to {
         left: calc(100vw + 200px);
     }}
    @keyframes eagleAwayLarge {
      from {
-        left: calc(100vw/2 - 37.5px);
+        left: calc(100vw/2 - 45px);
     }
     to {
         left: calc(100vw + 200px);
@@ -124,20 +163,22 @@
 
 
 .Second-Title{
-  -webkit-animation: fadeTitle 10s;
-   -moz-animation: fadeTitle 10s;
-   -o-animation: fadeTitle 10s;
-  animation: fadeTitle 10s;
+  -webkit-animation: fadeTitle 5s;
+   -moz-animation: fadeTitle 5s;
+   -o-animation: fadeTitle 5s;
+  animation: fadeTitle 5s;
 }
 
-
+.Second-Subtitle {
+  -webkit-animation: fadeTitle 1s;
+   -moz-animation: fadeTitle 1s;
+   -o-animation: fadeTitle 1s;
+  animation: fadeTitle 1s;
+}
 
 
  @-webkit-keyframes fadeTitle {
    0% {
-      opacity: 0;
-  }
-  10% {
       opacity: 0;
   }
   100% {
@@ -147,9 +188,6 @@
    0% {
       opacity: 0;
   }
-  10% {
-      opacity: 0;
-  }
   100% {
       opacity: 100%;
   }}
@@ -157,9 +195,7 @@
    0% {
       opacity: 0;
   }
-  10% {
-      opacity: 0;
-  }
+
   100% {
       opacity: 100%;
   }}
@@ -167,9 +203,36 @@
    0% {
       opacity: 0;
   }
-  10% {
-      opacity: 0;
-  }
   100% {
       opacity: 100%;
   }}
+
+  @-webkit-keyframes fadeSubTitle {
+    75% {
+       opacity: 0;
+   }
+   100% {
+       opacity: 100%;
+   }}
+  @-moz-keyframes fadeSubTitle  {
+    75% {
+       opacity: 0;
+   }
+   100% {
+       opacity: 100%;
+   }}
+  @-o-keyframes fadeSubTitle  {
+    0% {
+       opacity: 0;
+   }
+
+   100% {
+       opacity: 100%;
+   }}
+  @keyframes fadeSubTitle  {
+    75% {
+       opacity: 0;
+   }
+   100% {
+       opacity: 100%;
+   }}

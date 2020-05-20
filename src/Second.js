@@ -74,6 +74,7 @@ render() {
       <div className = {this.state.isButtonActive ? null : 'fadeOut'}>
         <div className = "Second-TitleDiv">
           <img className = "Second-Title" src = {SecondTitle}/>
+          <p className = "Second-Subtitle">The impact of immigration detention in the United States</p>
         </div>
       </div>
 
