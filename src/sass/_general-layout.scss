@@ -33,10 +33,10 @@ nav {
   width: 100vw;
   background-color: $dark-red;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   top: 10%;
+  pointer-events: none;
   p {
     color: $white;
     font-weight: $font-bold;
@@ -59,4 +59,5 @@ nav {
 .Portrait-Icon {
   height: 30%;
   opacity: .5;
+  margin-top: 43%;
 }

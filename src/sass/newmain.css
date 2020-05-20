@@ -35,10 +35,10 @@
   width: 100vw;
   background-color: #9b251f;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   top: 10%;
+  pointer-events: none;
 }
 .Portrait-Div p {
   color: #FFE9DD;
@@ -60,6 +60,7 @@
 .Portrait-Icon {
   height: 30%;
   opacity: 0.5;
+  margin-top: 43%;
 }
 
 .Portrait-Icon {
