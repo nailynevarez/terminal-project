@@ -136,7 +136,7 @@
     position: absolute;
     top:0;
     z-index: 4;
-    opacity: .1;
+    opacity: .07;
   }
 }
 
@@ -223,3 +223,34 @@
 
 
 //-----------------------------------------------
+
+
+.Second-Sharing {
+
+  @include sm {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    z-index: 6;
+    height: 50vh;
+    width: 15vw;
+    top: 3%;
+    right: 1.5%;
+  }
+
+@include md {
+  width: 12vw;
+}
+
+@include lg {
+  width: 10vw;
+}
+
+@include xl {
+  width: 7vw;
+}
+
+@include xxl {
+  width: 5vw;
+}
+}
