@@ -39,6 +39,8 @@ export default class First extends Component {
 
 render() {
   return (
+
+
     <div>
     {!this.state.isLoadDone ? (
       <div className = "First-Wrapper">

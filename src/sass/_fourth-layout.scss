@@ -10,6 +10,10 @@
 }
 
 .Fourth-Wrapper {
+  background-color: $black;
+}
+
+.Fourth-Wrapper-Flag {
   display: flex;
   height: 100%;
   width: 100%;
@@ -62,5 +66,188 @@
   }
   @include md {
     display: none;
+  }
+}
+
+
+
+
+
+
+//-----------------------------------------------
+
+
+.Fourth-ArrowPerson-Red {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, $light-red , $red, $dark-red);
+  display: flex;
+  flex-direction: column;
+}
+
+.Fourth-ArrowPerson-White {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, $white , $blue);
+  display: flex;
+  flex-direction: column;
+}
+
+.Fourth-Arrow {
+  @include sm {
+    align-self: flex-end;
+    height: 5%;
+    margin: 2% 2% 0 0;
+    z-index: 5;
+    &:hover {
+      transition: .5s;
+      opacity: .3;
+    }
+  }
+
+  @include lg {
+    height: 4%;
+  }
+}
+
+.Fourth-Person {
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Fourth-Writing {
+@include sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+  height: 100%;
+  width: 40%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  z-index: 5;
+}
+
+}
+
+.Fourth-Title {
+  @include sm {
+    font-weight: $font-xbold;
+    font-family: $font;
+    font-size: 1.9em;
+    margin-top: 0;
+    margin-bottom: 2%;
+  }
+  @include lg {
+    font-size: 2.5em;
+  }
+  @include xl {
+    font-size: 3.3em;
+  }
+}
+
+.Fourth-SubTitle {
+  @include sm {
+    color: $dark-blue;
+    font-weight: $font-bold;
+      font-style: italic;
+      font-size: .7em;
+      p {
+          margin: 0;
+        }
+  }
+  @include lg {
+    font-size: .9em;
+  }
+  @include xl {
+    font-size: 1.1em;
+  }
+}
+
+.Fourth-Story {
+  @include sm {
+    display: flex;
+    height: 20vh;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 100%;
+    height: 30%;
+    margin-top: 10%;
+    font-size: 1em;
+    p:nth-of-type(1) {
+      margin-top: 3%;
+    }
+    p {
+      margin-right: 5%;
+    }
+  }
+  @include lg {
+    font-size: 1.2em;
+  }
+  @include xl {
+    font-size: 1.3em;
+  }
+}
+
+
+  .Fourth-Story::-webkit-scrollbar-track
+{
+	background-color: $white;
+
+}
+
+.Fourth-Story::-webkit-scrollbar
+{
+
+	width: 4px;
+}
+
+.Fourth-Story::-webkit-scrollbar-thumb
+{
+	background-color: 	#282828;
+
+}
+
+
+
+
+.Fourth-Portrait {
+  @include sm {
+    height: 65%;
+    width: auto;
+    padding-bottom: 3%;
+  }
+
+}
+
+.Fourth-Row8Person1 {
+  @include sm {
+    position: absolute;
+    z-index: 5;
+    height: 3%;
+    width: auto;
+    top: 30.5%;
+    left: 45.5%;
+    &:hover {
+      animation: none;
+      opacity: .5;
+    }
+  }
+}
+
+
+.Fourth-Row8Person1-Red {
+  @include sm {
+    position: absolute;
+    z-index: 4;
+    height: 3%;
+    width: auto;
+    top: 30.5%;
+    left: 45.5%;
   }
 }

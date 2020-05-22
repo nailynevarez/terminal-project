@@ -1,5 +1,5 @@
 
-.Fourth-People {
+.Fourth-People, .Fourth-Row8Person1, .Fourth-Row8Person1-Red {
   -webkit-animation: fadePeople 3s;
    -moz-animation: fadePeople 3s;
    -o-animation: fadePeople 3s;
@@ -35,6 +35,178 @@
 }
 @keyframes fadePeople {
   0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.Fourth-Row8Person1 {
+  -webkit-animation: personBlink ease-in-out infinite 1.5s;
+   -moz-animation: personBlink ease-in-out  infinite 1.5s;
+   -o-animation: personBlink ease-in-out  infinite 1.5s;
+  animation: personBlink ease-in-out infinite 1.5s;
+}
+
+
+
+@-webkit-keyframes  personBlink {
+  0% {
+    opacity: .2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+@-moz-keyframes personBlink {
+  0% {
+    opacity: .2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+@-o-keyframes personBlink {
+  0% {
+    opacity: .2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+@keyframes personBlink {
+  0% {
+    opacity: .2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+
+
+
+.Fourth-Person, .Fourth-Title, .Fourth-SubTitle  {
+  -webkit-animation: personAppear 3s;
+   -moz-animation: personAppear 3s;
+   -o-animation: personAppear 3s;
+  animation: personAppear 3s;
+}
+
+
+
+@-webkit-keyframes  personAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes personAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes personAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes personAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.Fourth-Story {
+  -webkit-animation: storyAppear 7s;
+   -moz-animation: storyAppear 7s;
+   -o-animation: storyAppear 7s;
+  animation: storyAppear 7s;
+}
+
+
+
+@-webkit-keyframes  storyAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes storyAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes storyAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes storyAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 @media (min-width: 0) {
   html, body {
@@ -49,7 +49,7 @@
   .Portrait-Texture {
     height: 100%;
     left: 0;
-    opacity: 0.1;
+    opacity: 0;
     position: absolute;
     top: 0;
     width: 100%;
@@ -1367,6 +1367,10 @@
 }
 
 .Fourth-Wrapper {
+  background-color: #0d0d0d;
+}
+
+.Fourth-Wrapper-Flag {
   display: flex;
   height: 100%;
   width: 100%;
@@ -1423,7 +1427,181 @@
   }
 }
 
-.Fourth-People {
+.Fourth-ArrowPerson-Red {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #ee6052, #F23E2E, #9b251f);
+  display: flex;
+  flex-direction: column;
+}
+
+.Fourth-ArrowPerson-White {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #FFE9DD, #36388C);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 0) {
+  .Fourth-Arrow {
+    align-self: flex-end;
+    height: 5%;
+    margin: 2% 2% 0 0;
+    z-index: 5;
+  }
+  .Fourth-Arrow:hover {
+    transition: 0.5s;
+    opacity: 0.3;
+  }
+}
+@media (min-width: 1100px) {
+  .Fourth-Arrow {
+    height: 4%;
+  }
+}
+
+.Fourth-Person {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 0) {
+  .Fourth-Writing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFE9DD;
+    height: 100%;
+    width: 40%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    z-index: 5;
+  }
+}
+
+@media (min-width: 0) {
+  .Fourth-Title {
+    font-weight: 900;
+    font-family: "Lato", sans-serif;
+    font-size: 1.9em;
+    margin-top: 0;
+    margin-bottom: 2%;
+  }
+}
+@media (min-width: 1100px) {
+  .Fourth-Title {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1442px) {
+  .Fourth-Title {
+    font-size: 3.3em;
+  }
+}
+
+@media (min-width: 0) {
+  .Fourth-SubTitle {
+    color: #292759;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 0.7em;
+  }
+  .Fourth-SubTitle p {
+    margin: 0;
+  }
+}
+@media (min-width: 1100px) {
+  .Fourth-SubTitle {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 1442px) {
+  .Fourth-SubTitle {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 0) {
+  .Fourth-Story {
+    display: flex;
+    height: 20vh;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 100%;
+    height: 30%;
+    margin-top: 10%;
+    font-size: 1em;
+  }
+  .Fourth-Story p:nth-of-type(1) {
+    margin-top: 3%;
+  }
+  .Fourth-Story p {
+    margin-right: 5%;
+  }
+}
+@media (min-width: 1100px) {
+  .Fourth-Story {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1442px) {
+  .Fourth-Story {
+    font-size: 1.3em;
+  }
+}
+
+.Fourth-Story::-webkit-scrollbar-track {
+  background-color: #FFE9DD;
+}
+
+.Fourth-Story::-webkit-scrollbar {
+  width: 4px;
+}
+
+.Fourth-Story::-webkit-scrollbar-thumb {
+  background-color: #282828;
+}
+
+@media (min-width: 0) {
+  .Fourth-Portrait {
+    height: 65%;
+    width: auto;
+    padding-bottom: 3%;
+  }
+}
+
+@media (min-width: 0) {
+  .Fourth-Row8Person1 {
+    position: absolute;
+    z-index: 5;
+    height: 3%;
+    width: auto;
+    top: 30.5%;
+    left: 45.5%;
+  }
+  .Fourth-Row8Person1:hover {
+    animation: none;
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 0) {
+  .Fourth-Row8Person1-Red {
+    position: absolute;
+    z-index: 4;
+    height: 3%;
+    width: auto;
+    top: 30.5%;
+    left: 45.5%;
+  }
+}
+
+.Fourth-People, .Fourth-Row8Person1, .Fourth-Row8Person1-Red {
   -webkit-animation: fadePeople 3s;
   -moz-animation: fadePeople 3s;
   -o-animation: fadePeople 3s;
@@ -1456,6 +1634,159 @@
 }
 @keyframes fadePeople {
   0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Fourth-Row8Person1 {
+  -webkit-animation: personBlink ease-in-out infinite 1.5s;
+  -moz-animation: personBlink ease-in-out infinite 1.5s;
+  -o-animation: personBlink ease-in-out infinite 1.5s;
+  animation: personBlink ease-in-out infinite 1.5s;
+}
+
+@-webkit-keyframes personBlink {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-moz-keyframes personBlink {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-o-keyframes personBlink {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes personBlink {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+.Fourth-Person, .Fourth-Title, .Fourth-SubTitle {
+  -webkit-animation: personAppear 3s;
+  -moz-animation: personAppear 3s;
+  -o-animation: personAppear 3s;
+  animation: personAppear 3s;
+}
+
+@-webkit-keyframes personAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes personAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes personAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes personAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Fourth-Story {
+  -webkit-animation: storyAppear 7s;
+  -moz-animation: storyAppear 7s;
+  -o-animation: storyAppear 7s;
+  animation: storyAppear 7s;
+}
+
+@-webkit-keyframes storyAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes storyAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes storyAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes storyAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
