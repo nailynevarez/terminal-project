@@ -251,3 +251,32 @@
     left: 45.5%;
   }
 }
+
+
+
+.Fourth-Row3Person2 {
+  @include sm {
+    position: absolute;
+    z-index: 5;
+    height: 7.2%;
+    width: auto;
+    top: 53.5%;
+    left: 48%;
+    &:hover {
+      animation: none;
+      opacity: .5;
+    }
+  }
+}
+
+
+.Fourth-Row3Person2-Red {
+  @include sm {
+    position: absolute;
+    z-index: 4;
+    height: 7.2%;
+    width: auto;
+    top: 53.5%;
+    left: 48%;
+  }
+}
