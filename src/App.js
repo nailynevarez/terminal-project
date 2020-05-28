@@ -8,6 +8,7 @@ import './sass/newmain.css';
 import PortraitTexture from "./images/Texture.gif";
 import DeviceOrientation, { Orientation } from 'react-screen-orientation';
 import PortraitIcon from "./images/Portrait-Icon.gif";
+import MediaQuery from 'react-responsive';
 
 class App extends Component {
   constructor(props){
@@ -16,6 +17,8 @@ class App extends Component {
       activeScene: 'first',
     };
   }
+
+  
 
   switchScene = (sceneName) => {
     setTimeout(() => {
@@ -47,25 +50,25 @@ render() {
           component = <Fourth switchSceneFunction = {this.switchScene}/>;
           break;
         }
+
   return (
     <div className="App-Wrapper">
-    <DeviceOrientation lockOrientation={'landscape'}>
 
-        <Orientation orientation='landscape' alwaysRender={false}>
+  <MediaQuery query="(orientation: landscape)">
           <div>
             {component}
-          </div>
-        </Orientation>
+          </div>}
+          </MediaQuery>
 
-        <Orientation orientation='portrait'>
+
+      <MediaQuery query="(orientation: portrait)">
           <div className = "Portrait-Div">
             <img className = "Portrait-Texture" src = {PortraitTexture}/>
             <img className = "Portrait-Icon" src = {PortraitIcon}/>
             <p>Please rotate your device.</p>
-          </div>
-        </Orientation>
+          </div>}
+</MediaQuery>
 
-      </DeviceOrientation>
     </div>
   );
 }
