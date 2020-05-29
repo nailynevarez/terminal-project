@@ -18,7 +18,7 @@ class App extends Component {
     };
   }
 
-  
+
 
   switchScene = (sceneName) => {
     setTimeout(() => {

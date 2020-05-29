@@ -1,5 +1,6 @@
 
-.Fourth-People, .Fourth-Row8Person1, .Fourth-Row8Person1-Red, .Fourth-Row3Person2, .Fourth-Row3Person2-Red {
+
+.Fourth-People, .Fourth-Row8Person1-Red, .Fourth-Row3Person2-Red {
   -webkit-animation: fadePeople 3s;
    -moz-animation: fadePeople 3s;
    -o-animation: fadePeople 3s;
@@ -44,16 +45,18 @@
 
 
 
-.Fourth-Row8Person1, .Fourth-Row3Person2 {
-  -webkit-animation: personBlink ease-in-out infinite 1.5s;
-   -moz-animation: personBlink ease-in-out  infinite 1.5s;
-   -o-animation: personBlink ease-in-out  infinite 1.5s;
-  animation: personBlink ease-in-out infinite 1.5s;
+
+.Fourth-Row3Person2 {
+  -webkit-animation: fadePeople 3s, personBlink1 ease-in-out infinite 4s;
+   -moz-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 4s;
+   -o-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 4s;
+  animation: fadePeople 3s, personBlink1 ease-in-out infinite 4s;
+  animation-delay: 0ms, 3s;
 }
 
 
 
-@-webkit-keyframes  personBlink {
+@-webkit-keyframes  personBlink1 {
   0% {
     opacity: .2;
   }
@@ -64,7 +67,7 @@
     opacity: .2;
   }
 }
-@-moz-keyframes personBlink {
+@-moz-keyframes personBlink1 {
   0% {
     opacity: .2;
   }
@@ -76,7 +79,7 @@
   }
 }
 
-@-o-keyframes personBlink {
+@-o-keyframes personBlink1 {
   0% {
     opacity: .2;
   }
@@ -87,7 +90,7 @@
     opacity: .2;
   }
 }
-@keyframes personBlink {
+@keyframes personBlink1 {
   0% {
     opacity: .2;
   }
@@ -98,6 +101,65 @@
     opacity: .2;
   }
 }
+
+
+.Fourth-Row8Person1 {
+  -webkit-animation: fadePeople 3s, personBlink2 ease-in-out infinite 4s;
+   -moz-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 4s;
+   -o-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 4s;
+  animation: fadePeople 3s, personBlink2 ease-in-out infinite 4s;
+  animation-delay: 0ms, 3s;
+}
+
+
+
+@-webkit-keyframes  personBlink2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes personBlink2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes personBlink2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes personBlink2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 
 
 

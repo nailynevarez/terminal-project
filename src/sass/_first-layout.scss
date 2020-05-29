@@ -19,6 +19,7 @@
     top:0;
     width: 100%;
     z-index: 3;
+    pointer-events: none;
   }
 
 }
@@ -73,6 +74,7 @@
       &:hover {
         transition: .3s;
         opacity: .4;
+        cursor: pointer;
       }
     }
 

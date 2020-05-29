@@ -37,6 +37,7 @@
       max-width: 160px;
       opacity: 1;
       transition: .3s ease-in;
+      cursor: pointer;
     }
   }
 
@@ -137,6 +138,7 @@
     top:0;
     z-index: 4;
     opacity: .07;
+    pointer-events: none;
   }
 }
 

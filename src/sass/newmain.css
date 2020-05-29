@@ -219,6 +219,7 @@
     top: 0;
     width: 100%;
     z-index: 3;
+    pointer-events: none;
   }
 }
 
@@ -276,6 +277,7 @@
   .First-TextWarning p:nth-of-type(2):hover {
     transition: 0.3s;
     opacity: 0.4;
+    cursor: pointer;
   }
 }
 @media (min-width: 0) and (min-width: 769px) {
@@ -348,6 +350,7 @@
     max-width: 160px;
     opacity: 1;
     transition: 0.3s ease-in;
+    cursor: pointer;
   }
 }
 @media (min-width: 769px) {
@@ -456,6 +459,7 @@
     top: 0;
     z-index: 4;
     opacity: 0.07;
+    pointer-events: none;
   }
 }
 
@@ -732,93 +736,93 @@
   }
 }
 .Second-Title {
-  -webkit-animation: fadeTitle 3s;
-  -moz-animation: fadeTitle 3s;
-  -o-animation: fadeTitle 3s;
-  animation: fadeTitle 3s;
+  -webkit-animation: fadeTitle 4s;
+  -moz-animation: fadeTitle 4s;
+  -o-animation: fadeTitle 4s;
+  animation: fadeTitle 4s;
 }
 
 .Second-Subtitle {
-  -webkit-animation: fadeSubTitle 3s;
-  -moz-animation: fadeSubTitle 3s;
-  -o-animation: fadeSubTitle 3s;
-  animation: fadeSubTitle 3s;
+  -webkit-animation: fadeSubTitle 4s;
+  -moz-animation: fadeSubTitle 4s;
+  -o-animation: fadeSubTitle 4s;
+  animation: fadeSubTitle 4s;
 }
 
 @-webkit-keyframes fadeTitle {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @-moz-keyframes fadeTitle {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @-o-keyframes fadeTitle {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @keyframes fadeTitle {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @-webkit-keyframes fadeSubTitle {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   75% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @-moz-keyframes fadeSubTitle {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   75% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @-o-keyframes fadeSubTitle {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   75% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @keyframes fadeSubTitle {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   75% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 .Third-WrapperRed {
@@ -839,6 +843,7 @@
     top: 0;
     width: 100vw;
     z-index: 5;
+    pointer-events: none;
   }
 }
 
@@ -993,20 +998,11 @@
     width: 100%;
   }
 }
-.Third-FlagSmall {
-  -webkit-animation: zoomFlag 10s;
-  -moz-animation: zoomFlag 10s;
-  -o-animation: zoomFlag 10s;
-  animation: zoomFlag 10s;
-  transform-origin: 58% 21%;
-  opacity: 0;
-}
-
-.Third-FlagLarge {
-  -webkit-animation: zoomFlag 10s;
-  -moz-animation: zoomFlag 10s;
-  -o-animation: zoomFlag 10s;
-  animation: zoomFlag 10s;
+.Third-FlagLarge, .Third-FlagSmall {
+  -webkit-animation: zoomFlag 9s;
+  -moz-animation: zoomFlag 9s;
+  -o-animation: zoomFlag 9s;
+  animation: zoomFlag 9s;
   transform-origin: 58% 21%;
   opacity: 0;
 }
@@ -1080,99 +1076,66 @@
   }
 }
 .Third-FlagDistortLarge, .Third-FlagDistortSmall {
-  -webkit-animation: flagDisort 20s;
-  -moz-animation: flagDisort 20s;
-  -o-animation: flagDisort 20s;
-  animation: flagDisort 20s;
-  opacity: 0;
+  -webkit-animation: flagDisort 5s;
+  -moz-animation: flagDisort 5s;
+  -o-animation: flagDisort 5s;
+  animation: flagDisort 5s;
 }
 
 @-webkit-keyframes flagDisort {
   0% {
-    opacity: 0;
     height: 148%;
-  }
-  49% {
-    opacity: 0;
-    height: 148%;
-  }
-  50% {
-    opacity: 1;
     top: -11%;
   }
   70% {
-    opacity: 1;
     height: 100%;
     top: 0;
   }
-  71% {
-    opacity: 0;
+  100% {
+    height: 100%;
+    top: 0;
   }
 }
 @-moz-keyframes flagDisort {
   0% {
-    opacity: 0;
     height: 148%;
-  }
-  49% {
-    opacity: 0;
-    height: 148%;
-  }
-  50% {
-    opacity: 1;
     top: -11%;
   }
   70% {
-    opacity: 1;
     height: 100%;
     top: 0;
   }
-  71% {
-    opacity: 0;
+  100% {
+    height: 100%;
+    top: 0;
   }
 }
 @-o-keyframes flagDisort {
   0% {
-    opacity: 0;
     height: 148%;
-  }
-  49% {
-    opacity: 0;
-    height: 148%;
-  }
-  50% {
-    opacity: 1;
     top: -11%;
   }
   70% {
-    opacity: 1;
     height: 100%;
     top: 0;
   }
-  71% {
-    opacity: 0;
+  100% {
+    height: 100%;
+    top: 0;
   }
 }
 @keyframes flagDisort {
   0% {
-    opacity: 0;
     height: 148%;
-  }
-  49% {
-    opacity: 0;
-    height: 148%;
-  }
-  50% {
-    opacity: 1;
     top: -11%;
   }
   70% {
-    opacity: 1;
     height: 100%;
     top: 0;
   }
-  71% {
-    opacity: 0;
+  100% {
+    height: 100%;
+    top: 0;
   }
 }
 @media (min-width: 0) {
@@ -1304,57 +1267,6 @@
     background-size: cover;
   }
 }
-.Third-Fourth-FlagLarge, .Third-Fourth-FlagSmall {
-  -webkit-animation: flagIn 20s;
-  -moz-animation: flagIn 20s;
-  -o-animation: flagIn 20s;
-  animation: flagIn 20s;
-}
-
-@-webkit-keyframes flagIn {
-  0% {
-    opacity: 0;
-  }
-  69% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes flagIn {
-  0% {
-    opacity: 0;
-  }
-  69% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-}
-@-o-keyframes flagIn {
-  0% {
-    opacity: 0;
-  }
-  69% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-}
-@keyframes flagIn {
-  0% {
-    opacity: 0;
-  }
-  69% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-}
 @media (min-width: 0) {
   .Fourth-Background {
     background: url("../images/Fourth-BackgroundLarge.jpg");
@@ -1401,6 +1313,7 @@
     top: 0;
     width: 100vw;
     z-index: 4;
+    pointer-events: none;
   }
 }
 
@@ -1453,6 +1366,7 @@
   .Fourth-Arrow:hover {
     transition: 0.5s;
     opacity: 0.3;
+    cursor: pointer;
   }
 }
 @media (min-width: 1100px) {
@@ -1587,6 +1501,7 @@
   .Fourth-Row8Person1:hover {
     animation: none;
     opacity: 0.5;
+    cursor: pointer;
   }
 }
 
@@ -1613,6 +1528,7 @@
   .Fourth-Row3Person2:hover {
     animation: none;
     opacity: 0.5;
+    cursor: pointer;
   }
 }
 
@@ -1627,7 +1543,7 @@
   }
 }
 
-.Fourth-People, .Fourth-Row8Person1, .Fourth-Row8Person1-Red, .Fourth-Row3Person2, .Fourth-Row3Person2-Red {
+.Fourth-People, .Fourth-Row8Person1-Red, .Fourth-Row3Person2-Red {
   -webkit-animation: fadePeople 3s;
   -moz-animation: fadePeople 3s;
   -o-animation: fadePeople 3s;
@@ -1666,14 +1582,15 @@
     opacity: 1;
   }
 }
-.Fourth-Row8Person1, .Fourth-Row3Person2 {
-  -webkit-animation: personBlink ease-in-out infinite 1.5s;
-  -moz-animation: personBlink ease-in-out infinite 1.5s;
-  -o-animation: personBlink ease-in-out infinite 1.5s;
-  animation: personBlink ease-in-out infinite 1.5s;
+.Fourth-Row3Person2 {
+  -webkit-animation: fadePeople 3s, personBlink1 ease-in-out infinite 4s;
+  -moz-animation: fadePeople 3s, personBlink1 ease-in-out infinite 4s;
+  -o-animation: fadePeople 3s, personBlink1 ease-in-out infinite 4s;
+  animation: fadePeople 3s, personBlink1 ease-in-out infinite 4s;
+  animation-delay: 0ms, 3s;
 }
 
-@-webkit-keyframes personBlink {
+@-webkit-keyframes personBlink1 {
   0% {
     opacity: 0.2;
   }
@@ -1684,7 +1601,7 @@
     opacity: 0.2;
   }
 }
-@-moz-keyframes personBlink {
+@-moz-keyframes personBlink1 {
   0% {
     opacity: 0.2;
   }
@@ -1695,7 +1612,7 @@
     opacity: 0.2;
   }
 }
-@-o-keyframes personBlink {
+@-o-keyframes personBlink1 {
   0% {
     opacity: 0.2;
   }
@@ -1706,7 +1623,7 @@
     opacity: 0.2;
   }
 }
-@keyframes personBlink {
+@keyframes personBlink1 {
   0% {
     opacity: 0.2;
   }
@@ -1715,6 +1632,58 @@
   }
   100% {
     opacity: 0.2;
+  }
+}
+.Fourth-Row8Person1 {
+  -webkit-animation: fadePeople 3s, personBlink2 ease-in-out infinite 4s;
+  -moz-animation: fadePeople 3s, personBlink2 ease-in-out infinite 4s;
+  -o-animation: fadePeople 3s, personBlink2 ease-in-out infinite 4s;
+  animation: fadePeople 3s, personBlink2 ease-in-out infinite 4s;
+  animation-delay: 0ms, 3s;
+}
+
+@-webkit-keyframes personBlink2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes personBlink2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes personBlink2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes personBlink2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .Fourth-Person, .Fourth-Title, .Fourth-SubTitle {

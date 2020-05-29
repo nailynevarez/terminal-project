@@ -1,4 +1,9 @@
 
+
+
+
+
+
 .Third-FlagDivs {
   -webkit-animation: moveFlag 10s;
    -moz-animation: moveFlag 10s;
@@ -51,21 +56,11 @@ width: 50%;
 
 
 
-
-.Third-FlagSmall{
-  -webkit-animation: zoomFlag 10s;
-   -moz-animation: zoomFlag 10s;
-   -o-animation: zoomFlag 10s;
-  animation: zoomFlag 10s;
-  transform-origin: 58% 21%;
-  opacity: 0;
-}
-
-.Third-FlagLarge{
-  -webkit-animation: zoomFlag 10s;
-   -moz-animation: zoomFlag 10s;
-   -o-animation: zoomFlag 10s;
-  animation: zoomFlag 10s;
+.Third-FlagLarge, .Third-FlagSmall {
+  -webkit-animation: zoomFlag 9s;
+   -moz-animation: zoomFlag 9s;
+   -o-animation: zoomFlag 9s;
+  animation: zoomFlag 9s;
   transform-origin: 58% 21%;
   opacity: 0;
 }
@@ -153,111 +148,72 @@ width: 50%;
 
 
 .Third-FlagDistortLarge, .Third-FlagDistortSmall {
-  -webkit-animation: flagDisort 20s;
-   -moz-animation: flagDisort 20s;
-   -o-animation: flagDisort 20s;
-  animation: flagDisort 20s;
-  opacity: 0;
+  -webkit-animation: flagDisort 5s;
+   -moz-animation: flagDisort 5s;
+   -o-animation: flagDisort 5s;
+  animation: flagDisort 5s;
 }
 
 @-webkit-keyframes flagDisort {
   0% {
-    opacity: 0;
     height: 148%;
-  }
-
-  49% {
-    opacity: 0;
-    height: 148%;
-  }
-  50% {
-    opacity: 1;
     top: -11%;
   }
 
   70% {
-    opacity: 1;
     height: 100%;
     top: 0;
   }
-  71% {
-    opacity: 0;
+  100% {
+    height: 100%;
+    top: 0;
   }
 }
 @-moz-keyframes flagDisort {
   0% {
-    opacity: 0;
     height: 148%;
-  }
-
-  49% {
-    opacity: 0;
-    height: 148%;
-  }
-  50% {
-    opacity: 1;
     top: -11%;
-
   }
 
   70% {
-    opacity: 1;
     height: 100%;
     top: 0;
   }
-  71% {
-    opacity: 0;
+  100% {
+    height: 100%;
+    top: 0;
   }
 }
 
 
 @-o-keyframes flagDisort {
   0% {
-    opacity: 0;
     height: 148%;
-  }
-
-  49% {
-    opacity: 0;
-    height: 148%;
-  }
-  50% {
-    opacity: 1;
     top: -11%;
   }
 
   70% {
-    opacity: 1;
     height: 100%;
     top: 0;
   }
-  71% {
-    opacity: 0;
+  100% {
+    height: 100%;
+    top: 0;
   }
 }
 @keyframes flagDisort {
   0% {
-    opacity: 0;
     height: 148%;
-  }
-
-  49% {
-    opacity: 0;
-    height: 148%;
-
-  }
-  50% {
-    opacity: 1;
     top: -11%;
   }
 
   70% {
-    opacity: 1;
     height: 100%;
     top: 0;
   }
-  71% {
-    opacity: 0;
+  100% {
+    height: 100%;
+    top: 0;
   }
 }
 
@@ -418,66 +374,5 @@ width: 50%;
   70%{
       background: url("../images/Fourth-BackgroundLarge.jpg");
       background-size: cover;
-  }
-}
-
-
-
-.Third-Fourth-FlagLarge, .Third-Fourth-FlagSmall {
-  -webkit-animation: flagIn 20s;
-   -moz-animation: flagIn  20s;
-   -o-animation: flagIn  20s;
-  animation: flagIn 20s;
-}
-
-
-@-webkit-keyframes flagIn {
-  0% {
-    opacity: 0;
-  }
-
-  69% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes flagIn {
-  0% {
-    opacity: 0;
-  }
-
-  69% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-}
-
-
-@-o-keyframes flagIn {
-  0% {
-    opacity: 0;
-  }
-
-  69% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-}
-@keyframes flagIn {
-  0% {
-    opacity: 0;
-  }
-
-  69% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
   }
 }

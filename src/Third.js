@@ -13,14 +13,41 @@ export default class Third extends Component {
     super(props);
     this.state = {
       isSceneActive: true,
+      isFlagWaving: true,
+      isFlagDistorting: false,
+      isFlagDistorted: false,
     };
   }
 
   componentDidMount(){
 
     setTimeout(() => {
+        this.setState({
+          isFlagDistorting: true,
+        });
+      }, 8900);
+    setTimeout(() => {
+        this.setState({
+          isFlagWaving: false,
+        });
+      }, 9000);
+
+      setTimeout(() => {
+          this.setState({
+            isFlagDistorted: true,
+          });
+        }, 12000);
+
+      setTimeout(() => {
+          this.setState({
+            isFlagDistorting: false,
+          });
+        }, 12200);
+
+
+    setTimeout(() => {
           this.handleSceneSwitch();
-        }, 13000);
+        }, 12500);
 
   }
 
@@ -34,18 +61,23 @@ export default class Third extends Component {
 render() {
   return (
     <div className = "Third-WrapperRed">
-    <div className = {this.state.isSceneActive ? 'fadeIn' : 'none'}>
-    <img className = "Third-Texture" src = {ThirdTexture}/>
-    <div className = "Third-FlagDivs">
-      <img className= "Third-Fourth-FlagLarge" src = {FourthFlagLarge}/>
-      <img className= "Third-Fourth-FlagSmall" src = {FourthFlagSmall}/>
-      <img className = "Third-FlagDistortLarge" src = {ThirdFlagDistortLarge}/>
-      <img className = "Third-FlagDistortSmall" src = {ThirdFlagDistortSmall}/>
-      <img className = "Third-FlagSmall" src = {ThirdFlagSmall}/>
-      <img className = "Third-FlagLarge" src = {ThirdFlagLarge}/>
-    </div>
-    <div className = 'Third-Background'></div>
-    </div>
+      <div className = {this.state.isSceneActive ? 'fadeIn' : 'none'}>
+        <img className = "Third-Texture" src = {ThirdTexture}/>
+        <div className = "Third-FlagDivs">
+
+      {this.state.isFlagWaving ? <img className = "Third-FlagSmall" src = {ThirdFlagSmall}/> : null }
+      {this.state.isFlagWaving ? <img className = "Third-FlagLarge" src = {ThirdFlagLarge}/> : null}
+
+      {this.state.isFlagDistorting ? <img className = "Third-FlagDistortLarge" src = {ThirdFlagDistortLarge}/> : null}
+      {this.state.isFlagDistorting ? <img className = "Third-FlagDistortSmall" src = {ThirdFlagDistortSmall}/> : null}
+
+
+
+      {this.state.isFlagDistorted ? <img className= "Third-Fourth-FlagLarge" src = {FourthFlagLarge}/> : null }
+      {this.state.isFlagDistorted ? <img className= "Third-Fourth-FlagSmall" src = {FourthFlagSmall}/> : null}
+        </div>
+        <div className = 'Third-Background'></div>
+      </div>
     </div>
   );
 }
