@@ -7,6 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: $font;
 
   }
 }
@@ -66,6 +67,7 @@ nav {
 
 .App-Fullscreen {
   @include sm {
+    display: none;
     font-weight: $font-bold;
     color: white;
     position: absolute;
@@ -77,11 +79,9 @@ nav {
       margin-right: 10px;
       vertical-align:middle;
     }
-    label {
-      padding-top: 2px;
-    }
   }
   @include md {
+    display: flex;
     font-size: 1em;
   }
   @include lg {

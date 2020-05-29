@@ -3,7 +3,7 @@ import SecondTexture from "./images/Texture.gif";
 import SecondEagle from "./images/Second-Eagle.gif";
 import SecondButton from "./images/Second-Button.png";
 import SecondTitle from "./images/Second-Title.png";
-import Fullscreen from "react-full-screen";
+
 
 export default class Second extends Component {
   constructor(props){
@@ -13,7 +13,7 @@ export default class Second extends Component {
       isSceneActive: true,
       isButtonClicked: false,
       isButtonActive: true,
-  
+
     };
   }
 
@@ -68,7 +68,10 @@ render() {
         <div className = 'Second-ButtonDiv'>
           <img className = "Second-Button" onClick={this.handleButtonClick.bind(this)} src = {SecondButton}/>
         </div>
-
+        <div className = "Second-Sharing">
+        <a className = "Second-Twitter"   href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-url="https://www.waveringstripes.com" data-show-count="false"><i></i><span className = "label">Tweet</span></a>
+        <div class="fb-share-button" data-href="https://www.waveringstripes.com" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.waveringstripes.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+        </div>
       </div>
     </div>
     </div>

@@ -51,6 +51,8 @@
 
 .Fourth-People {
   @include sm {
+    display: flex;
+    justify-content: center;
     width: auto;
     height: 100%;
     position: absolute;
