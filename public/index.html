@@ -53,5 +53,29 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC2RKy70nFRnH48_gs8K1hXdPVahEZJ0jQ",
+    authDomain: "immigration-detention-project.firebaseapp.com",
+    databaseURL: "https://immigration-detention-project.firebaseio.com",
+    projectId: "immigration-detention-project",
+    storageBucket: "immigration-detention-project.appspot.com",
+    messagingSenderId: "682182877734",
+    appId: "1:682182877734:web:02095aafc33695de4f3ce7",
+    measurementId: "G-S6K3S2GCWE"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
 </html>

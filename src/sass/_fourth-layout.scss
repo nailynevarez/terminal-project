@@ -286,3 +286,40 @@
     left: 48%;
   }
 }
+
+
+.Fourth-Help {
+  @include sm {
+    position: absolute;
+    z-index: 6;
+    background-color: Transparent;
+    border: 3px solid white;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: .7em;
+    margin: 20px 20px;
+    font-weight: $font-bold;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+      background-color: $red;
+      border: 3px solid $red;
+    }
+  }
+
+  @include md {
+      padding: 10px 20px;
+      font-size: .8em;
+  }
+
+  @include lg {
+      padding: 15px 25px;
+      font-size: 1em;
+  }
+  @include xl {
+    padding: 20px 30px;
+    font-size: 1.2em;
+  }
+}

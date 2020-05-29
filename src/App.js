@@ -69,14 +69,10 @@ render() {
 
   <MediaQuery query="(orientation: landscape)">
     <div>
-      {this.state.showCheckbox ? <form className = "App-Fullscreen">
-            <label><input
-              name="isGoing"
-              type="checkbox"
-              checked={this.state.isFullscreen}
-              onChange={this.goFullscreen.bind(this)} />
-              GO FULLSCREEN</label>
-      </form> : null}
+      {this.state.showCheckbox ?
+        <button className = "App-Fullscreen" onClick={this.goFullscreen.bind(this)}>
+              GO FULLSCREEN</button>
+     : null}
       <Fullscreen enabled={this.state.isFullscreen} onChange={isFullscreen => this.setState({isFullscreen})}>
       {component}
        </Fullscreen>

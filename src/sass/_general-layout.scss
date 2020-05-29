@@ -67,24 +67,62 @@ nav {
 
 .App-Fullscreen {
   @include sm {
-    display: none;
-    font-weight: $font-bold;
-    color: white;
     position: absolute;
     z-index: 6;
+    background-color: Transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: .5em;
     bottom: 2%;
     left: 1.5%;
-    font-size: .8em;
-    input {
-      margin-right: 10px;
-      vertical-align:middle;
+    font-weight: $font-bold;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+      background-color: $black;
+      border: 3px solid $black;
+      color: white;
     }
   }
+
   @include md {
-    display: flex;
-    font-size: 1em;
+      padding: 5px 10px;
+      font-size: .5em;
   }
+
   @include lg {
-    font-size: 1.2em;
+      padding: 10px 20px;
+      font-size: .7em;
+      border: 2px solid white;
   }
+  @include xl {
+    padding: 12px 22px;
+    font-size: .9em;
+  }
+
+
+  // @include sm {
+  //   display: none;
+  //   font-weight: $font-bold;
+  //   color: white;
+  //   position: absolute;
+  //   z-index: 6;
+  //   bottom: 2%;
+  //   left: 1.5%;
+  //   font-size: .8em;
+  //   input {
+  //     margin-right: 10px;
+  //     vertical-align:middle;
+  //   }
+  // }
+  // @include md {
+  //   display: flex;
+  //   font-size: 1em;
+  // }
+  // @include lg {
+  //   font-size: 1.2em;
+  // }
 }

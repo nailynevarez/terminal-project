@@ -22,6 +22,7 @@ export default class Fourth extends Component {
       showRow3Person2: false,
       showPersonWrapper: false,
       showRedBackground: null,
+      showHelp: false,
     };
   }
 
@@ -52,6 +53,7 @@ export default class Fourth extends Component {
       showPersonWrapper: true,
       showRow8Person1: true,
       showRedBackground: false,
+      showHelp: true,
     });
   }
 
@@ -60,6 +62,7 @@ export default class Fourth extends Component {
       showPersonWrapper: true,
       showRow3Person2: true,
       showRedBackground: true,
+      showHelp: true,
     });
   }
 
@@ -75,6 +78,8 @@ export default class Fourth extends Component {
 render() {
   return (
     <div className = "Fourth-Wrapper">
+
+    {this.state.showHelp ? <button className = "Fourth-Help">TAKE ACTION</button>  : null}
 
     {this.state.showPersonWrapper ? (
       <div className = {this.state.showPersonWrapper ? 'fadeIn' : 'fadeOut'}>
