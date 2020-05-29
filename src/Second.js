@@ -69,7 +69,7 @@ render() {
           <img className = "Second-Button" onClick={this.handleButtonClick.bind(this)} src = {SecondButton}/>
         </div>
         <div className = "Second-Sharing">
-        <a className = "Second-Twitter"   href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-url="https://www.waveringstripes.com" data-show-count="false"><i></i><span className = "label">Tweet</span></a>
+        <a className = "Second-Twitter"  target="_blank" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-url="https://www.waveringstripes.com" data-show-count="false"><i></i><span className = "label">Tweet</span></a>
         <a className = "Second-Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.waveringstripes.com%2F&amp;src=sdkpreparse"><span className = "label">Share</span></a>
         </div>
       </div>

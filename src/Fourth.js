@@ -70,6 +70,7 @@ export default class Fourth extends Component {
     this.setState({
       showPersonWrapper: false,
       showRow8Person1: false,
+      showRow3Person2: false,
     });
   }
 
@@ -79,7 +80,7 @@ render() {
   return (
     <div className = "Fourth-Wrapper">
 
-    {this.state.showHelp ? <button className = "Fourth-Help">TAKE ACTION</button>  : null}
+
 
     {this.state.showPersonWrapper ? (
       <div className = {this.state.showPersonWrapper ? 'fadeIn' : 'fadeOut'}>
@@ -145,6 +146,7 @@ render() {
     (
 
       <div className = "Fourth-Wrapper-Flag">
+      {this.state.showHelp ? <button className = "Fourth-Help">TAKE ACTION</button>  : null}
       <img className = "Fourth-Texture" src = {FourthTexture}/>
       <img className = "Fourth-People" src = {FourthPeople}/>
       <img className= "Fourth-FlagLarge" src = {FourthFlagLarge}/>
