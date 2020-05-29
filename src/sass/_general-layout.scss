@@ -22,6 +22,7 @@ html, body {
 nav {
   @include sm {
     display: none;
+    visibility: hidden;
   }
   @include md {
     display: flex;
@@ -60,4 +61,30 @@ nav {
   height: 30%;
   opacity: .5;
   margin-top: 43%;
+}
+
+
+.App-Fullscreen {
+  @include sm {
+    font-weight: $font-bold;
+    color: white;
+    position: absolute;
+    z-index: 6;
+    bottom: 3%;
+    left: 3%;
+    font-size: .8em;
+    input {
+      margin-right: 10px;
+      vertical-align:middle;
+    }
+    label {
+      padding-top: 2px;
+    }
+  }
+  @include md {
+    font-size: 1em;
+  }
+  @include lg {
+    font-size: 1.2em;
+  }
 }

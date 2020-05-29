@@ -3,6 +3,7 @@ import SecondTexture from "./images/Texture.gif";
 import SecondEagle from "./images/Second-Eagle.gif";
 import SecondButton from "./images/Second-Button.png";
 import SecondTitle from "./images/Second-Title.png";
+import Fullscreen from "react-full-screen";
 
 export default class Second extends Component {
   constructor(props){
@@ -12,8 +13,10 @@ export default class Second extends Component {
       isSceneActive: true,
       isButtonClicked: false,
       isButtonActive: true,
+  
     };
   }
+
 
 
   handleButtonClick = () => {
@@ -50,6 +53,7 @@ render() {
     <div className = {this.state.isSceneActive ? "Second-WrapperWhite" : "Second-WrapperRed"}>
     <div className = {this.state.isSceneActive ? 'fadeIn' : 'fadeOut'}>
       <div className = 'Second-Background'></div>
+
 
       <img className = "Second-Texture" src = {SecondTexture}/>
       <div className = {this.state.isButtonActive ? null : 'fadeOut'}>
