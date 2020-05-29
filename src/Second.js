@@ -70,7 +70,7 @@ render() {
         </div>
         <div className = "Second-Sharing">
         <a className = "Second-Twitter"   href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-url="https://www.waveringstripes.com" data-show-count="false"><i></i><span className = "label">Tweet</span></a>
-        <div class="fb-share-button" data-href="https://www.waveringstripes.com" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.waveringstripes.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+        <a className = "Second-Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.waveringstripes.com%2F&amp;src=sdkpreparse"><span className = "label">Share</span></a>
         </div>
       </div>
     </div>
