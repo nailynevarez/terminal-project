@@ -98,9 +98,9 @@
 
 .Fourth-Arrow {
   @include sm {
-    align-self: flex-end;
+    align-self: flex-start;
     height: 5%;
-    margin: 2% 2% 0 0;
+    margin: 2% 0 0 2%;
     z-index: 5;
     &:hover {
       transition: .5s;
@@ -287,39 +287,186 @@
   }
 }
 
+.Fourth-ActionDiv {
+  @include sm {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+  }
+}
 
-.Fourth-Help {
+
+.Fourth-Action {
   @include sm {
     position: absolute;
     z-index: 6;
     background-color: Transparent;
-    border: 3px solid white;
+    border: none;
     color: white;
-    padding: 10px 15px;
+    padding: 5px 0px;
     text-align: center;
-    text-decoration: none;
+    border-bottom: 2px solid white;
     font-size: .7em;
     margin: 20px 20px;
     font-weight: $font-bold;
     cursor: pointer;
     transition: .5s;
-    &:hover {
-      background-color: $red;
-      border: 3px solid $red;
+    &:hover:before {
+      visibility: visible;
+      width: 100%;
     }
+    &:hover {
+      border-bottom: none;
+      color: $red;
+    }
+
   }
 
   @include md {
-      padding: 10px 20px;
-      font-size: .8em;
+    border-bottom: 3px solid white;
+    margin: 20px 40px;
+    font-size: .8em;
   }
 
   @include lg {
-      padding: 15px 25px;
-      font-size: 1em;
+    font-size: 1em;
   }
   @include xl {
-    padding: 20px 30px;
     font-size: 1.2em;
+  }
+}
+
+.Fourth-Action:before {
+  content: "";
+  position: absolute;
+  top: 5;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: $red;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.Fourth-Direction {
+  @include sm {
+    position: absolute;
+    color: $red;
+    z-index: 5;
+    bottom: 0;
+    font-size: 1em;
+    margin-bottom: 30px;
+    font-weight: $font-bold;
+
+  }
+  @include md {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+  }
+
+  @include lg {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+  }
+
+  @include xl {
+    font-size: 1.4em;
+    margin-bottom: 60px;
+  }
+}
+
+.Fourth-ActionContent {
+  @include sm {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    opacity: .9;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: $font-bold;
+    img {
+      height: 40%;
+      width: auto;
+    }
+    p:nth-child(1){
+      margin: 0 20% 0 20%;
+      a {
+        color: $red;
+        transition: .5s;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+    button {
+      background-color: Transparent;
+      border: 3px solid white;
+      color: white;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      font-size: .7em;
+      margin: 30% 0 30% 0;
+      font-weight: $font-bold;
+      cursor: pointer;
+      transition: .5s;
+      &:hover {
+        background-color: $red;
+        border: 3px solid $red;
+      }
+    }
+  }
+  @include md {
+    font-size: 1.1em;
+    button {
+      margin: 40% 0 40% 0;
+      font-size: 1em;
+    }
+  }
+
+  @include lg {
+    font-size: 1.3em;
+    p:nth-child(1){
+      margin: 0 20% 0 20%;
+    }
+    button {
+      margin: 45% 0 45% 0;
+      font-size: 1.2em;
+    }
+  }
+
+  @include xl {
+    font-size: 1.5em;
+    p:nth-child(1){
+      margin: 0 25% 0 25%;
+    }
+  }
+
+}
+
+.Fourth-SubCaption {
+  @include sm {
+    font-size: .7em;
+    margin: 0 20% 0 20%;
+    a {
+      color: white;
+      text-decoration: underline;
+      transition: .5s;
+      &:hover {
+        color: $red;
+      }
+  }
   }
 }

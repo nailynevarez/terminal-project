@@ -67,10 +67,11 @@ nav {
 
 .App-Fullscreen {
   @include sm {
+    display: none;
     position: absolute;
     z-index: 6;
     background-color: Transparent;
-    border: 1px solid white;
+    border: 2px solid white;
     color: white;
     padding: 5px 10px;
     text-align: center;
@@ -89,20 +90,20 @@ nav {
   }
 
   @include md {
-      padding: 5px 10px;
-      font-size: .5em;
+    display: flex;
+    padding: 5px 10px;
+    font-size: .5em;
   }
 
   @include lg {
-      padding: 10px 20px;
-      font-size: .7em;
-      border: 2px solid white;
+    padding: 10px 20px;
+    font-size: .7em;
   }
   @include xl {
     padding: 12px 22px;
     font-size: .9em;
   }
-
+  
 
   // @include sm {
   //   display: none;

@@ -275,3 +275,155 @@
     opacity: 1;
   }
 }
+
+
+
+.Fourth-Direction {
+  -webkit-animation: directionAppear 4s;
+   -moz-animation: directionAppear 4s;
+   -o-animation: directionAppear  4s;
+  animation: directionAppear  4s;
+}
+
+
+
+@-webkit-keyframes  directionAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes directionAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes directionAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes directionAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.Fourth-Action {
+  -webkit-animation: actionAppear 3s;
+   -moz-animation: actionAppear 3s;
+   -o-animation: actionAppear  3s;
+  animation: actionAppear  3s;
+}
+
+
+
+@-webkit-keyframes  actionAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes actionAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes actionAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes actionAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.Fourth-ActionContent {
+  -webkit-animation: actionAppearContent 1s;
+   -moz-animation: actionAppearContent 1s;
+   -o-animation: actionAppearContent  1s;
+  animation: actionAppearContent  1s;
+}
+
+
+@-webkit-keyframes  actionAppearContent {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .9;
+  }
+}
+@-moz-keyframes actionAppearContent {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .9;
+  }
+}
+
+@-o-keyframes actionAppearContent {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .9;
+  }
+}
+@keyframes actionAppearContent {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .9;
+  }
+}

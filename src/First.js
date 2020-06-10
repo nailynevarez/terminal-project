@@ -55,7 +55,7 @@ render() {
       <div className = "First-Wrapper">
       <div className = {this.state.isButtonActive ? 'none' : 'fadeOut'}>
       <div className = "First-TextWarning">
-      <p>This site contains content that some visitors may find triggering or disturbing (incarceration, suicide, abuse, hunger). Please continue with caution. </p>
+      <p>This site contains content that some visitors may find triggering or disturbing (incarceration, suicide, abuse, eating-disorders, ptsd, sexual assault). Please continue with caution. </p>
       <p onClick={this.handleButtonClick.bind(this)} className = "First-Link">Proceed to site</p>
       </div>
       </div>

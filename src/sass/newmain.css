@@ -67,10 +67,11 @@
 
 @media (min-width: 0) {
   .App-Fullscreen {
+    display: none;
     position: absolute;
     z-index: 6;
     background-color: Transparent;
-    border: 1px solid white;
+    border: 2px solid white;
     color: white;
     padding: 5px 10px;
     text-align: center;
@@ -90,6 +91,7 @@
 }
 @media (min-width: 769px) {
   .App-Fullscreen {
+    display: flex;
     padding: 5px 10px;
     font-size: 0.5em;
   }
@@ -98,7 +100,6 @@
   .App-Fullscreen {
     padding: 10px 20px;
     font-size: 0.7em;
-    border: 2px solid white;
   }
 }
 @media (min-width: 1442px) {
@@ -587,32 +588,11 @@
   .Second-Sharing {
     position: absolute;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 6;
     height: 50vh;
-    width: 17vw;
     top: 2.5%;
     right: 1.5%;
-  }
-}
-@media (min-width: 769px) {
-  .Second-Sharing {
-    width: 13vw;
-  }
-}
-@media (min-width: 1100px) {
-  .Second-Sharing {
-    width: 11vw;
-  }
-}
-@media (min-width: 1442px) {
-  .Second-Sharing {
-    width: 8vw;
-  }
-}
-@media (min-width: 1900px) {
-  .Second-Sharing {
-    width: 5vw;
   }
 }
 
@@ -627,7 +607,12 @@
   color: #fff;
   border-radius: 3px;
   font-weight: 700;
+  margin-right: 6px;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+.Second-Twitter:hover {
+  opacity: 0.5;
 }
 .Second-Twitter i {
   position: relative;
@@ -658,11 +643,161 @@ a {
   color: #fff;
   border-radius: 3px;
   font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+.Second-Facebook:hover {
+  opacity: 0.5;
 }
 
 .Second-Facebook span {
   font-size: 0.8em;
   font-family: Helvetica;
+}
+
+@media (min-width: 0) {
+  .Second-InfoButtonShow {
+    position: absolute;
+    bottom: 2%;
+    right: 1.5%;
+    z-index: 6;
+    background-color: Transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 7px 13px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    border-radius: 50%;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .Second-InfoButtonShow:hover {
+    background-color: #0d0d0d;
+    border: 3px solid #0d0d0d;
+    color: white;
+  }
+}
+@media (min-width: 1100px) {
+  .Second-InfoButtonShow {
+    padding: 7px 13px;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 0) {
+  .Second-InfoButtonHide {
+    position: absolute;
+    bottom: 2%;
+    right: 1.5%;
+    z-index: 6;
+    background-color: #0d0d0d;
+    border: 3px solid #0d0d0d;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.5em;
+    border-radius: 50%;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .Second-InfoButtonHide:hover {
+    background-color: Transparent;
+    border: 2px solid black;
+    color: black;
+  }
+}
+
+@media (min-width: 0) {
+  .Second-InfoDiv {
+    display: flex;
+    background-color: #FFE9DD;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1em;
+  }
+  .Second-InfoDiv p:nth-child(1) {
+    font-weight: 900;
+  }
+  .Second-InfoDiv p:nth-child(2) {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .Second-InfoDiv:hover {
+    cursor: pointer;
+  }
+  .Second-InfoDiv a {
+    color: #F23E2E;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .Second-InfoDiv a:hover {
+    color: #9b251f;
+  }
+}
+@media (min-width: 1100px) {
+  .Second-InfoDiv {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1442px) {
+  .Second-InfoDiv {
+    font-size: 1.4em;
+  }
+}
+
+.Second-InfoParagraph {
+  transition: 0.5s;
+}
+@media (min-width: 0) {
+  .Second-InfoParagraph {
+    margin: 0 10% 0 10%;
+  }
+}
+@media (min-width: 769px) {
+  .Second-InfoParagraph {
+    margin: 0 15% 0 15%;
+  }
+}
+@media (min-width: 1100px) {
+  .Second-InfoParagraph {
+    margin: 0 20% 0 20%;
+  }
+}
+@media (min-width: 1900px) {
+  .Second-InfoParagraph {
+    margin: 0 25% 0 25%;
+  }
+}
+
+.Second-ArrowRight {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-right: 1px;
+  margin-left: -1px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.Second-InfoButtonHide:hover .Second-ArrowRight {
+  border: 1px solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-right: 1px;
+  margin-left: -1px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 .Second-Background {
@@ -1454,9 +1589,9 @@ a {
 
 @media (min-width: 0) {
   .Fourth-Arrow {
-    align-self: flex-end;
+    align-self: flex-start;
     height: 5%;
-    margin: 2% 2% 0 0;
+    margin: 2% 0 0 2%;
     z-index: 5;
   }
   .Fourth-Arrow:hover {
@@ -1640,9 +1775,135 @@ a {
 }
 
 @media (min-width: 0) {
-  .Fourth-Help {
+  .Fourth-ActionDiv {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 0) {
+  .Fourth-Action {
     position: absolute;
     z-index: 6;
+    background-color: Transparent;
+    border: none;
+    color: white;
+    padding: 5px 0px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    font-size: 0.7em;
+    margin: 20px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .Fourth-Action:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  .Fourth-Action:hover {
+    border-bottom: none;
+    color: #F23E2E;
+  }
+}
+@media (min-width: 769px) {
+  .Fourth-Action {
+    border-bottom: 3px solid white;
+    margin: 20px 40px;
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 1100px) {
+  .Fourth-Action {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1442px) {
+  .Fourth-Action {
+    font-size: 1.2em;
+  }
+}
+
+.Fourth-Action:before {
+  content: "";
+  position: absolute;
+  top: 5;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #F23E2E;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 0) {
+  .Fourth-Direction {
+    position: absolute;
+    color: #F23E2E;
+    z-index: 5;
+    bottom: 0;
+    font-size: 1em;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+}
+@media (min-width: 769px) {
+  .Fourth-Direction {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1100px) {
+  .Fourth-Direction {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1442px) {
+  .Fourth-Direction {
+    font-size: 1.4em;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 0) {
+  .Fourth-ActionContent {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .Fourth-ActionContent img {
+    height: 40%;
+    width: auto;
+  }
+  .Fourth-ActionContent p:nth-child(1) {
+    margin: 0 20% 0 20%;
+  }
+  .Fourth-ActionContent p:nth-child(1) a {
+    color: #F23E2E;
+    transition: 0.5s;
+  }
+  .Fourth-ActionContent p:nth-child(1) a:hover {
+    color: #36388C;
+  }
+  .Fourth-ActionContent button {
     background-color: Transparent;
     border: 3px solid white;
     color: white;
@@ -1650,32 +1911,58 @@ a {
     text-align: center;
     text-decoration: none;
     font-size: 0.7em;
-    margin: 20px 20px;
+    margin: 30% 0 30% 0;
     font-weight: 700;
     cursor: pointer;
     transition: 0.5s;
   }
-  .Fourth-Help:hover {
+  .Fourth-ActionContent button:hover {
     background-color: #F23E2E;
     border: 3px solid #F23E2E;
   }
 }
 @media (min-width: 769px) {
-  .Fourth-Help {
-    padding: 10px 20px;
-    font-size: 0.8em;
+  .Fourth-ActionContent {
+    font-size: 1.1em;
   }
-}
-@media (min-width: 1100px) {
-  .Fourth-Help {
-    padding: 15px 25px;
+  .Fourth-ActionContent button {
+    margin: 40% 0 40% 0;
     font-size: 1em;
   }
 }
-@media (min-width: 1442px) {
-  .Fourth-Help {
-    padding: 20px 30px;
+@media (min-width: 1100px) {
+  .Fourth-ActionContent {
+    font-size: 1.3em;
+  }
+  .Fourth-ActionContent p:nth-child(1) {
+    margin: 0 20% 0 20%;
+  }
+  .Fourth-ActionContent button {
+    margin: 45% 0 45% 0;
     font-size: 1.2em;
+  }
+}
+@media (min-width: 1442px) {
+  .Fourth-ActionContent {
+    font-size: 1.5em;
+  }
+  .Fourth-ActionContent p:nth-child(1) {
+    margin: 0 25% 0 25%;
+  }
+}
+
+@media (min-width: 0) {
+  .Fourth-SubCaption {
+    font-size: 0.7em;
+    margin: 0 20% 0 20%;
+  }
+  .Fourth-SubCaption a {
+    color: white;
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+  .Fourth-SubCaption a:hover {
+    color: #F23E2E;
   }
 }
 
@@ -1922,6 +2209,135 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+.Fourth-Direction {
+  -webkit-animation: directionAppear 4s;
+  -moz-animation: directionAppear 4s;
+  -o-animation: directionAppear 4s;
+  animation: directionAppear 4s;
+}
+
+@-webkit-keyframes directionAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes directionAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes directionAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes directionAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Fourth-Action {
+  -webkit-animation: actionAppear 3s;
+  -moz-animation: actionAppear 3s;
+  -o-animation: actionAppear 3s;
+  animation: actionAppear 3s;
+}
+
+@-webkit-keyframes actionAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes actionAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes actionAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes actionAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Fourth-ActionContent {
+  -webkit-animation: actionAppearContent 1s;
+  -moz-animation: actionAppearContent 1s;
+  -o-animation: actionAppearContent 1s;
+  animation: actionAppearContent 1s;
+}
+
+@-webkit-keyframes actionAppearContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@-moz-keyframes actionAppearContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@-o-keyframes actionAppearContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes actionAppearContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
   }
 }
 

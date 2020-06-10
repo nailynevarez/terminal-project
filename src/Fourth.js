@@ -12,7 +12,6 @@ import Row3Person2Red from "./images/Row3Person2-Red.png";
 import JohanaMedinaLeon from "./images/JohanaMedinaLeon.png";
 
 
-
 export default class Fourth extends Component {
   constructor(props){
     super(props);
@@ -22,11 +21,14 @@ export default class Fourth extends Component {
       showRow3Person2: false,
       showPersonWrapper: false,
       showRedBackground: null,
-      showHelp: false,
+      showActionButton: false,
+      isDirectionActive: true,
+      showActionContent: false,
     };
   }
 
   componentDidMount(){
+
   }
 
 
@@ -53,7 +55,8 @@ export default class Fourth extends Component {
       showPersonWrapper: true,
       showRow8Person1: true,
       showRedBackground: false,
-      showHelp: true,
+      showActionButton: true,
+      isDirectionActive: false,
     });
   }
 
@@ -62,7 +65,8 @@ export default class Fourth extends Component {
       showPersonWrapper: true,
       showRow3Person2: true,
       showRedBackground: true,
-      showHelp: true,
+      showActionButton: true,
+      isDirectionActive: false,
     });
   }
 
@@ -71,6 +75,12 @@ export default class Fourth extends Component {
       showPersonWrapper: false,
       showRow8Person1: false,
       showRow3Person2: false,
+    });
+  }
+
+  showActionContent = () => {
+    this.setState ({
+      showActionContent: !this.state.showActionContent,
     });
   }
 
@@ -146,7 +156,9 @@ render() {
     (
 
       <div className = "Fourth-Wrapper-Flag">
-      {this.state.showHelp ? <button className = "Fourth-Help">TAKE ACTION</button>  : null}
+      {this.state.showActionButton ?
+        <div className = "Fourth-ActionDiv"><button onClick={this.showActionContent.bind(this)} className = "Fourth-Action">TAKE ACTION</button></div>  : null}
+        {this.state.isDirectionActive ? <p className = "Fourth-Direction">CLICK ON THE BLINKING FIGURES</p> : null}
       <img className = "Fourth-Texture" src = {FourthTexture}/>
       <img className = "Fourth-People" src = {FourthPeople}/>
       <img className= "Fourth-FlagLarge" src = {FourthFlagLarge}/>
@@ -158,6 +170,11 @@ render() {
       <img className = "Fourth-Row3Person2" src = {Row3Person2}
           onClick={this.showRow3Person2.bind(this)}/>
       <img className = "Fourth-Row3Person2-Red" src = {Row3Person2Red}/>
+      {this.state.showActionContent ? <div onClick={this.showActionContent.bind(this)} className = "Fourth-ActionContent">
+      <p>This project was made with the support of <a href = "https://www.detentionwatchnetwork.org/" target = "_blank"> Detention Watch Network, </a> a national coalition dedicated to abolishing immigration detention in the United States. To help strengthen their work and contribute to the mission of ending immigration detention, please consider making a donation.</p>
+      <a target = "_blank" href ="https://detentionwatchnetwork.z2systems.com/np/clients/detentionwatchnetwork/donation.jsp?campaign=25&&test=true"><button>HELP NOW</button></a>
+      <p className = "Fourth-SubCaption">To stay informed and learn of other ways to contribute, follow Detention Watch Network on <a target = "_blank" href = "https://twitter.com/DetentionWatch">Twitter</a> and <a target = "_blank" href = "https://www.facebook.com/DetentionWatchNetwork">Facebook.</a></p>
+      </div> : null}
       </div>
 
     )

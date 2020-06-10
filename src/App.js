@@ -16,7 +16,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      activeScene: 'first',
+      activeScene: 'second',
       isFullscreen: false,
       showCheckbox: true,
     };
