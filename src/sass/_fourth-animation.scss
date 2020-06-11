@@ -1,6 +1,6 @@
 
 
-.Fourth-People, .Fourth-Row8Person1-Red, .Fourth-Row3Person2-Red, .Fourth-Row1Person1-Red, .Fourth-Row6Person1-Red {
+.Fourth-People, .Fourth-Row8Person1-Red, .Fourth-Row3Person2-Red, .Fourth-Row1Person1-Red, .Fourth-Row6Person1-Red, .Fourth-Row3Person1-Red, .Fourth-Person11Person1-Red{
   -webkit-animation: fadePeople 3s;
    -moz-animation: fadePeople 3s;
    -o-animation: fadePeople 3s;
@@ -46,7 +46,7 @@
 
 
 
-.Fourth-Row3Person2 {
+.Fourth-Row3Person2, .Fourth-Row3Person1, .Fourth-Row11Person1 {
   -webkit-animation: fadePeople 3s, personBlink1 ease-in-out infinite 2s;
    -moz-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 2s;
    -o-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 2s;
@@ -425,5 +425,103 @@
 
   100% {
     opacity: .9;
+  }
+}
+
+
+
+
+.Fourth-Home-FadeIn {
+  -webkit-animation: homeFadeIn 3s;
+   -moz-animation: homeFadeIn 3s;
+   -o-animation: homeFadeIn 3s;
+  animation: homeFadeIn 3s;
+}
+
+
+@-webkit-keyframes  homeFadeIn  {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .4;
+  }
+}
+@-moz-keyframes homeFadeIn  {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .4;
+  }
+}
+
+@-o-keyframes homeFadeIn  {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .4;
+  }
+}
+@keyframes homeFadeIn  {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .4;
+  }
+}
+
+
+
+.Fourth-Home-FadeOut {
+  -webkit-animation: homeFadeOut 2s;
+   -moz-animation: homeFadeOut 2s;
+   -o-animation: homeFadeOut 2s;
+  animation: homeFadeOut 2s;
+  opacity: 0;
+}
+
+
+@-webkit-keyframes  homeFadeOut  {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes homeFadeOut  {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes homeFadeOut  {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes homeFadeOut  {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 0;
   }
 }
