@@ -1,6 +1,6 @@
 
 
-.Fourth-People, .Fourth-Row8Person1-Red, .Fourth-Row3Person2-Red {
+.Fourth-People, .Fourth-Row8Person1-Red, .Fourth-Row3Person2-Red, .Fourth-Row1Person1-Red {
   -webkit-animation: fadePeople 3s;
    -moz-animation: fadePeople 3s;
    -o-animation: fadePeople 3s;
@@ -47,10 +47,10 @@
 
 
 .Fourth-Row3Person2 {
-  -webkit-animation: fadePeople 3s, personBlink1 ease-in-out infinite 4s;
-   -moz-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 4s;
-   -o-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 4s;
-  animation: fadePeople 3s, personBlink1 ease-in-out infinite 4s;
+  -webkit-animation: fadePeople 3s, personBlink1 ease-in-out infinite 2s;
+   -moz-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 2s;
+   -o-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 2s;
+  animation: fadePeople 3s, personBlink1 ease-in-out infinite 2s;
   animation-delay: 0ms, 3s;
 }
 
@@ -103,11 +103,11 @@
 }
 
 
-.Fourth-Row8Person1 {
-  -webkit-animation: fadePeople 3s, personBlink2 ease-in-out infinite 4s;
-   -moz-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 4s;
-   -o-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 4s;
-  animation: fadePeople 3s, personBlink2 ease-in-out infinite 4s;
+.Fourth-Row8Person1, .Fourth-Row1Person1 {
+  -webkit-animation: fadePeople 3s, personBlink2 ease-in-out infinite 2s;
+   -moz-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 2s;
+   -o-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 2s;
+  animation: fadePeople 3s, personBlink2 ease-in-out infinite 2s;
   animation-delay: 0ms, 3s;
 }
 

@@ -287,6 +287,37 @@
   }
 }
 
+
+.Fourth-Row1Person1 {
+  @include sm {
+    position: absolute;
+    z-index: 5;
+    height: 4.5%;
+    width: auto;
+    top: 70.8%;
+    left: 73%;
+    &:hover {
+      animation: none;
+      opacity: .5;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.Fourth-Row1Person1-Red {
+  @include sm {
+    position: absolute;
+    z-index: 4;
+    height: 4.5%;
+    width: auto;
+    top: 70.8%;
+    left: 73%;
+  }
+}
+
+//-----------------------------------------------
+
 .Fourth-ActionDiv {
   @include sm {
     height: 100vh;
