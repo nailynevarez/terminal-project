@@ -35,6 +35,7 @@ export default class Fourth extends Component {
       showRow8Person1: false,
       showRow3Person2: false,
       showRow1Person1: false,
+      showRow6Person1: false,
       showPersonWrapper: false,
       showRedBackground: null,
       showActionButton: false,
@@ -96,11 +97,23 @@ export default class Fourth extends Component {
     });
   }
 
+  showRow6Person1 = () => {
+    this.setState({
+      showPersonWrapper: true,
+      showRow6Person1: true,
+      showRedBackground: false,
+      showActionButton: true,
+      isDirectionActive: false,
+    });
+  }
+
   showFlag = () => {
     this.setState({
       showPersonWrapper: false,
       showRow8Person1: false,
       showRow3Person2: false,
+      showRow1Person1: false,
+      showRow6Person1: false,
     });
   }
 
@@ -200,6 +213,28 @@ render() {
               </div>
               </div> : null}
 
+              {this.state.showRow6Person1 ?
+                <div className = "Fourth-Person">
+                <img className = "Fourth-Portrait" src = {NebaneAbienwi}/>
+                <div className = "Fourth-Writing">
+                  <p className = "Fourth-Title" >NEBANE ABIENWI</p>
+                  <div className = "Fourth-SubTitle">
+                    <p>37-year-old man</p>
+                    <p>Held in California</p>
+                    <p>Immigrated from Cameroon</p>
+                  </div>
+                  <div className = "Fourth-Story">
+                    <p>Nebane Abienwi was a father of three fleeing civil war conflicts in Cameroon. After <a target = "_blank" href="https://www.thenation.com/article/world/ice-death-negligence/">traveling</a> across 3 continents and 9 countries, Nebane finally reached the United States and applied for admission on September 5th, 2019 at the San Ysidro Port of Entry in California.</p>
+                    <p>U.S. Customs and Border Protection officers detained Nebane at the San Ysidro Admissibility Enforcement Unit, and he was later transferred to the Otay Mesa Detention Center ― a for-profit firm ― on September 19th while he awaited the next step of the asylum process.</p>
+                    <p>During his medical examination, Nebane reported a 3-day hospitalization in Mexico only 3 weeks ago for severe hypertension.</p>
+                    <p>On September 26th, Nebane allegedly fell off his top bunk onto the floor. A registered nurse observed him confused, sweating, not responding to commands, and paralyzed from the left side. He was taken to Sharp Chula Vista Medical Center and admitted to the intensive care unit. There, he was diagnosed with acute severe right intraparenchymal hemorrhage (bleeding within the brain).</p>
+                    <p>On October 1st, 2019, the hospital declared Nebane brain-dead and contacted his family. His family requested Nebane be kept on life support until a family member could arrive at the hospital. Despite the family’s wishes, the hospital removed Nebane from the ventilator at 2:37 p.m.</p>
+                    <p>In a later interview, Dr. John Flack, hypertension specialist and Chair of the Department of Internal Medicine at Southern Illinois University, expressed Nebane was likely a victim of medical negligence, expressing it was inconceivable he was allowed to enter the detention facility after having recently been hospitalized.</p>
+                    <p>Moreover, past cases reveal Otay Mesa Detention Center has a <a target = "_blank" href = "https://www.latimes.com/california/story/2019-10-05/cameroon-death-ice-custody-black-immigrants-rights">history</a> of abuse, particularly toward specific ethnic groups that include Cameroonians.</p>
+                  </div>
+                  </div>
+                  </div> : null}
+
       </div>
       </div>
 
@@ -230,6 +265,10 @@ render() {
       <img className = "Fourth-Row1Person1" src = {Row1Person1}
           onClick={this.showRow1Person1.bind(this)}/>
       <img className = "Fourth-Row1Person1-Red" src = {Row1Person1Red}/>
+
+      <img className = "Fourth-Row6Person1" src = {Row6Person1}
+          onClick={this.showRow6Person1.bind(this)}/>
+      <img className = "Fourth-Row6Person1-Red" src = {Row6Person1Red}/>
 
       {this.state.showActionContent ? <div onClick={this.showActionContent.bind(this)} className = "Fourth-ActionContent">
       <p>This project was made with the support of <a href = "https://www.detentionwatchnetwork.org/" target = "_blank"> Detention Watch Network, </a> a national coalition dedicated to abolishing immigration detention in the United States. To help strengthen their work and contribute to the mission of ending immigration detention, please consider making a donation.</p>

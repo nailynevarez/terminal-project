@@ -1,6 +1,6 @@
 
 
-.Fourth-People, .Fourth-Row8Person1-Red, .Fourth-Row3Person2-Red, .Fourth-Row1Person1-Red {
+.Fourth-People, .Fourth-Row8Person1-Red, .Fourth-Row3Person2-Red, .Fourth-Row1Person1-Red, .Fourth-Row6Person1-Red {
   -webkit-animation: fadePeople 3s;
    -moz-animation: fadePeople 3s;
    -o-animation: fadePeople 3s;
@@ -103,7 +103,7 @@
 }
 
 
-.Fourth-Row8Person1, .Fourth-Row1Person1 {
+.Fourth-Row8Person1, .Fourth-Row1Person1, .Fourth-Row6Person1, {
   -webkit-animation: fadePeople 3s, personBlink2 ease-in-out infinite 2s;
    -moz-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 2s;
    -o-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 2s;
