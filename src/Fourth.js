@@ -26,6 +26,8 @@ import MergensanaAmar from "./images/MergensanaAmar.png";
 import NebaneAbienwi from "./images/NebaneAbienwi.png";
 import MariaRamirez from "./images/MariaRamirez.png";
 import EfrainDeLaRosa from "./images/EfrainDeLaRosa.png";
+import CarlosVasquez from "./images/CarlosVasquez.png";
+import MarieeJuarez from "./images/MarieeJuarez.png";
 
 export default class Fourth extends Component {
   constructor(props){
@@ -33,9 +35,11 @@ export default class Fourth extends Component {
     this.state = {
       isSceneActive: true,
       showRow8Person1: false,
+      showRow8Person2: false,
       showRow3Person2: false,
       showRow1Person1: false,
       showRow6Person1: false,
+      showRow6Person2: false,
       showRow3Person1: false,
       showRow11Person1: false,
       showPersonWrapper: false,
@@ -122,6 +126,26 @@ export default class Fourth extends Component {
       showPersonWrapper: true,
       showRow11Person1: true,
       showRedBackground: true,
+      showActionButton: true,
+      isDirectionActive: false,
+    });
+  }
+
+  showRow8Person2 = () => {
+    this.setState({
+      showPersonWrapper: true,
+      showRow8Person2: true,
+      showRedBackground: false,
+      showActionButton: true,
+      isDirectionActive: false,
+    });
+  }
+
+  showRow6Person2 = () => {
+    this.setState({
+      showPersonWrapper: true,
+      showRow6Person2: true,
+      showRedBackground: false,
       showActionButton: true,
       isDirectionActive: false,
     });
@@ -308,6 +332,46 @@ render() {
                 </div>
                 </div> : null}
 
+          {this.state.showRow8Person2 ?
+            <div className = "Fourth-Person">
+            <img className = "Fourth-Portrait" src = {CarlosVasquez}/>
+            <div className = "Fourth-Writing">
+              <p className = "Fourth-Title" >CARLOS GREGORIO HERNANDEZ VASQUEZ</p>
+              <div className = "Fourth-SubTitle">
+                <p>16-year-old boy</p>
+                <p>Held in Texas</p>
+                <p>Immigrated from Guatemala</p>
+              </div>
+              <div className = "Fourth-Story">
+                <p>U.S. Border Patrol agents apprehended Carlos on May 13th, 2019, near Hidalgo, Texas.</p>
+                <p>For 6 days, he was held at the Rio Grande Valley Sector’s Central Processing Center. Processing centers are meant to serve as brief detention stays, after which immigrants are turned over to Immigration and Customs Enforcement (ICE), or in the case of children, the Office of Refugee Resettlement (ORR). On his last day at the center, Carlos tested positive for the flu and had a fever of 103 degrees. Despite these symptoms, he was transferred from the Rio Grande Valley Sector’s Central Processing Center to the Weslaco Border Patrol Station.</p>
+                <p>Upon arriving at the station, Carlos was placed in a holding cell with another physically-ill man. The next morning, on May 20th, Carlos was found dead in the holding cell.</p>
+                <p>Before his death, an agent logged checking on Carlos three times throughout the morning; they did not report anything alarming about Carlos’ condition. However, video later obtained by <a target = "_blank" href = "https://www.propublica.org/article/inside-the-cell-where-a-sick-16-year-old-boy-died-in-border-patrol-care">ProPublica</a> shows that during this time, Carlos was in severe pain ― writhing on the floor and eventually becoming unconscious. Moreover, agents reported finding Carlos unresponsive after checking in on him. In the video, however, Carlos’s cellmate is who first noticed Carlos in an unresponsive state, after which he immediately signals for help.</p>
+                <p>United States laws require U.S. Customs and Border Patrol to transfer minors into the custody of the ORR within <a target="_blank" href = "https://www.texasmonthly.com/news/autopsy-details-death-guatemalan-migrant-child/">72</a> hours of detainment. Carlos, however, spent 7 days at 2 different detention centers. Medical experts have also noted that Carlos should have been initially sent to a hospital considering his severe flu symptoms.</p>
+              </div>
+              </div>
+              </div> : null}
+
+        {this.state.showRow6Person2 ?
+          <div className = "Fourth-Person">
+          <img className = "Fourth-Portrait" src = {MarieeJuarez}/>
+          <div className = "Fourth-Writing">
+            <p className = "Fourth-Title" >MARIEE JUAREZ</p>
+            <div className = "Fourth-SubTitle">
+              <p>2 ½-year-old girl</p>
+              <p>Held in Texas</p>
+              <p>Immigrated from Guatemala</p>
+            </div>
+            <div className = "Fourth-Story">
+              <p>Yazmin Juárez, a 20-year-old woman, and her daughter, Mariee, were apprehended by Rio Grande, a river that marks the boundary between Mexico and the United States. A few days after, on March 5th, 2018, they were transferred to the South Texas Family Residential Center (STFR), the largest detention center in the United States. Upon arriving at the center, Mariee had no health issues.</p>
+              <p>However, after about one week at the center, Mariee’s health deteriorated. She had a cough, congestion, and a fever of 104 degrees. On March 11th, Yazmin took Mariee to the clinic. After waiting hours, she was told Mariee had a respiratory infection; Mariee was given Tylenol and honey. The next day, Mariee’s illness worsened. Yazmin once again sought medical attention, and the providers said they believed Mariee had an ear infection; they prescribed her antibiotics. During a testimonial, Yazmin describes having to wait in line for hours before being seen by a medical professional. She was even turned away on two occasions.</p>
+              <p>Yazmin and Mariee passed their credible fear interview and were released from Immigration Customs Enforcement on March 25th.</p>
+              <p>Yazmin took Mariee to the hospital the following day, and within hours, she was transferred to the emergency room for a viral lung infection. For the next 6 weeks, Mariee was hospitalized at 3 hospitals. She was released from a ventilator and passed away at Children’s Hospital of Philadelphia on May 10th.</p>
+              <p><a target = "_blank" href = "https://news.vice.com/en_us/article/paw9ky/toddler-died-after-getting-sick-in-ice-custody">Crowded conditions</a> at detention centers allow viruses to spread easily. Coupled with the lack of adequate medical services, detainees - especially young children - have a more difficult time recovering.  Following the death, Yazmin filed a wrongful death claim against the U.S. government.</p>
+            </div>
+            </div>
+            </div> : null}
+
       </div>
       </div>
 
@@ -352,6 +416,14 @@ render() {
       <img className = "Fourth-Row11Person1" src = {Row11Person1}
           onClick={this.showRow11Person1.bind(this)}/>
       <img className = "Fourth-Row11Person1-Red" src = {Row11Person1Red}/>
+
+      <img className = "Fourth-Row8Person2" src = {Row8Person2}
+          onClick={this.showRow8Person2.bind(this)}/>
+      <img className = "Fourth-Row8Person2-Red" src = {Row8Person2Red}/>
+
+      <img className = "Fourth-Row6Person2" src = {Row6Person2}
+          onClick={this.showRow6Person2.bind(this)}/>
+      <img className = "Fourth-Row6Person2-Red" src = {Row6Person2Red}/>
 
       </div>
 

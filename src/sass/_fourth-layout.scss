@@ -349,7 +349,7 @@
     height: 4.5%;
     width: auto;
     top: 38.7%;
-    left: 22%;
+    left: 27%;
     &:hover {
       animation: none;
       opacity: .5;
@@ -366,7 +366,7 @@
     height: 4.5%;
     width: auto;
     top: 38.7%;
-    left: 22%;
+    left: 27%;
   }
 }
 
@@ -426,6 +426,65 @@
     width: auto;
     top: 17.7%;
     left: 57%;
+  }
+}
+
+.Fourth-Row8Person2 {
+  @include sm {
+    position: absolute;
+    z-index: 5;
+    height: 6%;
+    width: auto;
+    top: 27.5%;
+    left: 70.2%;
+    &:hover {
+      animation: none;
+      opacity: .5;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.Fourth-Row8Person2-Red {
+  @include sm {
+    position: absolute;
+    z-index: 4;
+    height: 6%;
+    width: auto;
+    top: 27.5%;
+    left: 70.2%;
+  }
+}
+
+
+
+
+.Fourth-Row6Person2 {
+  @include sm {
+    position: absolute;
+    z-index: 5;
+    height: 2%;
+    width: auto;
+    top: 41.7%;
+    left: 65%;
+    &:hover {
+      animation: none;
+      opacity: .5;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.Fourth-Row6Person2-Red {
+  @include sm {
+    position: absolute;
+    z-index: 4;
+    height: 2%;
+    width: auto;
+    top: 41.7%;
+    left: 65%;
   }
 }
 
