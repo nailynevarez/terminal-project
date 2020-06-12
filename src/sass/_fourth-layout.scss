@@ -101,7 +101,7 @@
 .Fourth-Arrow {
   @include sm {
     align-self: flex-start;
-    height: 5%;
+    height: 8%;
     margin: 2% 0 0 2%;
     z-index: 5;
     &:hover {
@@ -111,6 +111,9 @@
     }
   }
 
+  @include md {
+    height: 5%;
+  }
   @include lg {
     height: 4%;
   }
@@ -124,6 +127,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 
 .Fourth-Writing {
@@ -135,7 +139,7 @@
   height: 100%;
   width: 40%;
   padding-left: 5%;
-  padding-bottom: 5%;
+  // padding-bottom: 5%;
   z-index: 5;
   a {
     color: white;
@@ -191,7 +195,7 @@
     overflow-y: scroll;
     width: 100%;
     height: 30%;
-    margin-top: 10%;
+    margin-top: 8%;
     font-size: 1em;
     p:nth-of-type(1) {
       margin-top: 3%;
@@ -234,7 +238,7 @@
   @include sm {
     height: 65%;
     width: auto;
-    padding-bottom: 3%;
+    // padding-bottom: 3%;
   }
 
 }

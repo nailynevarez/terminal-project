@@ -155,10 +155,13 @@ export default class Fourth extends Component {
     this.setState({
       showPersonWrapper: false,
       showRow8Person1: false,
+      showRow8Person2: false,
       showRow3Person2: false,
       showRow1Person1: false,
       showRow6Person1: false,
+      showRow6Person2: false,
       showRow3Person1: false,
+      showRow11Person1: false,
     });
   }
 
