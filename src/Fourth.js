@@ -391,6 +391,7 @@ render() {
       <img className= "Fourth-FlagSmall" src = {FourthFlagSmall}/>
       <div className = 'Fourth-Background'></div>
 
+      <div className = "Fourth-SilhouettesDiv">
       <div className = "Fourth-Silhouettes">
 
       <img className = "Fourth-Row8Person1" src = {Row8Person1}
@@ -425,6 +426,7 @@ render() {
           onClick={this.showRow6Person2.bind(this)}/>
       <img className = "Fourth-Row6Person2-Red" src = {Row6Person2Red}/>
 
+      </div>
       </div>
 
       <button onClick={this.handleButtonClick.bind(this)} className = {this.state.isSceneActive ? "Fourth-Home-FadeIn" : "Fourth-Home-FadeOut"}>HOME</button>

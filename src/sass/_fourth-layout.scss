@@ -12,6 +12,7 @@
 
 .Fourth-Wrapper {
   background-color: $black;
+
 }
 
 .Fourth-Wrapper-Flag {
@@ -240,19 +241,24 @@
 
 //-----------------------------------------------
 
-// .Fourth-Silhouettes {
-// display: inline-block;
-//   background-color: $red;
-//   opacity: .5;
-//   position: relative;
-//   top: 0;
-//   left: 0;
-//   width: 70vw;
-//   margin: 0 calc(25% - 65vh) 0 calc(25% - 65vh);
-//   // // width: 80vw;
-//   height: 100vh;
-//   z-index: 10;
-// }
+.Fourth-SilhouettesDiv {
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.Fourth-Silhouettes {
+  display: flex;
+  position: absolute;
+  width: calc(120vh);
+  max-width: 4000px;
+  height: 100vh;
+  z-index: 10;
+}
 
 .Fourth-Row8Person1 {
   @include sm {
@@ -261,7 +267,7 @@
     height: 3%;
     width: auto;
     top: 30.5%;
-    left: 45.5%;
+    left: 43%;
     &:hover {
       animation: none;
       opacity: .5;
@@ -278,7 +284,7 @@
     height: 3%;
     width: auto;
     top: 30.5%;
-    left: 45.5%;
+    left: 43%;
   }
 }
 
@@ -291,7 +297,7 @@
     height: 7.2%;
     width: auto;
     top: 53.5%;
-    left: 48%;
+    left: 47.5%;
     &:hover {
       animation: none;
       opacity: .5;
@@ -308,7 +314,7 @@
     height: 7.2%;
     width: auto;
     top: 53.5%;
-    left: 48%;
+    left: 47.5%;
   }
 }
 
@@ -320,7 +326,7 @@
     height: 4.5%;
     width: auto;
     top: 70.8%;
-    left: 70%;
+    left: 80%;
     &:hover {
       animation: none;
       opacity: .5;
@@ -337,7 +343,7 @@
     height: 4.5%;
     width: auto;
     top: 70.8%;
-    left: 70%;
+    left: 80%;
   }
 }
 
@@ -349,7 +355,7 @@
     height: 4.5%;
     width: auto;
     top: 38.7%;
-    left: 27%;
+    left: 9%;
     &:hover {
       animation: none;
       opacity: .5;
@@ -366,7 +372,7 @@
     height: 4.5%;
     width: auto;
     top: 38.7%;
-    left: 27%;
+    left: 9%;
   }
 }
 
@@ -379,7 +385,7 @@
     height: 9%;
     width: auto;
     top: 52.2%;
-    left: 20%;
+    left: 5.5%;
     &:hover {
       animation: none;
       opacity: .5;
@@ -396,7 +402,7 @@
     height: 9%;
     width: auto;
     top: 52.2%;
-    left: 20%;
+    left: 5.5%;
   }
 }
 
@@ -408,7 +414,7 @@
     height: 4%;
     width: auto;
     top: 17.7%;
-    left: 57%;
+    left: 62%;
     &:hover {
       animation: none;
       opacity: .5;
@@ -425,7 +431,7 @@
     height: 4%;
     width: auto;
     top: 17.7%;
-    left: 57%;
+    left: 62%;
   }
 }
 
@@ -435,8 +441,8 @@
     z-index: 5;
     height: 6%;
     width: auto;
-    top: 27.5%;
-    left: 70.2%;
+    top: 27.8%;
+    left: 86%;
     &:hover {
       animation: none;
       opacity: .5;
@@ -452,8 +458,8 @@
     z-index: 4;
     height: 6%;
     width: auto;
-    top: 27.5%;
-    left: 70.2%;
+    top: 27.8%;
+    left: 86%;
   }
 }
 
@@ -467,7 +473,7 @@
     height: 2%;
     width: auto;
     top: 41.7%;
-    left: 65%;
+    left: 72%;
     &:hover {
       animation: none;
       opacity: .5;
@@ -484,7 +490,7 @@
     height: 2%;
     width: auto;
     top: 41.7%;
-    left: 65%;
+    left: 72%;
   }
 }
 

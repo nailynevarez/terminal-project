@@ -1729,6 +1729,25 @@ a {
   }
 }
 
+.Fourth-SilhouettesDiv {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.Fourth-Silhouettes {
+  display: flex;
+  position: absolute;
+  width: calc(120vh);
+  max-width: 4000px;
+  height: 100vh;
+  z-index: 10;
+}
+
 @media (min-width: 0) {
   .Fourth-Row8Person1 {
     position: absolute;
@@ -1736,7 +1755,7 @@ a {
     height: 3%;
     width: auto;
     top: 30.5%;
-    left: 45.5%;
+    left: 43%;
   }
   .Fourth-Row8Person1:hover {
     animation: none;
@@ -1752,7 +1771,7 @@ a {
     height: 3%;
     width: auto;
     top: 30.5%;
-    left: 45.5%;
+    left: 43%;
   }
 }
 
@@ -1763,7 +1782,7 @@ a {
     height: 7.2%;
     width: auto;
     top: 53.5%;
-    left: 48%;
+    left: 47.5%;
   }
   .Fourth-Row3Person2:hover {
     animation: none;
@@ -1779,7 +1798,7 @@ a {
     height: 7.2%;
     width: auto;
     top: 53.5%;
-    left: 48%;
+    left: 47.5%;
   }
 }
 
@@ -1790,7 +1809,7 @@ a {
     height: 4.5%;
     width: auto;
     top: 70.8%;
-    left: 70%;
+    left: 80%;
   }
   .Fourth-Row1Person1:hover {
     animation: none;
@@ -1806,7 +1825,7 @@ a {
     height: 4.5%;
     width: auto;
     top: 70.8%;
-    left: 70%;
+    left: 80%;
   }
 }
 
@@ -1817,7 +1836,7 @@ a {
     height: 4.5%;
     width: auto;
     top: 38.7%;
-    left: 27%;
+    left: 9%;
   }
   .Fourth-Row6Person1:hover {
     animation: none;
@@ -1833,7 +1852,7 @@ a {
     height: 4.5%;
     width: auto;
     top: 38.7%;
-    left: 27%;
+    left: 9%;
   }
 }
 
@@ -1844,7 +1863,7 @@ a {
     height: 9%;
     width: auto;
     top: 52.2%;
-    left: 20%;
+    left: 5.5%;
   }
   .Fourth-Row3Person1:hover {
     animation: none;
@@ -1860,7 +1879,7 @@ a {
     height: 9%;
     width: auto;
     top: 52.2%;
-    left: 20%;
+    left: 5.5%;
   }
 }
 
@@ -1871,7 +1890,7 @@ a {
     height: 4%;
     width: auto;
     top: 17.7%;
-    left: 57%;
+    left: 62%;
   }
   .Fourth-Row11Person1:hover {
     animation: none;
@@ -1887,7 +1906,7 @@ a {
     height: 4%;
     width: auto;
     top: 17.7%;
-    left: 57%;
+    left: 62%;
   }
 }
 
@@ -1897,8 +1916,8 @@ a {
     z-index: 5;
     height: 6%;
     width: auto;
-    top: 27.5%;
-    left: 70.2%;
+    top: 27.8%;
+    left: 86%;
   }
   .Fourth-Row8Person2:hover {
     animation: none;
@@ -1913,8 +1932,8 @@ a {
     z-index: 4;
     height: 6%;
     width: auto;
-    top: 27.5%;
-    left: 70.2%;
+    top: 27.8%;
+    left: 86%;
   }
 }
 
@@ -1925,7 +1944,7 @@ a {
     height: 2%;
     width: auto;
     top: 41.7%;
-    left: 65%;
+    left: 72%;
   }
   .Fourth-Row6Person2:hover {
     animation: none;
@@ -1941,7 +1960,7 @@ a {
     height: 2%;
     width: auto;
     top: 41.7%;
-    left: 65%;
+    left: 72%;
   }
 }
 
@@ -2223,10 +2242,10 @@ a {
   }
 }
 .Fourth-Row3Person2, .Fourth-Row3Person1, .Fourth-Row11Person1, .Fourth-Row6Person2 {
-  -webkit-animation: fadePeople 3s, personBlink1 ease-in-out infinite 2s;
-  -moz-animation: fadePeople 3s, personBlink1 ease-in-out infinite 2s;
-  -o-animation: fadePeople 3s, personBlink1 ease-in-out infinite 2s;
-  animation: fadePeople 3s, personBlink1 ease-in-out infinite 2s;
+  -webkit-animation: fadePeople 3s, personBlink1 ease-in-out infinite 1.5s;
+  -moz-animation: fadePeople 3s, personBlink1 ease-in-out infinite 1.5s;
+  -o-animation: fadePeople 3s, personBlink1 ease-in-out infinite 1.5s;
+  animation: fadePeople 3s, personBlink1 ease-in-out infinite 1.5s;
   animation-delay: 0ms, 3s;
 }
 
@@ -2275,10 +2294,10 @@ a {
   }
 }
 .Fourth-Row8Person1, .Fourth-Row1Person1, .Fourth-Row6Person1, .Fourth-Row8Person2 {
-  -webkit-animation: fadePeople 3s, personBlink2 ease-in-out infinite 2s;
-  -moz-animation: fadePeople 3s, personBlink2 ease-in-out infinite 2s;
-  -o-animation: fadePeople 3s, personBlink2 ease-in-out infinite 2s;
-  animation: fadePeople 3s, personBlink2 ease-in-out infinite 2s;
+  -webkit-animation: fadePeople 3s, personBlink2 ease-in-out infinite 1.5s;
+  -moz-animation: fadePeople 3s, personBlink2 ease-in-out infinite 1.5s;
+  -o-animation: fadePeople 3s, personBlink2 ease-in-out infinite 1.5s;
+  animation: fadePeople 3s, personBlink2 ease-in-out infinite 1.5s;
   animation-delay: 0ms, 3s;
 }
 
