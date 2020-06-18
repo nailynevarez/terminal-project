@@ -198,11 +198,21 @@
     margin-top: 8%;
     font-size: 1em;
     p:nth-of-type(1) {
+      width: fit-content;
       margin-top: 3%;
+      font-size: .5em;
+      padding: 3px;
+      border: 1px solid $white;
     }
     p {
       margin-right: 5%;
     }
+  }
+  @include md {
+    p:nth-of-type(1) {
+      font-size: .7em;
+      padding: 5px;
+    }  
   }
   @include lg {
     font-size: 1.2em;

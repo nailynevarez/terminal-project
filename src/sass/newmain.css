@@ -1697,10 +1697,20 @@ a {
     font-size: 1em;
   }
   .Fourth-Story p:nth-of-type(1) {
+    width: fit-content;
     margin-top: 3%;
+    font-size: 0.5em;
+    padding: 3px;
+    border: 1px solid #FFE9DD;
   }
   .Fourth-Story p {
     margin-right: 5%;
+  }
+}
+@media (min-width: 769px) {
+  .Fourth-Story p:nth-of-type(1) {
+    font-size: 0.7em;
+    padding: 5px;
   }
 }
 @media (min-width: 1100px) {

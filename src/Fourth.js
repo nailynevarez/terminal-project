@@ -198,6 +198,7 @@ render() {
             <p>Immigrated from Iran</p>
           </div>
           <div className = "Fourth-Story">
+            <p>CONTENT WARNING: SUBSTANCE WITHDRAWAL</p>
             <p>Kamyar Samimi came to the United States as a student in 1976 and became a Legal Permanent Resident in 1978. In Colorado, he worked as a mechanic while raising three children.</p>
             <p>On November 17th, 2017, Kamyar was arrested at his home and accused of controlled substance violation.</p>
             <p>When entering the Aurora Contract Detention Facility (ACDF), Kamyar reported that he was taking between 150 - 190mg of methadone daily ― an opioid medication he had been legally taking for 20 years. He expressed he was beginning to experience methadone withdrawal symptoms. Nurses received orders from the physician to house Kamyar in medical observation, but the physician did not order monitoring of Kamyar’s withdrawal symptoms with any medical instruments.</p>
@@ -221,6 +222,7 @@ render() {
             <p>Immigrated from El Salvador</p>
           </div>
           <div className = "Fourth-Story">
+          <p>CONTENT WARNING: TRANSPHOBIA, PHYSICAL ILLNESS</p>
             <p>Johana Medina Leon was a certified nurse in El Salvador. However, she was not able to practice because she was living openly as a <a target = "_blank" href = "https://www.themujerista.com/the-blog/transgender-woman-and-asylum-seeker-johana-medina-leon">transgender woman.</a> She immigrated to the United States seeking asylum, and legally entered through a port of entry.</p>
             <p>After entering on April 11th, 2019, through the U.S through Paso Del Norte Port of Entry in El Paso, New Mexico, Johana was transferred to Otero County Processing Center, a private detention facility for Immigration Customs Enforcement (ICE) detainees. Despite identifying as a woman at the port of entry, Johana was sent to an all-male facility.</p>
             <p>In the coming weeks, her health declined. Johana told staff at the Otero County Processing Center she needed an IV solution. She explained she could do it herself, but just needed the medication. Johana asked for water, sugar and salt so she could make her own IV; her requests were repeatedly denied.</p>
@@ -244,6 +246,7 @@ render() {
             <p>Immigrated from Buryatia</p>
           </div>
           <div className = "Fourth-Story">
+            <p>CONTENT WARNING: DEPRESSION, SUICIDE</p>
             <p>Mergensana Amar immigrated from Buryatia, a Russian republic in Siberia, just north of Mongolia. He arrived in the United States on December 5th, 2017. Seeking asylum, Mergensana turned himself in at San Ysidro Port of Entry in California to begin the asylum process.</p>
             <p>On December 19th, Mergensana was transferred to the Northwest Detention Center in Tacoma, Washington, and he stayed in this facility awaiting immigration proceedings for the following 9 months.</p>
             <p>9 months later ― around August 22nd, 2018 ― Mergensana began a hunger strike. During a medical examination, he explained he had “no intentions of eating” and that he would be protesting the length of time it took for the immigration courts to make a decision about his case.</p>
@@ -272,13 +275,14 @@ render() {
                 <p>Immigrated from Cameroon</p>
               </div>
               <div className = "Fourth-Story">
+              <p>CONTENT WARNING: VIOLENCE, PHYSICAL ILLNESS</p>
                 <p>Nebane Abienwi was a father of three fleeing civil war conflicts in Cameroon. After <a target = "_blank" href="https://www.thenation.com/article/world/ice-death-negligence/">traveling</a> across 3 continents and 9 countries, Nebane finally reached the United States and applied for admission on September 5th, 2019 at the San Ysidro Port of Entry in California.</p>
                 <p>U.S. Customs and Border Protection officers detained Nebane at the San Ysidro Admissibility Enforcement Unit, and he was later transferred to the Otay Mesa Detention Center ― a for-profit firm ― on September 19th while he awaited the next step of the asylum process.</p>
                 <p>During his medical examination, Nebane reported a 3-day hospitalization in Mexico only 3 weeks ago for severe hypertension.</p>
                 <p>On September 26th, Nebane allegedly fell off his top bunk onto the floor. A registered nurse observed him confused, sweating, not responding to commands, and paralyzed from the left side. He was taken to Sharp Chula Vista Medical Center and admitted to the intensive care unit. There, he was diagnosed with acute severe right intraparenchymal hemorrhage (bleeding within the brain).</p>
                 <p>On October 1st, 2019, the hospital declared Nebane brain-dead and contacted his family. His family requested Nebane be kept on life support until a family member could arrive at the hospital. Despite the family’s wishes, the hospital removed Nebane from the ventilator at 2:37 p.m.</p>
                 <p>In a later interview, Dr. John Flack, hypertension specialist and Chair of the Department of Internal Medicine at Southern Illinois University, expressed Nebane was likely a victim of medical negligence, expressing it was inconceivable he was allowed to enter the detention facility after having recently been hospitalized.</p>
-                <p>Moreover, past cases reveal Otay Mesa Detention Center has a <a target = "_blank" href = "https://www.latimes.com/california/story/2019-10-05/cameroon-death-ice-custody-black-immigrants-rights">history</a> of abuse, particularly toward specific ethnic groups that include Cameroonians.</p>
+                <p>Moreover, past cases reveal Otay Mesa Detention Center has a <a target = "_blank" href = "https://www.latimes.com/california/story/2019-10-05/cameroon-death-ice-custody-black-immigrants-rights">history</a> of abuse and violence, particularly toward specific ethnic groups that include Cameroonians.</p>
               </div>
               </div>
               </div> : null}
@@ -294,6 +298,7 @@ render() {
                   <p>Immigrated from Guatemala</p>
                 </div>
                 <div className = "Fourth-Story">
+                  <p>CONTENT WARNING: SEXUAL ASSAULT, PTSD, PHYSICAL ILLNESS</p>
                   <p>On September 5, 2019, Maria Celeste Ochoa Yoc de Ramirez was apprehended by U.S. Border Patrol in the Rio Grande Valley, Texas. She was first transferred to El Valle Detention Facility in Raymondville, Texas.</p>
                   <p>On September 6th, 2019, a registered nurse performed a medical screening. Maria did not report any health conditions, except an allergy to the antibiotic gentamycin.</p>
                   <p>About a week later, Maria disclosed that she had been suffering from post-traumatic stress disorder (PTSD) from a history of sexual assault. She described having disruptive nightmares and resorted to excessive sleep during the day to cope. Moreover, the mental examiner noted Maria’s tearful and sad mood. She was prescribed Terazosin, a drug often used to reduce sleep-related disorders in PTSD. Over the next 4 months, Maria was not evaluated for any progress on her PTSD symptoms.</p>
@@ -321,6 +326,7 @@ render() {
                   <p>Immigrated from Mexico</p>
                 </div>
                 <div className = "Fourth-Story">
+                  <p>CONTENT WARNING: SCHIZOPHRENIA, SUICIDE</p>
                   <p>Efrain had been living in the United States for 17 years before he was apprehended by Immigrations Customs Enforcement (ICE) while on his way back to Mexico. He was transferred to the Steward Detention Center (SDC) in Steward County, Georgia, managed by the for-profit company CoreCivic Inc.</p>
                   <p>Upon arriving at the SDC on March 13th, 2018, Efrain reported to the registered nurse (RN) that he dealt with schizophrenia, a mental illness that affects emotion, thought, and behavior. Though he described having some auditory hallucinations in the past, Efrain reported feeling well overall and denied having any suicidal thoughts. Moreover, a mental health evaluation conducted later that week by a psychologist found Efrain to be mentally stable.</p>
                   <p>From April 3rd to April 18th, Efrain was placed in solitary confinement, a form of imprisonment in which detainees live in single cells with little to no contact to other inmates. During this time, a licensed correctional social worker (LCSW) asked Efrain about taking medication; Efrain refused.</p>
@@ -346,6 +352,7 @@ render() {
                 <p>Immigrated from Guatemala</p>
               </div>
               <div className = "Fourth-Story">
+                <p>CONTENT WARNING: NEGLECT, PHYSICAL ILLNESS</p>
                 <p>U.S. Border Patrol agents apprehended Carlos on May 13th, 2019, near Hidalgo, Texas.</p>
                 <p>For 6 days, he was held at the Rio Grande Valley Sector’s Central Processing Center. Processing centers are meant to serve as brief detention stays, after which immigrants are turned over to Immigration and Customs Enforcement (ICE), or in the case of children, the Office of Refugee Resettlement (ORR). On his last day at the center, Carlos tested positive for the flu and had a fever of 103 degrees. Despite these symptoms, he was transferred from the Rio Grande Valley Sector’s Central Processing Center to the Weslaco Border Patrol Station.</p>
                 <p>Upon arriving at the station, Carlos was placed in a holding cell with another physically-ill man. The next morning, on May 20th, Carlos was found dead in the holding cell.</p>
@@ -366,6 +373,7 @@ render() {
               <p>Immigrated from Guatemala</p>
             </div>
             <div className = "Fourth-Story">
+              <p>CONTENT WARNING: PHYSICAL ILLNESS</p>
               <p>Yazmin Juárez, a 20-year-old woman, and her daughter, Mariee, were apprehended by Rio Grande, a river that marks the boundary between Mexico and the United States. A few days after, on March 5th, 2018, they were transferred to the South Texas Family Residential Center (STFR), the largest detention center in the United States. Upon arriving at the center, Mariee had no health issues.</p>
               <p>However, after about one week at the center, Mariee’s health deteriorated. She had a cough, congestion, and a fever of 104 degrees. On March 11th, Yazmin took Mariee to the clinic. After waiting hours, she was told Mariee had a respiratory infection; Mariee was given Tylenol and honey. The next day, Mariee’s illness worsened. Yazmin once again sought medical attention, and the providers said they believed Mariee had an ear infection; they prescribed her antibiotics. During a testimonial, Yazmin describes having to wait in line for hours before being seen by a medical professional. She was even turned away on two occasions.</p>
               <p>Yazmin and Mariee passed their credible fear interview and were released from Immigration Customs Enforcement on March 25th.</p>
