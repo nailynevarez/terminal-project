@@ -4,13 +4,13 @@ import First from './First.js';
 import Second from './Second.js';
 import Third from './Third.js';
 import Fourth from './Fourth.js';
+import ShareImage from './images/ShareImage.png';
 import './sass/newmain.css';
 import PortraitTexture from "./images/Texture.gif";
 import DeviceOrientation, { Orientation } from 'react-screen-orientation';
 import PortraitIcon from "./images/Portrait-Icon.gif";
 import MediaQuery from 'react-responsive';
 import Fullscreen from "react-full-screen";
-import MetaTags from 'react-meta-tags';
 
 class App extends Component {
   constructor(props){
@@ -67,13 +67,6 @@ render() {
 
   return (
     <div className="App-Wrapper">
-      <MetaTags>
-              <title>Wavering Stripes</title>
-              <meta name="description" content="The impact of immigration detention in the United States." />
-              <meta property="og:title" content="Wavering Stripes"/>
-              <meta property="og:image" content="./images/ShareImage.png" />
-      </MetaTags>
-
       <MediaQuery query="(orientation: landscape)">
         <div>
           {this.state.showCheckbox ?

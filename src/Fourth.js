@@ -43,6 +43,8 @@ export default class Fourth extends Component {
       showRow3Person1: false,
       showRow11Person1: false,
       showPersonWrapper: false,
+      showProfile: false,
+      fadeInFlag: false,
       showRedBackground: null,
       showActionButton: false,
       isDirectionActive: true,
@@ -73,6 +75,7 @@ export default class Fourth extends Component {
 
   showRow8Person1 = () => {
     this.setState({
+      showProfile: true,
       showPersonWrapper: true,
       showRow8Person1: true,
       showRedBackground: false,
@@ -83,6 +86,7 @@ export default class Fourth extends Component {
 
   showRow3Person2 = () => {
     this.setState({
+      showProfile: true,
       showPersonWrapper: true,
       showRow3Person2: true,
       showRedBackground: true,
@@ -93,6 +97,8 @@ export default class Fourth extends Component {
 
   showRow1Person1 = () => {
     this.setState({
+
+      showProfile: true,
       showPersonWrapper: true,
       showRow1Person1: true,
       showRedBackground: true,
@@ -103,6 +109,8 @@ export default class Fourth extends Component {
 
   showRow6Person1 = () => {
     this.setState({
+
+      showProfile: true,
       showPersonWrapper: true,
       showRow6Person1: true,
       showRedBackground: false,
@@ -113,6 +121,8 @@ export default class Fourth extends Component {
 
   showRow3Person1 = () => {
     this.setState({
+
+      showProfile: true,
       showPersonWrapper: true,
       showRow3Person1: true,
       showRedBackground: true,
@@ -123,6 +133,8 @@ export default class Fourth extends Component {
 
   showRow11Person1 = () => {
     this.setState({
+
+      showProfile: true,
       showPersonWrapper: true,
       showRow11Person1: true,
       showRedBackground: true,
@@ -133,6 +145,7 @@ export default class Fourth extends Component {
 
   showRow8Person2 = () => {
     this.setState({
+      showProfile: true,
       showPersonWrapper: true,
       showRow8Person2: true,
       showRedBackground: false,
@@ -143,6 +156,7 @@ export default class Fourth extends Component {
 
   showRow6Person2 = () => {
     this.setState({
+      showProfile: true,
       showPersonWrapper: true,
       showRow6Person2: true,
       showRedBackground: false,
@@ -153,6 +167,7 @@ export default class Fourth extends Component {
 
   showFlag = () => {
     this.setState({
+      fadeInFlag: true,
       showPersonWrapper: false,
       showRow8Person1: false,
       showRow8Person2: false,
@@ -163,6 +178,18 @@ export default class Fourth extends Component {
       showRow3Person1: false,
       showRow11Person1: false,
     });
+
+    setTimeout(() => {
+      this.setState({
+        showProfile: false,
+      });
+    }, 500);
+
+    setTimeout(() => {
+      this.setState({
+        fadeInFlag: false,
+      });
+    }, 1700);
   }
 
   showActionContent = () => {
@@ -179,7 +206,7 @@ render() {
 
 
 
-    {this.state.showPersonWrapper ? (
+    {this.state.showProfile ? (
       <div className = {this.state.showPersonWrapper ? 'fadeIn' : 'fadeOut'}>
       <img className = "Fourth-Texture" src = {FourthTexture}/>
       <div className = {this.state.showRedBackground ? "Fourth-ArrowPerson-Red": "Fourth-ArrowPerson-White"}>
@@ -391,8 +418,8 @@ render() {
     )
     :
     (
-
-      <div className = "Fourth-Wrapper-Flag">
+      <div className = {this.state.fadeInFlag ? 'fadeIn' : null}>
+      <div className = "Fourth-WrapperFlag">
       {this.state.showActionButton ?
         <div className = "Fourth-ActionDiv"><button onClick={this.showActionContent.bind(this)} className = "Fourth-Action">TAKE ACTION</button></div>  : null}
         {this.state.isDirectionActive ? <p className = "Fourth-Direction">CLICK ON THE BLINKING FIGURES</p> : null}
@@ -447,6 +474,7 @@ render() {
       <a target = "_blank" href ="https://detentionwatchnetwork.z2systems.com/np/clients/detentionwatchnetwork/donation.jsp?campaign=25&&test=true"><button>HELP NOW</button></a>
       <p className = "Fourth-SubCaption">To stay informed and learn of other ways to contribute, follow Detention Watch Network on <a target = "_blank" href = "https://twitter.com/DetentionWatch">Twitter</a> and <a target = "_blank" href = "https://www.facebook.com/DetentionWatchNetwork">Facebook.</a></p>
       </div> : null}
+      </div>
       </div>
 
     )
