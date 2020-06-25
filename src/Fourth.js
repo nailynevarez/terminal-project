@@ -49,6 +49,7 @@ export default class Fourth extends Component {
       showActionButton: false,
       isDirectionActive: true,
       showActionContent: false,
+      showFAQContent: false,
     };
   }
 
@@ -195,6 +196,12 @@ export default class Fourth extends Component {
   showActionContent = () => {
     this.setState ({
       showActionContent: !this.state.showActionContent,
+    });
+  }
+
+  showFAQContent = () => {
+    this.setState ({
+      showFAQContent: !this.state.showFAQContent,
     });
   }
 
@@ -422,6 +429,7 @@ render() {
       <div className = "Fourth-WrapperFlag">
       {this.state.showActionButton ?
         <div className = "Fourth-ActionDiv"><button onClick={this.showActionContent.bind(this)} className = "Fourth-Action">TAKE ACTION</button></div>  : null}
+      {this.state.showActionButton ? <button className = "Fourth-FAQButton" onClick={this.showFAQContent.bind(this)}>?</button> : null}
         {this.state.isDirectionActive ? <p className = "Fourth-Direction">CLICK ON THE BLINKING FIGURES</p> : null}
       <img className = "Fourth-Texture" src = {FourthTexture}/>
       <img className = "Fourth-People" src = {FourthPeople}/>
@@ -469,11 +477,35 @@ render() {
 
       <button onClick={this.handleButtonClick.bind(this)} className = {this.state.isSceneActive ? "Fourth-Home-FadeIn" : "Fourth-Home-FadeOut"}>HOME</button>
 
-      {this.state.showActionContent ? <div onClick={this.showActionContent.bind(this)} className = "Fourth-ActionContent">
+
+      {this.state.showActionContent ?
+        <div onClick={this.showActionContent.bind(this)} className = "Fourth-ActionContent">
       <p>This project was made with the support of <a href = "https://www.detentionwatchnetwork.org/" target = "_blank"> Detention Watch Network, </a> a national coalition dedicated to abolishing immigration detention in the United States. To help strengthen their work and contribute to the mission of ending immigration detention, please consider making a donation.</p>
-      <a target = "_blank" href ="https://detentionwatchnetwork.z2systems.com/np/clients/detentionwatchnetwork/donation.jsp?campaign=25&&test=true"><button>HELP NOW</button></a>
+      <a target = "_blank" href ="https://detentionwatchnetwork.z2systems.com/np/clients/detentionwatchnetwork/donation.jsp?campaign=25&&test=true"><button>DONATE NOW</button></a>
       <p className = "Fourth-SubCaption">To stay informed and learn of other ways to contribute, follow Detention Watch Network on <a target = "_blank" href = "https://twitter.com/DetentionWatch">Twitter</a> and <a target = "_blank" href = "https://www.facebook.com/DetentionWatchNetwork">Facebook.</a></p>
       </div> : null}
+
+      {this.state.showFAQContent ?
+        <div onClick={this.showFAQContent.bind(this)} className = "Fourth-FAQContent">
+        <p>IMMIGRATION DETENTION</p>
+        <p>Frequently Asked Questions</p>
+        <p>To learn more about immigration detention and what you can do to end it, visit <a href = "https://www.detentionwatchnetwork.org/" target = "_blank">detentionwatchnetwork.org</a></p>
+        <p>What is immigration detention?</p>
+          <p>Immigration detention is the unjust and inhumane practice of incarcerating immigrants while they await a determination of their immigration status or potential deportation. In Fiscal Year (FY) 2019, the United States government detained over 500,000 people in a sprawling system of over 200 jails across the country run by Immigration and Customs Enforcement (ICE).</p>
+          <p>ICE has an appalling record of abuse. Many Americans are shocked to learn that in ICE detention centers people are deprived of their liberty, denied access to lawyers, separated from their families and loved ones, and experiencing fatal medical neglect. Since 2003, over 200 people have died in ICE custody.</p>
+        <p>Who is in immigration detention?</p>
+          <p>Immigrants in detention can be undocumented or documented immigrants, including people whose immigration status is not current, is expired, or is under review. The U.S. locks up survivors of torture, people seeking asylum, people who have been granted the right to live in the U.S., visa holders, people who have lived here for years and may have American citizen spouses and children, individuals with mental health and medical conditions and other vulnerable groups including pregnant women and families with children — even babies.</p>
+        <p>What is ICE’s budget?</p>
+          <p>In the last two years, taxpayers have spent approximately $8 billion annually on Immigration Customs Enforcement (ICE) (FY20: $8.4 billion). Since 2016, ICE’s budget has seen about a 40 percent increase under the Trump administration. This money translates into the detention of immigrants, racial profiling and targeting of immigrant communities, and separation of families and loved ones.
+          Instead, taxpayer dollars should be used to support our collective well-being for programs like education, housing, and healthcare to build thriving communities.
+          </p>
+        <p>Who profits from immigration detention?</p>
+          <p>ICE contracts with both local governments and private prison companies, like The GEO Group, Inc. and CoreCivic, to operate its wide network of facilities that includes dedicated detention centers as well as local and state jails. This contract model creates a perverse financial incentive to keep people incarcerated as private prison companies and local governments with shrinking budgets profit off of immigrant pain.</p>
+          <p>Over 80 percent of people held in detention facilities are operated by private prison companies.</p>
+        <p>Does the U.S. need immigration detention?</p>
+          <p>Simply put, no. As the U.S. expanded prisons in the 1980s and 1990s, the detention of immigrants, once a little known practice, began to take shape and grow to the system we have today. It doesn’t need to be this way.</p>
+          <p>People navigating their immigration case should be able to do so with their loved ones and in their communities not behind bars in immigration detention. The majority of people in detention have been living in the U.S. for years and are established members of their communities with families. People seeking asylum often have strong community ties with loved ones waiting to welcome them to the United States. And for those that need support, they can access it through community-based groups that offer services to help people through their immigration proceedings.</p>
+        </div> : null}
       </div>
       </div>
 
