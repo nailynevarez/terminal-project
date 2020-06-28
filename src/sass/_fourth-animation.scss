@@ -1,6 +1,6 @@
 
 
-.Fourth-People, .Fourth-Row8Person1-Red, .Fourth-Row3Person2-Red, .Fourth-Row1Person1-Red, .Fourth-Row6Person1-Red, .Fourth-Row3Person1-Red,
+.Fourth-People, .Fourth-Row8Person1-Red, .Fourth-Row3Person2-Red, .Fourth-Row1Person2-Red, .Fourth-Row1Person1-Red, .Fourth-Row6Person1-Red, .Fourth-Row3Person1-Red,
 .Fourth-Row11Person1-Red, .Fourth-Row8Person2-Red, .Fourth-Row6Person2-Red {
   -webkit-animation: fadePeople 3s;
    -moz-animation: fadePeople 3s;
@@ -47,11 +47,11 @@
 
 
 
- .Fourth-Row3Person1, .Fourth-Row11Person1, .Fourth-Row6Person2, .Fourth-Row1Person1 {
-  -webkit-animation: fadePeople 3s, personBlink1 ease-in-out infinite 1.5s;
-   -moz-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 1.5s;
-   -o-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 1.5s;
-  animation: fadePeople 3s, personBlink1 ease-in-out infinite 1.5s;
+ .Fourth-Row3Person1, .Fourth-Row11Person1, .Fourth-Row6Person2, .Fourth-Row1Person2 {
+  -webkit-animation: fadePeople 3s, personBlink1 ease-in-out infinite 1.8s;
+   -moz-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 1.8s;
+   -o-animation: fadePeople 3s, personBlink1 ease-in-out  infinite 1.8s;
+  animation: fadePeople 3s, personBlink1 ease-in-out infinite 1.8s;
   animation-delay: 0ms, 3s;
 }
 
@@ -104,11 +104,11 @@
 }
 
 
-.Fourth-Row8Person1, .Fourth-Row6Person1, .Fourth-Row8Person2, .Fourth-Row3Person2,  {
-  -webkit-animation: fadePeople 3s, personBlink2 ease-in-out infinite 1.5s;
-   -moz-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 1.5s;
-   -o-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 1.5s;
-  animation: fadePeople 3s, personBlink2 ease-in-out infinite 1.5s;
+.Fourth-Row8Person1, .Fourth-Row6Person1, .Fourth-Row8Person2, .Fourth-Row3Person2, .Fourth-Row1Person1,   {
+  -webkit-animation: fadePeople 3s, personBlink2 ease-in-out infinite 1.8s;
+   -moz-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 1.8s;
+   -o-animation: fadePeople 3s, personBlink2 ease-in-out  infinite 1.8s;
+  animation: fadePeople 3s, personBlink2 ease-in-out infinite 1.8s;
   animation-delay: 0ms, 3s;
 }
 

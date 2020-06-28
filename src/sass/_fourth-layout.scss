@@ -333,7 +333,7 @@
 }
 
 
-.Fourth-Row1Person1 {
+.Fourth-Row1Person2 {
   @include sm {
     position: absolute;
     z-index: 6;
@@ -350,7 +350,7 @@
 }
 
 
-.Fourth-Row1Person1-Red {
+.Fourth-Row1Person2-Red {
   @include sm {
     position: absolute;
     z-index: 5;
@@ -358,6 +358,35 @@
     width: auto;
     top: 70.8%;
     left: 80%;
+  }
+}
+
+
+.Fourth-Row1Person1 {
+  @include sm {
+    position: absolute;
+    z-index: 6;
+    height: 12%;
+    width: auto;
+    top: 63.5%;
+    left: 17.5%;
+    &:hover {
+      animation: none;
+      opacity: .5;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.Fourth-Row1Person1-Red {
+  @include sm {
+    position: absolute;
+    z-index: 5;
+    height: 12%;
+    width: auto;
+    top: 63.5%;
+    left: 17.5%;
   }
 }
 

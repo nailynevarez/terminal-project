@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import FourthTexture from "./images/Texture.gif";
 import FourthFlagLarge from "./images/Fourth-FlagLarge.png";
 import FourthFlagSmall from "./images/Fourth-FlagSmall.png";
-import FourthPeople from "./images/Fourth-People.png";
+import FourthPeople from "./images/Fourth-People2.png";
 import Row8Person1 from "./images/Row8Person1.png";
 import Row8Person1Red from "./images/Row8Person1-Red.png";
 import KamyarSamimi from "./images/KamyarSamimi.png";
 import FourthArrow from "./images/Fourth-Arrow.png";
 import Row3Person2 from "./images/Row3Person2.png";
 import Row3Person2Red from "./images/Row3Person2-Red.png";
+import Row1Person2 from "./images/Row1Person2.png";
+import Row1Person2Red from "./images/Row1Person2-Red.png";
 import Row1Person1 from "./images/Row1Person1.png";
 import Row1Person1Red from "./images/Row1Person1-Red.png";
 import Row3Person1 from "./images/Row3Person1.png";
@@ -28,6 +30,7 @@ import MariaRamirez from "./images/MariaRamirez.png";
 import EfrainDeLaRosa from "./images/EfrainDeLaRosa.png";
 import CarlosVasquez from "./images/CarlosVasquez.png";
 import MarieeJuarez from "./images/MarieeJuarez.png";
+import JeanJimenezJoseph from "./images/JeanJimenezJoseph.png";
 
 export default class Fourth extends Component {
   constructor(props){
@@ -38,6 +41,7 @@ export default class Fourth extends Component {
       showRow8Person2: false,
       showRow3Person2: false,
       showRow1Person1: false,
+      showRow1Person2: false,
       showRow6Person1: false,
       showRow6Person2: false,
       showRow3Person1: false,
@@ -96,9 +100,20 @@ export default class Fourth extends Component {
     });
   }
 
-  showRow1Person1 = () => {
+  showRow1Person2 = () => {
     this.setState({
 
+      showProfile: true,
+      showPersonWrapper: true,
+      showRow1Person2: true,
+      showRedBackground: true,
+      showActionButton: true,
+      isDirectionActive: false,
+    });
+  }
+
+  showRow1Person1 = () => {
+    this.setState({
       showProfile: true,
       showPersonWrapper: true,
       showRow1Person1: true,
@@ -269,7 +284,7 @@ render() {
           </div>
           </div> : null}
 
-      {this.state.showRow1Person1 ?
+      {this.state.showRow1Person2 ?
         <div className = "Fourth-Person">
         <img className = "Fourth-Portrait" src = {MergensanaAmar}/>
         <div className = "Fourth-Writing">
@@ -278,6 +293,7 @@ render() {
             <p>40-year-old man</p>
             <p>Held in Washington</p>
             <p>Immigrated from Buryatia</p>
+
           </div>
           <div className = "Fourth-Story">
             <p>CONTENT WARNING: DEPRESSION, SUICIDE</p>
@@ -298,6 +314,33 @@ render() {
           </div>
           </div> : null}
 
+          {this.state.showRow1Person1 ?
+            <div className = "Fourth-Person">
+            <img className = "Fourth-Portrait" src = {JeanJimenezJoseph}/>
+            <div className = "Fourth-Writing">
+              <p className = "Fourth-Title" >JEAN JIMENEZ-JOSEPH</p>
+              <div className = "Fourth-SubTitle">
+                <p>27-year-old man</p>
+                <p>Held in Georgia</p>
+                <p>Immigrated from Panama</p>
+              </div>
+              <div className = "Fourth-Story">
+                <p>CONTENT WARNING: SCHIZOPHRENIA, PHYSICAL ASSAULT, SUICIDE</p>
+                <p>Jean Jimenez-Joseph and his family immigrated from Panama when he was 10 years-old.  After submitting four applications, Jean was finally approved for Deferred Action for Childhood Arrival (DACA) on May 6th, 2016, and he enrolled in community college to study architecture.</p>
+                <p>5 months later, Jean suffered a head injury while skateboarding. Following this incident, Jean experienced severe psychological distress, and was diagnosed with schizophrenia and anxiety. He was hospitalized for mental health treatment multiple times.</p>
+                <p>Within these months, around October 2016, Jean’s DACA status was removed after a misdemeanor offense. However, since Jean was not an “enforcement priority,” he was not given an order of deportation. However, after <a target = "_blank" href = "https://www.americanimmigrationcouncil.org/research/immigration-enforcement-priorities-under-trump-administration">Trump’s executive order</a> in January of 2017 ― which made all undocumented immigrants targets for deportation ― Jean was arrested and eventually transported to the Steward Detention Center (SDC) in Atlanta, Georgia on March 7th, 2017.</p>
+                <p>When Jean was assessed by a SDC officer, he responded “yes,” to a question concerning thoughts of harming himself or others; the officer notified a nurse. With the nurse, Jean described two past suicide attempts and a history visual hallucinations. After being seen by a licensed clinical social worker, he was prescribed psychotropic medication, but there are no records to show the nurse gave Jean the medication. Jean remained in medical observation for two days.</p>
+                <p>When releasing Jean to the general population, medical staff completed a special needs form requesting Jean to be housed on a low bunk on a low tier. Despite this, security staff assigned him to an upper bunk.</p>
+                <p>On April 13th, 2017, Jean was physically assaulted by another detainee.  SDC Housing Unit Post Orders states no officer should leave their post unless they are replaced by another officer/manager/supervisor, yet video footage later revealed no officers were present at the time of the assault.</p>
+                <p>Though Jean explained he did not start or physically engage in the fight, SDC staff sent him to solitary confinement for several days.</p>
+                <p>Jean returned to the general population, and he immediately called <a target = "_blank" href = "https://theintercept.com/2018/10/08/ice-detention-suicide-solitary-confinement/">ICE’s help line. </a> Jean said he was hearing voices telling him to commit suicide. Two days after this call, on April 27th,  the officer assigned to Jean’s unit left his post unsupervised. Jean walked out of his unit and climbed over the railing of the second tier. He jumped nine feet onto the first floor and landed on his feet. Concerned, another detainee informed the officer what Jean had done upon returning. The officer charged Jean with an act that could endanger persons or property, and he was sentenced to 20 days in solitary confinement.</p>
+                <p>Throughout these days, reports show a worsening in Jean’s mental health. Observations included an increase of auditory hallucinations, inappropriate laughing/yelling, kicking the air around him as well as pounding on walls. During this time, Jean also admitted to medical staff that his previous jumping act was a suicide attempt.</p>
+                <p>Despite all this information, SDC staff kept Jean in solitary confinement. On May 15th, 2017, after 18 days in solitary confinement, Jean was found hanging in his cell by a sheet, and he was pronounced dead by Emergency Medical Services at 2:15am.</p>
+                <p>Juan Méndez, a professor of human rights law who previously served as the United Nations special rapporteur on torture, explains that solitary confinement is a torture practice: “Even for a single day, it is banned [in international law] when applied to inmates with psycho-social disabilities...”</p>
+              </div>
+              </div>
+              </div> : null}
+
           {this.state.showRow6Person1 ?
             <div className = "Fourth-Person">
             <img className = "Fourth-Portrait" src = {NebaneAbienwi}/>
@@ -309,7 +352,7 @@ render() {
                 <p>Immigrated from Cameroon</p>
               </div>
               <div className = "Fourth-Story">
-              <p>CONTENT WARNING: VIOLENCE, PHYSICAL ILLNESS</p>
+              <p>CONTENT WARNING: HATE CRIME, PHYSICAL ILLNESS</p>
                 <p>Nebane Abienwi was a father of three fleeing civil war conflicts in Cameroon. After <a target = "_blank" href="https://www.thenation.com/article/world/ice-death-negligence/">traveling</a> across 3 continents and 9 countries, Nebane finally reached the United States and applied for admission on September 5th, 2019 at the San Ysidro Port of Entry in California.</p>
                 <p>U.S. Customs and Border Protection officers detained Nebane at the San Ysidro Admissibility Enforcement Unit, and he was later transferred to the Otay Mesa Detention Center ― a for-profit firm ― on September 19th while he awaited the next step of the asylum process.</p>
                 <p>During his medical examination, Nebane reported a 3-day hospitalization in Mexico only 3 weeks ago for severe hypertension.</p>
@@ -447,6 +490,10 @@ render() {
       <img className = "Fourth-Row3Person2" src = {Row3Person2}
           onClick={this.showRow3Person2.bind(this)}/>
       <img className = "Fourth-Row3Person2-Red" src = {Row3Person2Red}/>
+
+      <img className = "Fourth-Row1Person2" src = {Row1Person2}
+          onClick={this.showRow1Person2.bind(this)}/>
+      <img className = "Fourth-Row1Person2-Red" src = {Row1Person2Red}/>
 
       <img className = "Fourth-Row1Person1" src = {Row1Person1}
           onClick={this.showRow1Person1.bind(this)}/>
