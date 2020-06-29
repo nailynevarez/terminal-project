@@ -4,7 +4,7 @@ import First from './First.js';
 import Second from './Second.js';
 import Third from './Third.js';
 import Fourth from './Fourth.js';
-import ShareImage from './images/ShareImage.png';
+import shareImage from './images/ShareImage.png';
 import './sass/newmain.css';
 import PortraitTexture from "./images/Texture.gif";
 import DeviceOrientation, { Orientation } from 'react-screen-orientation';
@@ -41,8 +41,6 @@ class App extends Component {
  }
 
 
-
-
 render() {
 
   let component = null;
@@ -66,28 +64,27 @@ render() {
         }
 
   return (
-    <div className="App-Wrapper">
-      <MediaQuery query="(orientation: landscape)">
-        <div>
-          {this.state.showCheckbox ?
-            <button className = "App-Fullscreen" onClick={this.goFullscreen.bind(this)}>
-                  GO FULLSCREEN</button>
-         : null}
-          <Fullscreen enabled={this.state.isFullscreen} onChange={isFullscreen => this.setState({isFullscreen})}>
-          {component}
-           </Fullscreen>
-        </div>}
-        </MediaQuery>
-
-      <MediaQuery query="(orientation: portrait)">
-          <div className = "Portrait-Div">
-            <img className = "Portrait-Texture" src = {PortraitTexture}/>
-            <img className = "Portrait-Icon" src = {PortraitIcon}/>
-            <p>Please rotate your device.</p>
+      <div className="App-Wrapper">
+        <MediaQuery query="(orientation: landscape)">
+          <div>
+            {this.state.showCheckbox ?
+              <button className = "App-Fullscreen" onClick={this.goFullscreen.bind(this)}>
+                    GO FULLSCREEN</button>
+           : null}
+            <Fullscreen enabled={this.state.isFullscreen} onChange={isFullscreen => this.setState({isFullscreen})}>
+                {component}
+             </Fullscreen>
           </div>}
-      </MediaQuery>
+          </MediaQuery>
 
-    </div>
+        <MediaQuery query="(orientation: portrait)">
+            <div className = "Portrait-Div">
+              <img className = "Portrait-Texture" src = {PortraitTexture}/>
+              <img className = "Portrait-Icon" src = {PortraitIcon}/>
+              <p>Please rotate your device.</p>
+            </div>}
+        </MediaQuery>
+      </div>
   );
 }
 }

@@ -290,12 +290,36 @@ a {
   border-radius: 3px;
   font-weight: $font-bold;
   transition: .3s ease-in-out;
+  margin-right: 6px;
   &:hover {
     opacity: .5;
   }
 }
 
 .Second-Facebook span {
+  font-size: .8em;
+  font-family: Helvetica;
+}
+
+
+.Second-Instagram {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 2px 6px 1px 6px;
+  background-image: linear-gradient(to bottom right, #515bd4, #8134af, #dd2a7b, #feda77);
+  color: #fff;
+  border-radius: 3px;
+  font-weight: $font-bold;
+  transition: .3s ease-in-out;
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.Second-Instagram span {
   font-size: .8em;
   font-family: Helvetica;
 }
