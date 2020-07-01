@@ -1,14 +1,18 @@
+* {
+margin : 0;
+padding: 0;
+}
+
 html, body {
   @include sm {
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     width: 100%;
     cursor: url("../images/General-Cursor.svg"), auto;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     font-family: $font;
-
   }
 }
 
@@ -39,10 +43,16 @@ nav {
   flex-direction: column;
   top: 10%;
   pointer-events: none;
-  p {
+  p:nth-of-type(1) {
     color: $white;
     font-weight: $font-bold;
-
+    font-size: 1.2em;
+  }
+  p:nth-of-type(2) {
+    font-size: .8em;
+    color: $white;
+    margin: 0 15% 0 15%;
+    text-align: center;
   }
 }
 
@@ -103,7 +113,7 @@ nav {
     padding: 12px 22px;
     font-size: .9em;
   }
-  
+
 
   // @include sm {
   //   display: none;

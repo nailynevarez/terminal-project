@@ -82,6 +82,7 @@ render() {
               <img className = "Portrait-Texture" src = {PortraitTexture}/>
               <img className = "Portrait-Icon" src = {PortraitIcon}/>
               <p>Please rotate your device.</p>
+              <p>NOTE: for the best user experience, please view on a laptop or desktop.</p>
             </div>}
         </MediaQuery>
       </div>

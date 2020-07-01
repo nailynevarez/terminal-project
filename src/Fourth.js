@@ -189,6 +189,7 @@ export default class Fourth extends Component {
       showRow8Person2: false,
       showRow3Person2: false,
       showRow1Person1: false,
+      showRow1Person2: false,
       showRow6Person1: false,
       showRow6Person2: false,
       showRow3Person1: false,

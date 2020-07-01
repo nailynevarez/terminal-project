@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 0) {
   html, body {
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     width: 100%;
     cursor: url("../images/General-Cursor.svg"), auto;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     font-family: "Lato", sans-serif;
   }
 }
@@ -42,9 +47,16 @@
   top: 10%;
   pointer-events: none;
 }
-.Portrait-Div p {
+.Portrait-Div p:nth-of-type(1) {
   color: #FFE9DD;
   font-weight: 700;
+  font-size: 1.2em;
+}
+.Portrait-Div p:nth-of-type(2) {
+  font-size: 0.8em;
+  color: #FFE9DD;
+  margin: 0 15% 0 15%;
+  text-align: center;
 }
 
 @media (min-width: 0) {
@@ -590,7 +602,7 @@
     display: flex;
     justify-content: space-between;
     z-index: 6;
-    height: 50vh;
+    height: 10vh;
     top: 2.5%;
     right: 1.5%;
   }
@@ -1728,12 +1740,16 @@ a {
   }
   .Fourth-Story p {
     margin-right: 5%;
+    margin-bottom: 5%;
   }
 }
 @media (min-width: 769px) {
   .Fourth-Story p:nth-of-type(1) {
     font-size: 0.7em;
     padding: 5px;
+  }
+  .Fourth-Story p {
+    margin-bottom: 2.5%;
   }
 }
 @media (min-width: 1100px) {
