@@ -233,7 +233,7 @@
   @include xl {
     font-size: 1.2em;
     p:last-child {
-      font-size: 1.1em;
+      font-size: .8em;
     }
   }
 }
@@ -620,22 +620,22 @@
 
 .Fourth-DirectionDiv {
   display: flex;
-  height: 100vh;
+  height: 23vh;
+  align-self: auto;
   width: calc(120vh);
   max-width: 4000px;
   justify-content: center;
-  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
 }
 .Fourth-Direction {
   @include sm {
     color: $white;
     z-index: 5;
-    bottom: 0;
     font-size: .7em;
-    margin: 0 10% 5% 10%;
+    margin: 5% 10% 0 10%;
     font-weight: $font-bold;
     text-align: center;
-
   }
   @include md {
     font-size: .9em;
@@ -643,7 +643,6 @@
 
   @include lg {
     font-size: 1.1em;
-    margin: 0 10% 6% 10%;
   }
 
   @include xl {
@@ -651,7 +650,6 @@
   }
   @include xxl {
     font-size: 1.5em;
-    margin: 0 10% 8% 10%;
   }
 }
 
