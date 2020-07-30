@@ -142,9 +142,9 @@
   // padding-bottom: 5%;
   z-index: 5;
   a {
-    color: white;
-    font-weight: $font-bold;
+    color: $white;
     transition: .5s;
+    text-decoration: underline;
     &:hover {
       opacity: .5;
     }
@@ -204,6 +204,9 @@
       padding: 3px;
       border: 1px solid $white;
     }
+    p:last-child {
+      font-size:.3em;
+    }
     p {
       margin-right: 5%;
       margin-bottom: 5%;
@@ -211,18 +214,27 @@
   }
   @include md {
     p:nth-of-type(1) {
-      font-size: .7em;
+      font-size: .8em;
       padding: 5px;
+    }
+    p:last-child {
+      font-size:.6em;
     }
     p {
       margin-bottom: 2.5%;
     }
   }
   @include lg {
-    font-size: 1.2em;
+    font-size: 1em;
+    p:last-child {
+      font-size:.8em;
+    }
   }
   @include xl {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    p:last-child {
+      font-size: 1.1em;
+    }
   }
 }
 
@@ -606,30 +618,40 @@
   transition: all 0.3s ease-in-out;
 }
 
+.Fourth-DirectionDiv {
+  display: flex;
+  height: 100vh;
+  width: calc(120vh);
+  max-width: 4000px;
+  justify-content: center;
+  align-items: flex-end;
+}
 .Fourth-Direction {
   @include sm {
-    position: absolute;
-    color: $red;
+    color: $white;
     z-index: 5;
     bottom: 0;
-    font-size: 1em;
-    margin-bottom: 30px;
+    font-size: .7em;
+    margin: 0 10% 5% 10%;
     font-weight: $font-bold;
+    text-align: center;
 
   }
   @include md {
-    font-size: 1.1em;
-    margin-bottom: 40px;
+    font-size: .9em;
   }
 
   @include lg {
-    font-size: 1.2em;
-    margin-bottom: 50px;
+    font-size: 1.1em;
+    margin: 0 10% 6% 10%;
   }
 
   @include xl {
-    font-size: 1.4em;
-    margin-bottom: 60px;
+    font-size: 1.3em;
+  }
+  @include xxl {
+    font-size: 1.5em;
+    margin: 0 10% 8% 10%;
   }
 }
 

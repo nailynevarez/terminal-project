@@ -21,7 +21,6 @@
     z-index: 3;
     pointer-events: none;
   }
-
 }
 
 
@@ -71,6 +70,7 @@
       text-align: center;
       text-decoration: underline;
       transition: .3s;
+      margin-top: 10px;
       &:hover {
         transition: .3s;
         opacity: .4;

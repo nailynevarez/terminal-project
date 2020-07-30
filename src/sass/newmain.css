@@ -331,6 +331,7 @@
     text-align: center;
     text-decoration: underline;
     transition: 0.3s;
+    margin-top: 10px;
   }
   .First-TextWarning p:nth-of-type(2):hover {
     transition: 0.3s;
@@ -1669,9 +1670,9 @@ a {
     z-index: 5;
   }
   .Fourth-Writing a {
-    color: white;
-    font-weight: 700;
+    color: #FFE9DD;
     transition: 0.5s;
+    text-decoration: underline;
   }
   .Fourth-Writing a:hover {
     opacity: 0.5;
@@ -1738,6 +1739,9 @@ a {
     padding: 3px;
     border: 1px solid #FFE9DD;
   }
+  .Fourth-Story p:last-child {
+    font-size: 0.3em;
+  }
   .Fourth-Story p {
     margin-right: 5%;
     margin-bottom: 5%;
@@ -1745,8 +1749,11 @@ a {
 }
 @media (min-width: 769px) {
   .Fourth-Story p:nth-of-type(1) {
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding: 5px;
+  }
+  .Fourth-Story p:last-child {
+    font-size: 0.6em;
   }
   .Fourth-Story p {
     margin-bottom: 2.5%;
@@ -1754,12 +1761,18 @@ a {
 }
 @media (min-width: 1100px) {
   .Fourth-Story {
-    font-size: 1.2em;
+    font-size: 1em;
+  }
+  .Fourth-Story p:last-child {
+    font-size: 0.8em;
   }
 }
 @media (min-width: 1442px) {
   .Fourth-Story {
-    font-size: 1.3em;
+    font-size: 1.2em;
+  }
+  .Fourth-Story p:last-child {
+    font-size: 1.1em;
   }
 }
 
@@ -2109,33 +2122,46 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+.Fourth-DirectionDiv {
+  display: flex;
+  height: 100vh;
+  width: calc(120vh);
+  max-width: 4000px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 @media (min-width: 0) {
   .Fourth-Direction {
-    position: absolute;
-    color: #F23E2E;
+    color: #FFE9DD;
     z-index: 5;
     bottom: 0;
-    font-size: 1em;
-    margin-bottom: 30px;
+    font-size: 0.7em;
+    margin: 0 10% 5% 10%;
     font-weight: 700;
+    text-align: center;
   }
 }
 @media (min-width: 769px) {
   .Fourth-Direction {
-    font-size: 1.1em;
-    margin-bottom: 40px;
+    font-size: 0.9em;
   }
 }
 @media (min-width: 1100px) {
   .Fourth-Direction {
-    font-size: 1.2em;
-    margin-bottom: 50px;
+    font-size: 1.1em;
+    margin: 0 10% 6% 10%;
   }
 }
 @media (min-width: 1442px) {
   .Fourth-Direction {
-    font-size: 1.4em;
-    margin-bottom: 60px;
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 1900px) {
+  .Fourth-Direction {
+    font-size: 1.5em;
+    margin: 0 10% 8% 10%;
   }
 }
 
