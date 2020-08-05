@@ -90,7 +90,7 @@ render() {
       <div className = {this.state.isInfoTextActive ? 'fadeIn' : 'fadeOut'}>
         <div className = "Second-InfoDiv">
         <p className = "Second-InfoParagraph">Wavering Stripes is an interactive website about immigration detention in the United States. The project hopes to spread awareness on, and ignite action toward, ending immigration detention.</p>
-        <p className = "Second-InfoParagraph">Created by multidisciplinary artist <a target="_blank" href = "https://nailynevarez.com"> Naily Nevarez,</a> the project distorts the American flag — a symbol of pride — into the structure of a detention facility. Within the structure are individuals and their personal stories of struggle as immigrants. Each story further reveals the injustice and irony of immigration detention in the "land of the free."</p>
+        <p className = "Second-InfoParagraph">Created by visual artist <a target="_blank" href = "https://nailynevarez.com"> Naily Nevarez,</a> the project distorts the American flag — a symbol of pride — into the structure of a detention facility. Within the structure are individuals and their personal stories of struggle as immigrants. Each story further reveals the injustice and irony of immigration detention in the "land of the free."</p>
         <button className = "Second-InfoButtonHide" onClick={this.hideInfo.bind(this)}>
               <i className="Second-ArrowRight"></i></button>
         </div>
