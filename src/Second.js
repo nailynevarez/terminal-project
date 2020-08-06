@@ -115,7 +115,7 @@ render() {
               <img className = "Second-Button" onClick={this.handleButtonClick.bind(this)} src = {SecondButton}/>
             </div>
             <div className = "Second-Sharing">
-              <a className = "Second-Twitter"  target="_blank" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-url="https://www.waveringstripes.com" data-show-count="false"><i></i><span className = "label">Tweet</span></a>
+              <a className = "Second-Twitter"  target="_blank" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fwww.waveringstripes.com%2F&amp;ref_src=twsrc%5Etfw&amp;text=Check%20out%20Wavering%20Stripes%2C%20an%20interactive%20website%20about%20the%20deadly%20impact%20of%20immigration%20detention%20in%20the%20United%20States.&amp;url=https%3A%2F%2Fwww.waveringstripes.com%2F" data-show-count="false"><i></i><span className = "label">Tweet</span></a>
               <a className = "Second-Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.waveringstripes.com%2F&amp;src=sdkpreparse"><span className = "label">Share</span></a>
               <a className = "Second-Instagram" target = "_blank" href={IGStory} ><span className = "label">IG Story</span></a>
             </div>
