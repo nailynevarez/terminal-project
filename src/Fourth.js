@@ -520,7 +520,7 @@ render() {
         <div className = "Fourth-ActionDiv"><button onClick={this.showActionContent.bind(this)} className = "Fourth-Action">TAKE ACTION</button></div>  : null}
       {this.state.showActionButton ? <button className = "Fourth-FAQButton" onClick={this.showFAQContent.bind(this)}>?</button> : null}
         {this.state.isDirectionActive ?
-          <div className = "Fourth-DirectionDiv"><p className = "Fourth-Direction">Immigration detention is plagued by fatally flawed medical care, a lack of transparency, and ongoing abuse. These stories illuminate only a few of the many tragedies that have occurred inside ICE and CBP custody. To view a story, click on a blinking figure.</p></div> 
+          <div className = "Fourth-DirectionDiv"><p className = "Fourth-Direction">Immigration detention is plagued by fatally flawed medical care, a lack of transparency, and ongoing abuse. These stories illuminate only a few of the many tragedies that have occurred inside ICE and CBP custody. To view a story, click on a blinking figure.</p></div>
           : null}
       <img className = "Fourth-Texture" src = {FourthTexture}/>
       <img className = "Fourth-People" src = {FourthPeople}/>
